@@ -49,15 +49,15 @@ Python-1 and Python-2 into a single course.
 **Week 5:** [badgers](/badgers)<br> 
 **Week 6:** [bridgekeeper](/bridgekeeper)<br>
 **Week 7:** [bridgekeeper](/bridgekeeper)<br> 
-**Week 8:** [quizgame](/quizgame)
-**Week 9:** [quizgame](/quizgame)
-**Week 10:** [quizgame](/quizgame)
-**Week 11:** [roll](/roll)
-**Week 12:** [roll](/roll)
-**Week 13:** [greetings](/greetings)
-**Week 14:** [madlib](/madlib)
-**Week 15:** [madlib](/madlib) 
-**Week 16:** [madlib](/madlib)
+**Week 8:** [quizgame](/quizgame)<br>
+**Week 9:** [quizgame](/quizgame)<br>
+**Week 10:** [quizgame](/quizgame)<br>
+**Week 11:** [roll](/roll)<br>
+**Week 12:** [roll](/roll)<br>
+**Week 13:** [greetings](/greetings)<br>
+**Week 14:** [madlib](/madlib)<br>
+**Week 15:** [madlib](/madlib) <br>
+**Week 16:** [madlib](/madlib)<br>
 
 ## Assessment
 
