@@ -1,0 +1,14 @@
+#!/usr/bin/env python3 
+
+import colors as c
+import time
+
+count = 1
+increment = 0.001
+
+while True:
+    time.sleep(increment)
+    seconds = increment * count
+    print(c.clear)
+    print(str(seconds))
+    count += 1

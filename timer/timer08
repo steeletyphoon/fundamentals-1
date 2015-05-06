@@ -1,0 +1,12 @@
+#!/usr/bin/env python3 
+
+import colors as c
+import time
+
+count = 1
+
+while True:
+    time.sleep(0.001)
+    print(c.clear)
+    print(str(count) + ' thousandths of second')
+    count += 1
