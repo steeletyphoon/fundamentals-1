@@ -44,7 +44,7 @@ Python-1 and Python-2 into a single course.
 
 **Week 1:** [timer](/timer)<br>
 **Week 2:** [timer](/timer), [nyan](/nyan)<br>
-**Week 3:** [agediff](/agediff)
+**Week 3:** [agediff](/agediff)<br>
 **Week 4:** [waffles](/waffles)<br> 
 **Week 5:** [badgers](/badgers)<br> 
 **Week 6:** [bridgekeeper](/bridgekeeper)<br>
