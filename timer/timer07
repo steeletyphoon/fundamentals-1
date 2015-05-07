@@ -1,10 +1,14 @@
 #!/usr/bin/env python3 
 
 import time
+import colors as c
 
 count = 1
+print(c.clear)
 
 while True:
     time.sleep(1)
-    print(str(count) + ' seconds')
+    print(c.clear)
+    print(c.cyan + '[Control-C to stop]' + c.reset, end=': ')
+    print(count)
     count += 1

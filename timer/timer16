@@ -4,17 +4,22 @@ import time
 import colors as c
 
 count = 0
+interval = 0.01
 
 def show():
     print(c.clear)
     print(c.cyan + '[Control-C to stop]' + c.reset, end=': ', flush=True)
-    print(count)
+    print('{:.2f} seconds'.format(count))
 
 #-----------------------------------------------------------------------
 
 show()
 
-while True:
-    time.sleep(0.01)
-    count += 1
+try:
+    while True:
+        time.sleep(interval)
+        count += interval 
+        show()
+except KeyboardInterrupt:
     show()
+    exit()
