@@ -3,18 +3,16 @@
 import time
 import colors as c
 
-count = 0
-
-def show():
-    print(c.clear)
-    print(c.cyan + '[Control-C to stop]' + c.reset, end=': ', flush=True)
-    print(count)
-
-#-----------------------------------------------------------------------
-
-show()
+seconds = 0
+hundredths = 0
 
 while True:
-    time.sleep(1)
-    count += 1
-    show()
+    print(c.clear)
+    print(c.cyan + '[Control-C to stop]' + c.reset, end=': ')
+    print(seconds, end=':')
+    print(hundredths)
+    time.sleep(0.01)
+    hundredths += 1
+    if hundredths >= 100:
+        hundredths = hundredths % 100
+        seconds += 1

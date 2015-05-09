@@ -3,12 +3,11 @@
 import time
 import colors as c
 
-count = 1
-print(c.clear)
+seconds = 0
 
 while True:
-    time.sleep(1)
     print(c.clear)
     print(c.cyan + '[Control-C to stop]' + c.reset, end=': ')
-    print(count)
-    count += 1
+    print(seconds)
+    time.sleep(1)
+    seconds += 1
