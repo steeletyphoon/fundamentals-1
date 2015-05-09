@@ -3,6 +3,7 @@
 import time
 import colors as c
 
+days = 0
 hours = 0
 minutes = 0
 seconds = 0
@@ -10,6 +11,7 @@ hundredths = 0
 
 while True:
     print(c.clear + c.cyan + '[Control-C to stop] ' + c.reset)
+    print(days)
     print(hours)
     print(minutes)
     print(seconds)
@@ -25,3 +27,6 @@ while True:
     if minutes == 60:
         hours += 1
         minutes = 0
+    if hours == 24:
+        days += 1
+        hours = 0

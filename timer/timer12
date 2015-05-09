@@ -3,11 +3,15 @@
 import time
 import colors as c
 
+hours = 0
+minutes = 0
 seconds = 0
 hundredths = 0
 
 while True:
     print(c.clear + c.cyan + '[Control-C to stop] ' + c.reset)
+    print(hours)
+    print(minutes)
     print(seconds)
     print(hundredths)
     time.sleep(0.01)
@@ -15,3 +19,9 @@ while True:
     if hundredths == 100:
         seconds += 1
         hundredths = 0
+    if seconds == 60:
+        minutes += 1
+        seconds = 0
+    if minutes == 60:
+        hours += 1
+        minutes = 0
