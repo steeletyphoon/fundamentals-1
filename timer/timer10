@@ -7,8 +7,7 @@ seconds = 0
 hundredths = 0
 
 while True:
-    print(c.clear)
-    print(c.cyan + '[Control-C to stop]' + c.reset, end=': ')
+    print(c.clear + c.cyan + '[Control-C to stop]' + c.reset, end=': ')
     print(seconds, end=':')
     print(hundredths)
     time.sleep(0.01)

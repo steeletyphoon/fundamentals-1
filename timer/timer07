@@ -6,8 +6,7 @@ import colors as c
 seconds = 0
 
 while True:
-    print(c.clear)
-    print(c.cyan + '[Control-C to stop]' + c.reset, end=': ')
+    print(c.clear + c.cyan + '[Control-C to stop]' + c.reset, end=': ')
     print(seconds)
     time.sleep(1)
     seconds += 1
