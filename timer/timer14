@@ -8,7 +8,7 @@ hours = 0
 minutes = 0
 seconds = 0
 hundredths = 0
-mesg = c.clear + c.cyan + '[Control-C to stop] ' + c.reset
+mesg = c.clear + c.conceil + '\n' * 15 + c.cyan + '                             [Control-C to stop] ' + c.reset
 
 while True:
     print(mesg + '{}-{}:{}:{}.{}'.format(days,hours,minutes,seconds,hundredths))
