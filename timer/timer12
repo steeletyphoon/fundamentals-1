@@ -12,7 +12,6 @@ hundredths = 0
 
 while True:
     print(c.clear)
-    '''
     print(c.yellow + 'weeks: ' + c.reset)
     print(weeks)
     print(c.yellow + 'days: ' + c.reset)
@@ -25,7 +24,6 @@ while True:
     print(seconds)
     print(c.yellow + 'hundredths: ' + c.reset)
     print(hundredths)
-    '''
     time.sleep(0.01)
     hundredths += 1
     if hundredths == 100:
