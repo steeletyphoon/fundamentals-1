@@ -3,6 +3,7 @@
 import time
 import colors as c
 
+weeks = 0
 days = 0
 hours = 0
 minutes = 0
@@ -10,12 +11,8 @@ seconds = 0
 hundredths = 0
 
 while True:
-    print(c.clear + c.cyan + '[Control-C to stop] ' + c.reset)
-    print(days)
-    print(hours)
-    print(minutes)
-    print(seconds)
-    print(hundredths)
+    print(c.clear)
+    print('{} weeks {} days {}:{}:{}.{}'.format(weeks,days,hours,minutes,seconds,hundredths))
     time.sleep(0.01)
     hundredths += 1
     if hundredths == 100:
@@ -30,3 +27,6 @@ while True:
     if hours == 24:
         days += 1
         hours = 0
+    if days == 7:
+        weeks += 1
+        days = 0

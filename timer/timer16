@@ -3,17 +3,17 @@
 import time
 import colors as c
 
-mesg = c.clear + c.cyan + '[Control-C to stop] ' + c.reset
-form = '{}-{:02}:{:02}:{:02}.{:02}'
-
+weeks = 0
 days = 0
 hours = 0
 minutes = 0
 seconds = 0
 hundredths = 0
 
+form = c.clear + c.base3 + '{} weeks {} days {}:{:02}:{:02}.{:02}' + c.reset
+
 while True:
-    print( mesg + form.format(days,hours,minutes,seconds,hundredths))
+    print(form.format(weeks,days,hours,minutes,seconds,hundredths))
     time.sleep(0.01)
     hundredths += 1
     if hundredths == 100:
@@ -28,3 +28,6 @@ while True:
     if hours == 24:
         days += 1
         hours = 0
+    if days == 7:
+        weeks += 1
+        days = 0

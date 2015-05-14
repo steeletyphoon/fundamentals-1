@@ -7,7 +7,7 @@ seconds = 0
 
 while True:
     print(c.clear)
-    print(c.cyan + '[Control-C to quit]: ' + c.reset)
+    print(c.yellow + 'seconds: ' + c.reset)
     print(seconds)
     time.sleep(1)
     seconds += 1

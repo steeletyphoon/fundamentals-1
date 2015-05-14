@@ -3,10 +3,11 @@
 import time
 import colors as c
 
-seconds = 0
+hundredths = 0
 
 while True:
-    print(c.clear + c.cyan + '[Control-C to stop] ' + c.reset)
-    print(seconds)
-    time.sleep(1)
-    seconds += 1
+    print(c.clear)
+    print(c.yellow + 'hundredths: ' + c.reset)
+    print(hundredths)
+    time.sleep(0.01)
+    hundredths += 1
