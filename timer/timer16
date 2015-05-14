@@ -14,6 +14,20 @@ form = c.clear + c.base3 + '{} weeks {} days {}:{:02}:{:02}.{:02}' + c.reset
 
 while True:
     print(form.format(weeks,days,hours,minutes,seconds,hundredths))
+    '''
+    print(c.yellow + 'weeks: ' + c.reset)
+    print(weeks)
+    print(c.yellow + 'days: ' + c.reset)
+    print(days)
+    print(c.yellow + 'hours: ' + c.reset)
+    print(hours)
+    print(c.yellow + 'minutes: ' + c.reset)
+    print(minutes)
+    print(c.yellow + 'seconds: ' + c.reset)
+    print(seconds)
+    print(c.yellow + 'hundredths: ' + c.reset)
+    print(hundredths)
+    '''
     time.sleep(0.01)
     hundredths += 1
     if hundredths == 100:
