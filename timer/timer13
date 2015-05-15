@@ -10,10 +10,8 @@ minutes = 0
 seconds = 0
 hundredths = 0
 
-while True:
-    print(c.clear)
-    print('{} weeks {} days {}:{}:{}.{}'.format(weeks,days,hours,minutes,seconds,hundredths))
-    '''
+def show():
+    print(c.clear, end='')
     print(c.yellow + 'weeks: ' + c.reset)
     print(weeks)
     print(c.yellow + 'days: ' + c.reset)
@@ -26,21 +24,27 @@ while True:
     print(seconds)
     print(c.yellow + 'hundredths: ' + c.reset)
     print(hundredths)
-    '''
-    time.sleep(0.01)
-    hundredths += 1
-    if hundredths == 100:
-        seconds += 1
-        hundredths = 0
-    if seconds == 60:
-        minutes += 1
-        seconds = 0
-    if minutes == 60:
-        hours += 1
-        minutes = 0
-    if hours == 24:
-        days += 1
-        hours = 0
-    if days == 7:
-        weeks += 1
-        days = 0
+
+try:
+    while True:
+        show()
+        time.sleep(0.01)
+        hundredths += 1
+        if hundredths == 100:
+            seconds += 1
+            hundredths = 0
+        if seconds == 60:
+            minutes += 1
+            seconds = 0
+        if minutes == 60:
+            hours += 1
+            minutes = 0
+        if hours == 24:
+            days += 1
+            hours = 0
+        if days == 7:
+            weeks += 1
+            days = 0
+except KeyboardInterrupt:
+    print("\b\b\b")
+    exit()
