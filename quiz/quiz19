@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+
+import colors as c
+from utils import ask
+import random
+
+print(c.clear)
+
+which = ask("Would you like the 'fluffy' quiz or 'capitals?'")
+if which == 'fluffy':
+    import fluffy as quiz
+else:
+    import capitals as quiz
+
+print(c.clear + quiz.intro)
+
+while quiz.questions:
+    question_function = random.choice(quiz.questions)
+    if question_function():
+        quiz.questions.remove(question_function)

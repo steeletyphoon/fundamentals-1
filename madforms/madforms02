@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+text = '''Online Dating
+
+A little about me hmmmmm. I'm pretty {Adjective1} and easy going. I try
+to stay {Adjective2} and {Adjective3} even when life gets {Adjective4} and believe me,
+if they could make a movie about my life it would definitely
+be a {Type of Book or Movie}.  I moved here about {Number} months ago and still
+haven't {Sense in Past Tense} a lot that {City} has to offer! I love relaxing at
+{Place Beginning with 'the'} or {Place to Hangout} or taking weekend road trips to {Fun Destination}.
+I've been told I'm one of the most {Descriptive Adjective}, {Adjective5} people ever but 
+I haven't found the right {Companion} yet. So here I am giving this online dating a shot!
+Please {Communication Method} me if you think your are my kinda {Adjective6} {Companion}!
+'''
+
+lines = text.splitlines()
+title = lines[0]
+
+print(c.clear + c.base3 + title + c.reset)
+print(text)

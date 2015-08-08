@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+print(c.clear + c.yellow + '''
+Who shall cross the Bridge of Death
+Must answer me these questions three
+'Ere the other side he see.
+''' + c.reset)
+

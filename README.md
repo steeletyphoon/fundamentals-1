@@ -1,89 +1,67 @@
-# Learning to Program, in Python
+# About
+
+Meet Python, the best first programming language anyone should learn.
+It is approachable, easy, and &mdash; most of all &mdash; real. Python is
+a core language used by the worldwide scientific community – including
+MIT where it is the first language taught – and can be found everywhere
+from elementary schools to Hollywood. In this course students find out
+what coding is, why they should learn it, and how to write their first
+Python code the way professionals do, with the [vim editor][] from a
+[Linux Bash][] command line. (You won't find any IDLE here.) 
+
+Students gradually
+learn the same habits, tools and workflows associated with college CS
+programs and technical careers. Young or old, this is everyone's best
+first experience with real programming. Students learn programming
+fundamentals such as variables, operators, blocks, loops, data
+types, lists, dictionaries, functions, exceptions and module
+use. Python-1 focuses on basic structured and procedural programming
+paradigms. Important code management and object-oriented concepts are
+introduced in Python-2.
+
+# Planning
+
+This course takes a total of 24 hours to complete and is designed
+to fit into 16 weeks of 90-minute classes (a semester) or two weeks of
+3-hour classes (a camp, M-Thu).
+
+The pace is set to what an average 8-12 year-old with typing skills can
+accomplish within 80 minutes a week with bonus challenges for faster
+learners.
+
+The last two weeks are a review of all the previous material. Avoid the
+temptation to skip the final review since it ensures students are ready to
+progress.
+
+**Week 1:** [hello] (/hello), [hi](/hi)<br>
+**Week 2:** [nyan] (/nyan)<br>
+**Week 3:** [waffles] (/waffles)<br>
+**Week 4:** [dice] (/dice)<br>
+**Week 5:** [badgers] (/badgers)<br>
+**Week 6:** [eightball] (/eightball)<br>
+**Week 7:** [bridge] (/bridge) (utils.py)<br>
+**Week 8:** [bridge] (/bridge)<br>
+**Week 9:** [mtable] (/mtable)<br>
+**Week 10:** [madforms] (/madforms)<br>
+**Week 11:** [madforms] (/madforms)<br>
+**Week 12:** [bincount] (/bincount)<br>
+**Week 13:** [quiz] (/quiz)<br>
+**Week 14:** [quiz] (/quiz)<br>
+**Week 15:** [review] (/review)<br>
+**Week 16:** [review] (/review)<br>
+
+# Resources and Requirements
+
+Students need access to a Linux command-line on a computer that has had
+`python3` installed. Usually this will be through an ssh connection
+(putty, etc.) to a Linux account on a school server. This could equally
+be done with individual [Raspberry Pi][] computers, individual Linux
+real or virtual machines, or a remote virtual host such as Digital Ocean.
 
 [![][logo]][scb] [![][cc0]][cc0link]
 
-This repo is a [SkilStak Content Block&trade;][scb] designed to become a
-pseudo-user home directory (named the same as repo) on a Linux terminal
-server, virtual machine, or [Raspberry Pi][]. Normally teachers login
-as the pseudo-user and present the content during class.  Students and
-teachers can browse, clone, or download any block repo as a zip from
-GitHub to use locally on their own computers. The content in this
-block is released under [CC0 Public Domain][cc0link] and visible to
-anyone. Teachers will need to adopt assessment strategies that take this
-into account. We'd love to [hear from you][] if you have suggestions or
-contribution ideas.
-
-## About
-
-This course follows on and reemphasizes the skills and concepts introduced
-in [Python-0](http://skilstak.github.io/python-0), which is designed to be
-a simple introduction. In Python-1 students learn to program, in Python.
-The fact that the language is Python is important, but secondary to
-learning programming fundamentals such as variables, operators, blocks,
-loops, data types, lists, dictionaries, exceptions, functions and module
-use. Python-1 focuses on basic structured and procedural programming
-paradigms. Important object-oriented concepts are introduced in Python-2,
-which is sometimes offered with Python-1 in an accelerated course.
-
-**Tier:** Project<br>
-**Hours:** 24<br>
-**Age:** 7+<br>
-**SkilStaks:** All<br>
-**Prerequisites:** Python-0
-
-## Planning
-
-Students taking this course will spend 90 minutes per class for 16
-weeks focusing on developing several projects that can be customized and
-expanded outside of class. As new concepts are covered students go back
-to previous projects and apply them to what they have done before.
-
-This schedule is designed for students as young as seven who have typing
-skills. More advanced and/or older students might elect to combine
-Python-1 and Python-2 into a single course.
-
-**Week 1:** [timer](/timer)<br>
-**Week 2:** [timer](/timer), [nyan](/nyan)<br>
-**Week 3:** [agediff](/agediff)<br>
-**Week 4:** [waffles](/waffles)<br> 
-**Week 5:** [badgers](/badgers)<br> 
-**Week 6:** [bridgekeeper](/bridgekeeper)<br>
-**Week 7:** [bridgekeeper](/bridgekeeper)<br> 
-**Week 8:** [quizgame](/quizgame)<br>
-**Week 9:** [quizgame](/quizgame)<br>
-**Week 10:** [quizgame](/quizgame)<br>
-**Week 11:** [roll](/roll)<br>
-**Week 12:** [roll](/roll)<br>
-**Week 13:** [greetings](/greetings)<br>
-**Week 14:** [madlib](/madlib)<br>
-**Week 15:** [madlib](/madlib) <br>
-**Week 16:** [madlib](/madlib)<br>
-
-## Assessment
-
-Assessment is informal through weekly verbal quiz questions and SkilBux
-rewards for terms and concepts remembered week to week. All students save
-their work to GitHub accounts where parents can assess their progress
-themselves as well.
-
-## Skills
-
-* TODO: fill this part out
-
-## Topics
-
-[Please see the individual projects for a list of topics covered.]
-
-## Attribution
-
-This content block was created by [Rob Muhlestein][] founder and teacher
-at [SkilStak Coding Arts][].
-
-[SkilStak Coding Arts]: http://skilstak.com
-[Rob Muhlestein]: http://github.com/robmuh
+[logo]: http://skilstak.com/images/skilstak-logo-bw-31.svg "SkilStak"
 [scb]: http://github.com/skilstak/block
 [cc0]: http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg "CC0 Public Domain"
 [cc0link]: https://creativecommons.org/publicdomain/zero/1.0/
-[hear from you]: mailto:learn@skilstak.com
-[logo]: http://skilstak.com/images/skilstak-logo-bw-31.svg "SkilStak"
 [Raspberry Pi]: https://www.raspberrypi.org/

@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+
+import colors as c
+from utils import ask
+import random
+
+def choose_quiz():
+    global quiz
+    while True:
+        print(c.clear)
+        which = ask("Would you like the 'fluffy' quiz or 'capitals?'")
+        if which == 'fluffy':
+            import fluffy as quiz
+            break
+        elif which == 'capitals':
+            import capitals as quiz
+            break
+        elif which in ['bye','stop','done','quit','exit']:
+            print(c.base3 + "kthxbye" + c.reset)
+            exit()
+
+def give_quiz():
+    print(c.clear + quiz.intro)
+    question_function = random.choice(quiz.questions)
+    if question_function():
+        quiz.questions.remove(question_function)
+
+while True:
+    choose_quiz()
+    give_quiz()

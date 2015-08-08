@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+
+import colors as c
+import time
+
+seconds = 0.38
+
+print(c.clear, end='')
+for n in range(11):
+    print(c.yellow + 'Badger!' + c.reset)
+    time.sleep(seconds)

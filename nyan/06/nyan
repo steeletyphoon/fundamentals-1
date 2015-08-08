@@ -1,0 +1,10 @@
+#!/usr/bin/env python3 
+
+import colors as c
+
+try:
+    while True:
+        print(c.rc() + 'Nyan' + c.x, end=' ')
+except KeyboardInterrupt:
+    print(c.cl)
+    exit()

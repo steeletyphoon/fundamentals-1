@@ -1,0 +1,8 @@
+_madforms() {
+  local forms=`madforms -l`
+  local typed=${COMP_WORDS[COMP_CWORD]}
+  COMPREPLY=( $(compgen -W "$forms" -- $typed))
+}
+complete -F _madforms madforms
+
+

@@ -1,0 +1,75 @@
+#!/usr/bin/env python3
+
+import colors as c
+print(c.clear)
+import random
+
+sides = []
+
+sides.append('''
+ -------
+|       |
+|   o   |
+|       |
+ -------
+''')
+
+sides.append('''
+ -------
+| o     |
+|       |
+|     o | 
+ -------
+''')
+
+sides.append('''
+ -------
+| o     |
+|   o   |
+|     o |
+ -------
+''')
+
+sides.append('''
+ -------
+| o   o |
+|       |
+| o   o |
+ -------
+''')
+
+sides.append('''
+ -------
+| o   o |
+|   o   |
+| o   o |
+ -------
+''')
+
+sides.append(''' 
+ -------
+| o   o |
+| o   o |
+| o   o |
+ -------
+''')
+
+while True:
+    side = random.choice(sides)
+    print(c.cl + c.rc() + side + c.x)
+    input()
+
+##############################
+# Keep for reference later:
+#
+# for side in sides:
+#     print("no index needed for", side)
+#
+# for n in range(6):
+#     print("index", n, "is side", sides[n])
+#
+# n = 0
+# while n < 6:
+#     print("index", n, "is side", sides[n])
+#     n = n + 1
+#

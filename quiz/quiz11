@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+
+import fluffy as quiz
+import colors as c
+
+print(c.clear + quiz.intro)
+
+for question_function in quiz.questions:
+    question_function()
+
+

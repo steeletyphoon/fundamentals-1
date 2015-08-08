@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+
+print("Do you like waffles?")
+answer = input("> ")
+print(answer)

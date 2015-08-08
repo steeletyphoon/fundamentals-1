@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+
+import fluffy as quiz
+import colors as c
+import random
+
+print(c.clear + quiz.intro)
+
+while quiz.questions:
+    question_function = random.choice(quiz.questions)
+    if question_function():
+        quiz.questions.remove(question_function)
+
+

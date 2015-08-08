@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+
+import colors as c
+from utils import ask
+import string
+import os
+import sys
+import random
+
+files = [f for f in os.listdir('madforms.d') if f.endswith('.form')]
+
+if len(sys.argv) > 1:
+    first = sys.argv[1]
+    if first == '-l':
+        for f in files:
+            print(os.path.splitext(f)[0], end=" ")
+        print()
+        exit(0)
+    else:
+        name = first + '.form'
+else:
+    name = random.choice(files)
+
+with open('madforms.d/' + name,'r') as f:
+    text = f.read()
+
+lines = text.splitlines()
+title = lines[0]
+text = "\n".join(lines[1:])
+print(c.clear + c.base3 + title + c.reset)
+
+words =  {i[1]: None for i in string.Formatter().parse(text) if i[1]}
+
+for key in words:
+    words[key] = c.magenta + ask(key.rstrip('0123456789') + ': ',
+        color=c.random_color(), lower=False) + c.reset
+
+print(c.clear + c.base3 + title + c.reset)
+print(text.format(**words))
+
