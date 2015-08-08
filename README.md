@@ -1,4 +1,4 @@
-# About
+# Learning to Program, in Python (*Python-1*)
 
 Meet Python, the best first programming language anyone should learn.
 It is approachable, easy, and &mdash; most of all &mdash; real. Python is
@@ -9,12 +9,11 @@ what coding is, why they should learn it, and how to write their first
 Python code the way professionals do, with the [vim editor][] from a
 [Linux Bash][] command line. (You won't find any IDLE here.) 
 
-Students gradually
-learn the same habits, tools and workflows associated with college CS
-programs and technical careers. Young or old, this is everyone's best
-first experience with real programming. Students learn programming
-fundamentals such as variables, operators, blocks, loops, data
-types, lists, dictionaries, functions, exceptions and module
+Students gradually learn the same habits, tools and workflows associated
+with college CS programs and technical careers. Young or old, this is
+everyone's best first experience with real programming. Students learn
+programming fundamentals such as variables, operators, blocks, loops,
+data types, lists, dictionaries, functions, exceptions and module
 use. Python-1 focuses on basic structured and procedural programming
 paradigms. Important code management and object-oriented concepts are
 introduced in Python-2.
@@ -33,22 +32,22 @@ The last two weeks are a review of all the previous material. Avoid the
 temptation to skip the final review since it ensures students are ready to
 progress.
 
-**Week 1:** [hello] (/hello), [hi](/hi)<br>
-**Week 2:** [nyan] (/nyan)<br>
-**Week 3:** [waffles] (/waffles)<br>
-**Week 4:** [dice] (/dice)<br>
-**Week 5:** [badgers] (/badgers)<br>
-**Week 6:** [eightball] (/eightball)<br>
-**Week 7:** [bridge] (/bridge) (utils.py)<br>
-**Week 8:** [bridge] (/bridge)<br>
-**Week 9:** [mtable] (/mtable)<br>
-**Week 10:** [madforms] (/madforms)<br>
-**Week 11:** [madforms] (/madforms)<br>
-**Week 12:** [bincount] (/bincount)<br>
-**Week 13:** [quiz] (/quiz)<br>
-**Week 14:** [quiz] (/quiz)<br>
-**Week 15:** [review] (/review)<br>
-**Week 16:** [review] (/review)<br>
+**Week 1:** [hello](/hello), [hi](/hi)<br>
+**Week 2:** [nyan](/nyan)<br>
+**Week 3:** [waffles](/waffles)<br>
+**Week 4:** [dice](/dice)<br>
+**Week 5:** [badgers](/badgers)<br>
+**Week 6:** [eightball](/eightball)<br>
+**Week 7:** [bridge](/bridge) (utils.py)<br>
+**Week 8:** [bridge](/bridge)<br>
+**Week 9:** [mtable](/mtable)<br>
+**Week 10:** [madforms](/madforms)<br>
+**Week 11:** [madforms](/madforms)<br>
+**Week 12:** [bincount](/bincount)<br>
+**Week 13:** [quiz](/quiz)<br>
+**Week 14:** [quiz](/quiz)<br>
+**Week 15:** [review](/review)<br>
+**Week 16:** [review](/review)<br>
 
 # Resources and Requirements
 
