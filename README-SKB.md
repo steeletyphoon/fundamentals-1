@@ -1,6 +1,6 @@
 # SkilStak Content Block™
 
-[![][logo]](http://github.com/skilstak/block)
+[![][http://skilstak.com/images/skilstak-logo-bw-31.svg]](http://github.com/skilstak/block)
 
 This repo is a SkilStak Content Block™ designed to become a pseudo-user
 home directory (named the same as repo) on a Linux terminal server,
