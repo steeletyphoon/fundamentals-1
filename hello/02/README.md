@@ -15,18 +15,18 @@ in the permissions for the file when we do `ls -l hello`:
 -rwxr-xr-x 1 student student 46 Jul 11 14:57 hello
 ```
 
-Don't worry about permissions to much now, just know they control things
+Don't worry about permissions now, just know they control things
 like reading and writing the file and telling the computer the file is
-a script.
+a script that can be run.
 
 ## Tell Computer How to Run the Program
 
-Next, we have to tell the computer which program we want to use to run
+After `chmod`ing we have to tell the computer which program we want to use to run
 our Python `hello` script. By adding the executable permission we signaled
 to the computer to look at the first line of our script for a ***shebang
 line***.  This special line starts with a *hashtag* `#` and the *bang*
-is for the exclamation point `!`. (Coders have all kinds of slang for
-different characters.) Add the following on the very first line of your script:
+is for the exclamation point `!`. Coders have all kinds of slang for
+different characters. Add the following on the very first line of your script:
 
 ```python
 #!/usr/bin/env python3

@@ -261,26 +261,6 @@ export SOL_cyan='\033[0;36m'
 export SOL_green='\033[0;32m'
 export SOL_reset='\033[0m'
 
-colors() {
-  echo -e "base03  ${SOL_base03}#002B36$SOL_reset \\\033[1;30m"
-  echo -e "base02  ${SOL_base02}#073642$SOL_reset \\\033[0;30m"
-  echo -e "base01  ${SOL_base01}#586E75$SOL_reset \\\033[1;32m"
-  echo -e "base00  ${SOL_base00}#657B83$SOL_reset \\\033[1;33m"
-  echo -e "base0   ${SOL_base0}#839496$SOL_reset \\\033[1;34m"
-  echo -e "base1   ${SOL_base1}#93A1A1$SOL_reset \\\033[1;36m"
-  echo -e "base2   ${SOL_base2}#EEE8D5$SOL_reset \\\033[0;37m"
-  echo -e "base3   ${SOL_base3}#FDF6E3$SOL_reset \\\033[1;37m"
-  echo -e "yellow  ${SOL_yellow}#B58900$SOL_reset \\\033[0;33m"
-  echo -e "orange  ${SOL_orange}#CB4B16$SOL_reset \\\033[1;31m"
-  echo -e "red     ${SOL_red}#DC322F$SOL_reset \\\033[0;31m"
-  echo -e "magenta ${SOL_magenta}#D33682$SOL_reset \\\033[0;35m"
-  echo -e "violet  ${SOL_violet}#6C71C4$SOL_reset \\\033[1;35m"
-  echo -e "blue    ${SOL_blue}#268BD2$SOL_reset \\\033[0;34m"
-  echo -e "cyan    ${SOL_cyan}#2AA198$SOL_reset \\\033[0;36m"
-  echo -e "green   ${SOL_green}#859900$SOL_reset \\\033[0;32m"
-  echo -e "reset   ------- \\\033[0m"
-  echo -e "clear   ------- \\\033[H\\\033[2J"
-}
 
 clogo() {
 echo -e "          $SOL_red        __   .__.__            __          __                        "
