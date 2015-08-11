@@ -1,7 +1,7 @@
 # What is Coding?
 
-Let's assume you have never heard of ***coding*** before. If you have this
-will be a good review but skip this section if you like.
+Let's assume you have never heard of ***coding*** before. If you have you
+can skip.
 
 Coding is when humans write instructions for computers to use. The
 instructions are like recipes. The recipes are called ***algorithems***.
