@@ -1,4 +1,4 @@
-# Learning to Program, in Python (*Python-1*)
+# Learning to Program, in Python
 
 Meet Python, the best first programming language anyone should learn.
 It is approachable, easy, and &mdash; most of all &mdash; real. Python is
