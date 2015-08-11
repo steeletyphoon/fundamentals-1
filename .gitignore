@@ -2,6 +2,7 @@
 .bash_history
 .viminfo
 .ssh
+.mozilla
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
