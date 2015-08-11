@@ -1,6 +1,6 @@
 # SkilStak Content Block™
 
-[![](http://skilstak.com/images/skilstak-logo-bw-31.svg)](http://github.com/skilstak/block)
+[![][logo]][scb] [![][cc0]][cc0link]
 
 This repo is a SkilStak Content Block™ designed to become a pseudo-user
 home directory (named the same as repo) on a Linux terminal server,
@@ -13,3 +13,8 @@ content in this block is released under CC0 Public Domain and visible
 to anyone. Teachers will need to adopt assessment strategies that take
 this into account. We'd love to hear from you if you have suggestions
 or contribution ideas.
+
+[scb]: http://github.com/skilstak/block
+[cc0]: http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg
+"CC0 Public Domain"
+[cc0link]: https://creativecommons.org/publicdomain/zero/1.0/
