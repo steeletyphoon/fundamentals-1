@@ -40,4 +40,4 @@ instead. `env` is itself a program that finds other programs wherever
 they are.  `env` finds `python3` wherever it may be on the system
 (or another system). This makes our program easier to share with others.
 
-[[&larr; Back](../02) | [Continue &rarr;](../03)]
+[[&larr; Back](../01) | [Continue &rarr;](../03)]

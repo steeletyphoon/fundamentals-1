@@ -38,4 +38,6 @@ into text that follows.
 
 If you are a teacher or am ambitious student who does not
 have these colors set up in your terminal you can look at
-[`tools`](../tools) for some help.
+[`tools`](../../tools) for some help.
+
+[[&larr; Back](../02) | [Continue &rarr;](../04)]
