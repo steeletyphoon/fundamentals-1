@@ -28,7 +28,18 @@ Now that it's imported we can change our code to use them:
 print(c.yellow + "Hello world" + c.reset) 
 ```
 
-We will use long form `c.yellow` for now and short for later to save on
+The colors can be joined to our string with the join `+` operator. An
+***operator*** is a symbol that does something to the things on either side
+of it called ***operands***. You can thing of an old-school telephone
+operator who made connections between folks.
+
+![Operator](operator.jpg)
+
+Or if you prefer, the Matrix version, Tank.
+
+![Tank Operator](tank.jpg)
+
+We'll join the long `c.yellow` for now and short for later to save on
 space and typing. When in doubt, use whatever one reads the best.
 
 The `c.reset` is a good habit to get into. It keeps colors from bleeding
@@ -40,4 +51,4 @@ If you are a teacher or am ambitious student who does not
 have these colors set up in your terminal you can look at
 [`tools`](../../tools) for some help.
 
-[[&larr; Back](../02) | [Continue &rarr;](../04)]
+[[&larr; Back](../03) | [Continue &rarr;](../05)]

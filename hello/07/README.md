@@ -351,4 +351,4 @@ with others and has become a standard. Memorize this shebang line.
 - [x] Command: `bash`
 - [x] Command: `/usr/bin/env`
 
-[[&larr; Back](../10) | [Bonus &rarr;](../bonus)]
+[[&larr; Back](../7) | [Bonus &rarr;](../bonus)]

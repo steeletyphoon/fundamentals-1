@@ -32,4 +32,4 @@ even if they contain hard words to understand, they contain a lot of clues
 about the problem, which you can even Google to get more help from other
 humans on the Interwebz.
 
-[[&larr; Back](../01) | [Continue &rarr;](../02)]
+[[&larr; Back](../01) | [Continue &rarr;](../03)]
