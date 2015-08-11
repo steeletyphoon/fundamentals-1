@@ -2,11 +2,11 @@
 
 ![Solarized Color Palette](http://ethanschoonover.com/solarized/img/solarized-palette.png)
 
-Most classes would stop right here and call this "hello world" complete
-but let's add some color and learn about ***operators***. Somehow
-programming is more fun with colors and these days adding
-color to terminal programs is pretty easy. Most terminals are
-still limited to 16 colors so we will use the [Solarized Dark
+Most classes would stop right here and call this "hello world"
+complete but let's add some color and learn about ***import*** and
+***operators***. Somehow programming is more fun with colors and these
+days adding color to terminal programs is pretty easy. Most terminals
+are still limited to 16 colors so we will use the [Solarized Dark
 Theme](http://ethanschoonover.com/solarized), our favorite here at
 SkilStak. What are the colors you ask? Type `colors` on the command-line
 to see:
