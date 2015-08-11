@@ -36,7 +36,7 @@ operator who made connections between folks.
 
 ![Operator](operator.jpg)
 
-Or if you prefer, the Matrix version, Tank.
+Or if you prefer, the Matrix version, Tank the operator.
 
 ![Tank Operator](tank.jpg)
 

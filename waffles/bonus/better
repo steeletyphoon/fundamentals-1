@@ -3,18 +3,23 @@
 import colors as c
 from utils import ask
 
-if ask(c.clear + "Do you like waffles?",c.random_color()) != "yes":
-    print("Well, I like waffles.")
+try:
+
+    if ask(c.clear + "Do you like waffles?",c.random_color()) != "yes":
+        print("Well, I like waffles.")
+        exit()
+
+
+    if ask(c.clear + "Do you like pancakes?",c.random_color()) != "yes":
+        print("Well, I like pancakes.")
+        exit()
+
+    if ask(c.clear + "Do you like French toast?",c.random_color()) != "yes":
+        print("Well, I like French toast.")
+        exit()
+
+    print(c.clear + c.random_color() + "♫ Do, do da do, can't wait to get a mouthful! ♫")
+
+except KeyboardInterrupt:
+    print(c.cl)
     exit()
-
-
-if ask(c.clear + "Do you like pancakes?",c.random_color()) != "yes":
-    print("Well, I like pancakes.")
-    exit()
-
-if ask(c.clear + "Do you like French toast?",c.random_color()) != "yes":
-    print("Well, I like French toast.")
-    exit()
-
-print(c.clear + c.random_color() + "♫ Do, do da do, can't wait to get a mouthful! ♫")
-
