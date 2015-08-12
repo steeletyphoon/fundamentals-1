@@ -1,5 +1,7 @@
 # Learning to Program, in Python
 
+![](https://www.python.org/static/community_logos/python-logo-generic.svg)
+
 Meet Python, the best first programming language anyone should learn.
 It is approachable, easy, and &mdash; most of all &mdash; real. Python is
 a core language used by the worldwide scientific community – including
