@@ -36,8 +36,8 @@ The last two weeks are a review of all the previous material. Avoid the
 temptation to skip the final review since it ensures students are ready to
 progress.
 
-**Week 1:** [hello](/hello), [hi](/hi) - vim, chmod, shebang, strings, functions, import, colors<br>
-**Week 2:** [nyan](/nyan)<br>
+**Week 1:** [hello](/hello), [hi](/hi) - vim, chmod, shebang, strings, functions, print, import, colors<br>
+**Week 2:** [nyan](/nyan) - while loop, `<control>-c`, `top`<br>
 **Week 3:** [waffles](/waffles)<br>
 **Week 4:** [dice](/dice)<br>
 **Week 5:** [badgers](/badgers)<br>
