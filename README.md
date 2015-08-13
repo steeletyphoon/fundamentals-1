@@ -13,11 +13,11 @@ from elementary schools to Hollywood.
 In this course students find out what coding is, why they should learn
 it, and how to write their first Python code the way most professionals
 do, with the vim text editor from a Linux Bash command line. Students
-gradually learn the same habits, tools, and workflows associated
-with college CS programs and technical careers. Young or old, this is
-everyone's best first experience with real programming. Students learn
-programming fundamentals such as variables, operators, blocks, loops,
-data types, lists, dictionaries, functions, exceptions and module use.
+gradually learn the same habits, tools, and workflows associated with
+college CS programs and technical careers. Students learn programming
+fundamentals such as variables, operators, blocks, logics, loops, data
+types, lists, dictionaries, functions, exceptions, and basic code
+organization with modules.
 
 # What We Don't Learn
 
