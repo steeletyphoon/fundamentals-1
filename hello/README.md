@@ -76,4 +76,4 @@ mode less and less.
 
 Now you are ready to start creating files with vi.
 
-[[Continue -->](01)]
+[[Continue %rarr;](01)]
