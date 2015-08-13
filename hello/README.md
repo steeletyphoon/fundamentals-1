@@ -63,6 +63,8 @@ tool to learn.
 
 # Creating Code with VIM
 
+![vim](vim-logo.png)
+
 Here are the vi survival essentials you need to master at this point. You
 will learn many more as you grow into this powerful editor:
 
