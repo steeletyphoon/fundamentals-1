@@ -36,10 +36,11 @@ The last two weeks are a review of all the previous material. Avoid the
 temptation to skip the final review since it ensures students are ready to
 progress.
 
-**Week 1:** [hello](/hello), [hi](/hi) - vim, chmod, shebang, strings, functions, print, import, colors<br>
-**Week 2:** [nyan](/nyan) - while loops, `<control>-c`, `top`<br>
-**Week 3:** [waffles](/waffles) - for counter loops, time.sleep, <br>
-**Week 4:** [dice](/dice)<br>
+**Week 1:** [hello](/hello) - vim, `chmod`, `#!`, strings, functions, `print()`, `import colors`, `+`<br>
+**Week 1:** [hi](/hi) - `input()`, variables, assignment, operators, `=`<br>
+**Week 2:** [nyan](/nyan) - infinite loops, `while`, code blocks, `<control>-c`, `top`<br>
+**Week 3:** [waffles](/waffles) - nested code blocks, `for`, conditions, `if/else`, <br>
+**Week 4:** [dice](/dice) - <br>
 **Week 5:** [badgers](/badgers)<br>
 **Week 6:** [eightball](/eightball)<br>
 **Week 7:** [bridge](/bridge) (utils.py)<br>
