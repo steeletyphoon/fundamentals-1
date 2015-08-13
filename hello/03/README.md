@@ -30,6 +30,13 @@ Now that it's imported we can change our code to use them:
 print(c.yellow + "Hello world" + c.reset) 
 ```
 
+## Setting Up Your Own Colors
+
+If you are a teacher or am ambitious student who does not
+have these colors set up in your terminal you can look at
+[`tools`](../../tools) for some help.
+
+
 # "Operator!"
 
 The colors can be joined to our string with the join `+` operator. An
@@ -48,11 +55,5 @@ space and typing. When in doubt, use whatever one reads the best.
 
 The `c.reset` is a good habit to get into. It keeps colors from bleeding
 into text that follows.
-
-## Setting Up Your Own Colors
-
-If you are a teacher or am ambitious student who does not
-have these colors set up in your terminal you can look at
-[`tools`](../../tools) for some help.
 
 [[&larr; Back](../02) | [Continue &rarr;](../04)]
