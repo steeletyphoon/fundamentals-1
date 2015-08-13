@@ -65,8 +65,11 @@ tool to learn.
 
 ![vim](vim-logo.png)
 
-Here are the vi survival essentials you need to master at this point. You
-will learn many more as you grow into this powerful editor:
+`vi` is an ancient ***text editor***, almost the first, (which I think was
+`ed`). Ironically it holds its position as the Stradivarius of editors
+&mdash; especially now that `vim` has improved it.  Here are the survival
+essentials you need to master at this point. You will learn many more
+as you grow into this powerful editor:
 
 * `vi hello` - create and open a new file called `hello`
 * `i` - switch to `INSERT` mode (look in bottom left)
