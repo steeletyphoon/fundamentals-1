@@ -42,12 +42,10 @@ progress.
 **Week 3:** [waffles](/waffles) - conditions, `if/else`, `==`, nested blocks, exceptions, `try/except`, `exit()`<br>
 **Week 4:** [dice](/dice) - lists, loops, `for`, `range()`, implicit,`.append()`,`import random`,`.choice()`<br>
 **Week 5:** [badgers](/badgers) - numbers, casting, `int()`, `str()`, nested loops, `import time`, `.sleep()`<br>
-**Week 6:** [eightball](/eightball) - `if/elif/else`, `not`, `!=`, `in`,
-`.strip()`, `.lower()`<br>
+**Week 6:** [eightball](/eightball) - `if/elif/else`, `not`, `!=`, `in`, functions, `def/return`, `.strip()`, `.lower()`<br>
 **Week 7:** [utils](/utils) - basic modules, refactoring, reuse, docstrings, `if
 __name__ == '__main__':`<br>
-**Week 8:** [bridge](/bridge) - compound conditions, `or`, `and`, logic bugs,
-functions/procedures, `def`, `return`<br>
+**Week 8:** [bridge](/bridge) - compound conditions, `or`, `and`, logic bugs, procedures (void `return`)<br>
 **Week 9:** [mtable](/mtable) - math, command-line parameters, `*`, `for`,`range()`,`import
 sys`,`argv`, `,`<br>
 **Week 10:** [madforms](/madforms) - dictionaries, JSON, web apis, `.format()`<br>
