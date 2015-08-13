@@ -95,7 +95,7 @@ save ()
 ```
 
 More details about setting up a teacher and/or student environment can be
-found in the [`tools`](tools) directory.
+found in the [`bin`](bin) and [`tools`](tools) directory.
 
 [![][logo]][scb] [![][cc0]][cc0link]
 
