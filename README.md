@@ -43,7 +43,7 @@ progress.
 **Week 4:** [dice](/dice) - lists, loops, `for`, `range()`, implicit,`.append()`,`import random`,`.choice()`<br>
 **Week 5:** [badgers](/badgers) - numbers, casting, `int()`, `str()`, nested loops, `import time`, `.sleep()`<br>
 **Week 6:** [eightball](/eightball) - `if/elif/else`, `not`, `!=`, `in`,
-`string.strip().lower()`<br>
+`.strip()`, `.lower()`<br>
 **Week 7:** [bridge](/bridge) - compound conditions, `or`, `and`, logic bugs,
 functions/procedures, `def`, `return`<br>
 **Week 7:** [utils](/utils) - modules, refactoring, reuse, docstrings, `if
