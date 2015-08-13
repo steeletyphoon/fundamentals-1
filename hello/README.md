@@ -22,6 +22,10 @@ have protocol droids like 3PO yet, but many languages have been created
 with interpreters and other stuff to help humans tell different types
 of computers how to do the same things.
 
+For more about what code is read Paul Ford's excellent article:
+
+[![](whatiscode.jpg)](http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/)
+
 # Use the Source, Luke
 
 ![](yoda.png)
