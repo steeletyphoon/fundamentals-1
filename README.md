@@ -53,8 +53,10 @@ sys`,`argv`<br>
 **Week 12:** [bincount](/bincount) - decimal (base 10), binary (base 2), hexadecimal (base 16), `.format()`<br>
 **Week 13:** [quiz](/quiz) - first-class functions, modules, scope, `import`<br>
 **Week 14:** [quiz](/quiz) - `$PYTHONPATH`, conditional `import`<br>
-**Week 15:** [review](/review)<br>
-**Week 16:** [review](/review)<br>
+**Week 15:** [review](/review) - hello, hi, nyan, waffles, dice, badgers,
+eightball<br>
+**Week 16:** [review](/review) - utils, bridge, mtable, madforms, bincount,
+quiz<br>
 
 # Resources and Requirements
 
