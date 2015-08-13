@@ -22,7 +22,6 @@ a script that can be run.
 
 ## Tell Computer How to Run the Program
 
-![](shebang.png)
 
 After `chmod`ing we have to tell the computer which program we want to use to run
 our Python `hello` script. By adding the executable permission we signaled
@@ -44,3 +43,5 @@ they are.  `env` finds `python3` wherever it may be on the system
 (or another system). This makes our program easier to share with others.
 
 [[&larr; Back](../01) | [Continue &rarr;](../03)]
+
+![](shebang.png)
