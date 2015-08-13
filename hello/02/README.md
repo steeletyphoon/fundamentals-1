@@ -1,3 +1,4 @@
+[[&larr; Back](../01) | [Continue &rarr;](../03)]
 # Chmod That SheBang
 
 The best programmers live by an important rule *Don't Repeat Yourself*

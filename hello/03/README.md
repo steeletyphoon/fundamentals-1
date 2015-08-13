@@ -1,3 +1,4 @@
+[[&larr; Back](../02) | [Continue &rarr;](../04)]
 # Ooooo, Pretty Colors
 
 ![Solarized Color Palette](http://ethanschoonover.com/solarized/img/solarized-palette.png)
@@ -28,6 +29,8 @@ Now that it's imported we can change our code to use them:
 ```python
 print(c.yellow + "Hello world" + c.reset) 
 ```
+
+# "Operator!"
 
 The colors can be joined to our string with the join `+` operator. An
 ***operator*** is a symbol that does something to the things on either side
