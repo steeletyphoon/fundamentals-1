@@ -40,8 +40,8 @@ progress.
 **Week 1:** [hi](/hi) - `input()`, variables, assignment, operators, `=`<br>
 **Week 2:** [nyan](/nyan) - code blocks, booleans, `while`, `True/False`,`ctrl-c`, `'''`, ascii art, `top`<br>
 **Week 3:** [waffles](/waffles) - conditions, `if/else`, `==`, nested blocks, `exit()`<br>
-**Week 4:** [dice](/dice) - lists, loops, `for`, `range()`, implicit,`list.append()`,`import random`,`random.choice()`<br>
-**Week 5:** [badgers](/badgers) - numbers, casting, `int()`, `str()`, nested loops, `import time`, `time.sleep()`<br>
+**Week 4:** [dice](/dice) - lists, loops, `for`, `range()`, implicit,`.append()`,`import random`,`.choice()`<br>
+**Week 5:** [badgers](/badgers) - numbers, casting, `int()`, `str()`, nested loops, `import time`, `.sleep()`<br>
 **Week 6:** [eightball](/eightball) - `if/elif/else`, `not`, `!=`, `in`,
 `string.strip().lower()`<br>
 **Week 7:** [bridge](/bridge) - compound conditions, `or`, `and`, logic bugs,
