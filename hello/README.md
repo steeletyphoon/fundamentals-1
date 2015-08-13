@@ -24,6 +24,8 @@ of computers how to do the same things.
 
 # Use the Source, Luke
 
+![](yoda.png)
+
 These days most all code is written.
 
 A ***character*** is a letter, number, symbol or space that you can type.
