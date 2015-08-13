@@ -50,7 +50,7 @@ __name__ == '__main__':`<br>
 sys`,`argv`<br>
 **Week 10:** [madforms](/madforms) - dictionaries, JSON, web apis, `.format()`<br>
 **Week 11:** [madforms](/madforms) - `for`, `.splitlines()`, `.rstrip()`<br>
-**Week 12:** [bincount](/bincount) - decimal (base 10), binary (base 2), binhex (base 16), `.format()`<br>
+**Week 12:** [bincount](/bincount) - decimal (base 10), binary (base 2), hexadecimal (base 16), `.format()`<br>
 **Week 13:** [quiz](/quiz)<br>
 **Week 14:** [quiz](/quiz)<br>
 **Week 15:** [review](/review)<br>
