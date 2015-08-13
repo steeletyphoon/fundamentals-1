@@ -36,7 +36,7 @@ The last two weeks are a review of all the previous material. Avoid the
 temptation to skip the final review since it ensures students are ready to
 progress.
 
-**Week 1:** [hello](/hello) - vim, `chmod`, `#!`, strings, functions, `print()`, `import colors`, `+`<br>
+**Week 1:** [hello](/hello) - vim, `chmod`, `#!`, strings, functions, `print()`, `import colors`, `+`,`"`,`'`<br>
 **Week 1:** [hi](/hi) - `input()`, variables, assignment, operators, `=`<br>
 **Week 2:** [nyan](/nyan) - code blocks, booleans, `while`, `True/False`,`ctrl-c`, `'''`, ascii art, `top`<br>
 **Week 3:** [waffles](/waffles) - conditions, `if/else`, `==`, nested blocks, `exit()`<br>
