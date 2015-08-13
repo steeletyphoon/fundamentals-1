@@ -79,8 +79,8 @@ be done with individual [Raspberry Pi][] computers, individual Linux
 real or virtual machines, or a remote virtual host such as Digital Ocean.
 
 GitHub accounts for each student are strongly recommended and the
-following function is contained in `.bashrc` to `git commits` as easy as
-possible:
+following function is contained in `.bashrc` to make `git commits`
+as easy as possible:
 
 ```bash
 save () 
@@ -93,6 +93,9 @@ save ()
     git push
 }
 ```
+
+More details about setting up a teacher and/or student environment can be
+found in the [`tools`](tools) directory.
 
 [![][logo]][scb] [![][cc0]][cc0link]
 
