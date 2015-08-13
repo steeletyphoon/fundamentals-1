@@ -5,18 +5,22 @@
 Meet Python, the best first programming language anyone should learn.
 It is approachable, easy, and &mdash; most of all &mdash; real. Python is
 a core language used by the worldwide scientific community &mdash; including
-MIT where it is the first language taught. You can be found everywhere
-from elementary schools to Hollywood. In this course students find out
-what coding is, why they should learn it, and how to write their first
-Python code the way most professionals do, with the vim text editor
-from a Linux Bash command line.
+MIT where it is the first language taught. Python can be found everywhere
+from elementary schools to Hollywood.
 
-Students gradually learn the same habits, tools, and workflows associated
-with college CS programs and technical careers. Young or old, this is
-everyone's best first experience with real programming. Students learn
-programming fundamentals such as variables, operators, blocks, loops,
-data types, lists, dictionaries, functions, exceptions and module
-use.
+## What's Included
+
+In this course students find out
+what coding is, why they should learn it, and how to write their first
+Python code the way most professionals do, with the vim text editor from
+a Linux Bash command line. Students gradually learn the same habits,
+tools, and workflows associated with college CS programs and technical
+careers. Young or old, this is everyone's best first experience with real
+programming. Students learn programming fundamentals such as variables,
+operators, blocks, loops, data types, lists, dictionaries, functions,
+exceptions and module use.
+
+## What's Left Out
 
 Python-1 focuses on basic structured and procedural programming
 paradigms. It does not directly cover important but more advanced concepts
@@ -29,7 +33,7 @@ school. Students are encouraged to test often but no test frameworks
 besides code bits in `if __name__ == '__main__':` are introduced at
 this level.
 
-# Planning
+# Planning for Python-1
 
 This course takes a total of 24 hours to complete and is designed
 to fit into 16 weeks of 90-minute classes (a semester) or two, 4-day weeks of
