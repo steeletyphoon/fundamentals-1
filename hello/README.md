@@ -10,7 +10,9 @@ It's a great way to start.
 # What is Coding?
 
 Let's assume you have never heard of ***coding*** before. If you have you
-can skip.
+can skip or maybe you want read Paul Ford's excellent article:
+
+[![](whatiscode.jpg)](http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/)
 
 Coding is when humans write instructions for computers to use. The
 instructions are like recipes. The recipes are called ***algorithems***.
@@ -21,10 +23,6 @@ between machines. (A ***protocol*** is a way to communicate.) We may not
 have protocol droids like 3PO yet, but many languages have been created
 with interpreters and other stuff to help humans tell different types
 of computers how to do the same things.
-
-For more about what code is read Paul Ford's excellent article:
-
-[![](whatiscode.jpg)](http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/)
 
 # Use the Source, Luke
 
