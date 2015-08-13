@@ -46,7 +46,7 @@ progress.
 `.strip()`, `.lower()`<br>
 **Week 7:** [bridge](/bridge) - compound conditions, `or`, `and`, logic bugs,
 functions/procedures, `def`, `return`<br>
-**Week 7:** [utils](/utils) - modules, refactoring, reuse, docstrings, `if
+**Week 7:** [utils](/utils) - basic modules, refactoring, reuse, docstrings, `if
 __name__ == '__main__':`<br>
 **Week 8:** [bridge](/bridge)<br>
 **Week 9:** [mtable](/mtable)<br>
