@@ -1,3 +1,5 @@
+[[Continue -->](../01)]
+
 # What is Coding?
 
 Let's assume you have never heard of ***coding*** before. If you have you
