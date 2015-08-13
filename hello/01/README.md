@@ -1,5 +1,4 @@
 [[&larr; Back](..) | [Continue &rarr;](../02)]
-
 # Your First Program
 
 Let's start simple:
