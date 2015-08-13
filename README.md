@@ -82,7 +82,7 @@ real or virtual machines, or a remote virtual host such as Digital Ocean.
 [![][logo]][scb] [![][cc0]][cc0link]
 
 [logo]: http://skilstak.com/images/skilstak-logo-bw-31.svg "SkilStak"
-[scb]: http://github.com/skilstak/block
+[scb]: README-SKB.md
 [cc0]: http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg "CC0 Public Domain"
 [cc0link]: https://creativecommons.org/publicdomain/zero/1.0/
 [Raspberry Pi]: https://www.raspberrypi.org/
