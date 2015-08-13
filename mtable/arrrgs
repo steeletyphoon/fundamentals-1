@@ -3,7 +3,7 @@
 import colors as c
 import sys
 
-print(c.yellow + 'You have',len(sys.argv),'arrrrrrguments:' + c.reset)
+print(c.cl + c.y + 'You have',len(sys.argv),'arrrrrrguments:' + c.x)
 
 for index in range(len(sys.argv)):
     print('    ', index, '-->', c.base3 + sys.argv[index] + c.reset)
