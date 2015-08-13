@@ -38,21 +38,21 @@ progress.
 
 **Week 1:** [hello](/hello) - vim, `chmod`, `#!`, strings, functions, `print()`, `import colors`, `+`,`"`,`'`<br>
 **Week 1:** [hi](/hi) - `input()`, variables, assignment, operators, `=`<br>
-**Week 2:** [nyan](/nyan) - code blocks, booleans, `while`, `True/False`,`ctrl-c`, `'''`, ascii art, `top`<br>
+**Week 2:** [nyan](/nyan) - code blocks, booleans, `while`, `True/False`,`ctrl-c`, `'''`, `end=''`, `try/except`, ascii art, `top`<br>
 **Week 3:** [waffles](/waffles) - conditions, `if/else`, `==`, nested blocks, `exit()`<br>
 **Week 4:** [dice](/dice) - lists, loops, `for`, `range()`, implicit,`.append()`,`import random`,`.choice()`<br>
 **Week 5:** [badgers](/badgers) - numbers, casting, `int()`, `str()`, nested loops, `import time`, `.sleep()`<br>
 **Week 6:** [eightball](/eightball) - `if/elif/else`, `not`, `!=`, `in`,
 `.strip()`, `.lower()`<br>
-**Week 7:** [bridge](/bridge) - compound conditions, `or`, `and`, logic bugs,
-functions/procedures, `def`, `return`<br>
 **Week 7:** [utils](/utils) - basic modules, refactoring, reuse, docstrings, `if
 __name__ == '__main__':`<br>
-**Week 8:** [bridge](/bridge)<br>
-**Week 9:** [mtable](/mtable)<br>
-**Week 10:** [madforms](/madforms)<br>
-**Week 11:** [madforms](/madforms)<br>
-**Week 12:** [bincount](/bincount)<br>
+**Week 8:** [bridge](/bridge) - compound conditions, `or`, `and`, logic bugs,
+functions/procedures, `def`, `return`<br>
+**Week 9:** [mtable](/mtable) - math, command-line parameters, `*`, `for`,`range()`,`import
+sys`,`argv`, `,`<br>
+**Week 10:** [madforms](/madforms) - dictionaries, JSON, web apis, `.format()`<br>
+**Week 11:** [madforms](/madforms) - `for`, `.splitlines()`, `.rstrip()`<br>
+**Week 12:** [bincount](/bincount) - binary/base2, binhex, `.format()`<br>
 **Week 13:** [quiz](/quiz)<br>
 **Week 14:** [quiz](/quiz)<br>
 **Week 15:** [review](/review)<br>
