@@ -1,6 +1,8 @@
 [[&larr; Back](../01) | [Continue &rarr;](../03)]
 # Chmod That SheBang
 
+![](dry.png)
+
 The best programmers live by an important rule *Don't Repeat Yourself*
 or *DRY* — even code-muggles can appreciate that. Typing `python3`
 is far too much work.  We just want to type `hello`, but how?
