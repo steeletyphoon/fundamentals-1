@@ -22,6 +22,8 @@ Don't worry about permissions now, just know they control things
 like reading and writing the file and telling the computer the file is
 a script that can be run.
 
+![](chmod4.png)
+
 ## Tell Computer How to Run the Program
 
 
