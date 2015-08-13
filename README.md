@@ -53,7 +53,7 @@ progress.
 **Week 2:** [nyan](/nyan) - code blocks, booleans, `while`, `True/False`,`ctrl-c`, `'''`, `end=''`, ascii, `top`<br>
 **Week 3:** [waffles](/waffles) - conditions, `if/else`, `==`, nested blocks, exceptions, `try/except`, `exit()`<br>
 **Week 4:** [dice](/dice) - lists, loops, `for`, `range()`, implicit,`.append()`,`import random`,`.choice()`<br>
-**Week 5:** [badgers](/badgers) - numbers, casting, `int()`, `str()`, nested loops, `import time`, `.sleep()`<br>
+**Week 5:** [badgers](/badgers) - numbers, scope, casting, `int()`, `str()`, nested loops, `import time`, `.sleep()`<br>
 **Week 6:** [eightball](/eightball) - `if/elif/else`, `not`, `!=`, `in`, functions, `def/return`, `.strip()`, `.lower()`<br>
 **Week 7:** [utils](/utils) - basic modules, refactoring, reuse, docstrings, `if
 __name__ == '__main__':`<br>
