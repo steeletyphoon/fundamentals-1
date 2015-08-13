@@ -47,7 +47,7 @@ progress.
 __name__ == '__main__':`<br>
 **Week 8:** [bridge](/bridge) - compound conditions, `or`, `and`, logic bugs, procedures (void `return`)<br>
 **Week 9:** [mtable](/mtable) - math, command-line parameters, `*`, `for`,`range()`,`import
-sys`,`argv`, `,`<br>
+sys`,`argv`,print('foo',1)<br>
 **Week 10:** [madforms](/madforms) - dictionaries, JSON, web apis, `.format()`<br>
 **Week 11:** [madforms](/madforms) - `for`, `.splitlines()`, `.rstrip()`<br>
 **Week 12:** [bincount](/bincount) - binary/base2, binhex, `.format()`<br>
