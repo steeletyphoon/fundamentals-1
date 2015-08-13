@@ -8,7 +8,7 @@ a core language used by the worldwide scientific community &mdash; including
 MIT where it is the first language taught. Python can be found everywhere
 from elementary schools to Hollywood.
 
-## What's Included
+# What's Included
 
 In this course students find out
 what coding is, why they should learn it, and how to write their first
@@ -20,7 +20,7 @@ programming. Students learn programming fundamentals such as variables,
 operators, blocks, loops, data types, lists, dictionaries, functions,
 exceptions and module use.
 
-## What's Left Out
+# What's Not
 
 Python-1 focuses on basic structured and procedural programming
 paradigms. It does not directly cover important but more advanced concepts
@@ -33,7 +33,7 @@ school. Students are encouraged to test often but no test frameworks
 besides code bits in `if __name__ == '__main__':` are introduced at
 this level.
 
-# Planning for Python-1
+# Planning
 
 This course takes a total of 24 hours to complete and is designed
 to fit into 16 weeks of 90-minute classes (a semester) or two, 4-day weeks of
