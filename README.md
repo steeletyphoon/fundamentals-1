@@ -46,7 +46,7 @@ progress.
 **Week 7:** [utils](/utils) - basic modules, refactoring, reuse, docstrings, `if
 __name__ == '__main__':`<br>
 **Week 8:** [bridge](/bridge) - compound conditions, `or`, `and`, logic bugs, procedures (void `return`)<br>
-**Week 9:** [mtable](/mtable) - math, command-line parameters, `*`, `for`,`range()`,`import
+**Week 9:** [mtable](/mtable) - math, command-line parameters, `*` vs `x`, `for`,`range()`,`import
 sys`,`argv`<br>
 **Week 10:** [madforms](/madforms) - dictionaries, JSON, web apis, `.format()`<br>
 **Week 11:** [madforms](/madforms) - `for`, `.splitlines()`, `.rstrip()`<br>
