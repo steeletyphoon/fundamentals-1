@@ -4,21 +4,30 @@
 
 Meet Python, the best first programming language anyone should learn.
 It is approachable, easy, and &mdash; most of all &mdash; real. Python is
-a core language used by the worldwide scientific community – including
-MIT where it is the first language taught – and can be found everywhere
+a core language used by the worldwide scientific community &mdash; including
+MIT where it is the first language taught. You can be found everywhere
 from elementary schools to Hollywood. In this course students find out
 what coding is, why they should learn it, and how to write their first
 Python code the way most professionals do, with the vim text editor
-from a Linux Bash command line. (You won't find any IDLE here.)
+from a Linux Bash command line.
 
 Students gradually learn the same habits, tools, and workflows associated
 with college CS programs and technical careers. Young or old, this is
 everyone's best first experience with real programming. Students learn
 programming fundamentals such as variables, operators, blocks, loops,
 data types, lists, dictionaries, functions, exceptions and module
-use. Python-1 focuses on basic structured and procedural programming
-paradigms. Important code management, functional (comprehensions),
-object-oriented concepts are introduced in Python-2.
+use.
+
+Python-1 focuses on basic structured and procedural programming
+paradigms. It does not directly cover important but more advanced concepts
+such as traditional object-oriented and functional programming.  While the
+games and code in Python-1 are designed to be fun, Python-1 does **not**
+use Python IDLE, `turtle`, `pygame` or other made-for-education Python
+technologies, which are of dubious value in the professional world. Focus
+is placed on techniques and tools that will remain useful well beyond
+school. Students are encouraged to test often but no test frameworks
+besides code bits in `if __name__ == '__main__':` are introduced at
+this level.
 
 # Planning
 
