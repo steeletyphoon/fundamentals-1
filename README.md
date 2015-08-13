@@ -78,6 +78,22 @@ Students need access to a Linux command-line on a computer that has had
 be done with individual [Raspberry Pi][] computers, individual Linux
 real or virtual machines, or a remote virtual host such as Digital Ocean.
 
+GitHub accounts for each student are strongly recommended and the
+following function is contained in `.bashrc` to `git commits` as easy as
+possible:
+
+```bash
+save () 
+{ 
+    comment=save;
+    [ ! -z "$*" ] && comment="$*";
+    git pull;
+    git add -A .;
+    git commit -a -m "$comment";
+    git push
+}
+```
+
 [![][logo]][scb] [![][cc0]][cc0link]
 
 [logo]: http://skilstak.com/images/skilstak-logo-bw-31.svg "SkilStak"
