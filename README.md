@@ -39,11 +39,13 @@ progress.
 **Week 1:** [hello](/hello) - vim, `chmod`, `#!`, strings, functions, `print()`, `import colors`, `+`<br>
 **Week 1:** [hi](/hi) - `input()`, variables, assignment, operators, `=`<br>
 **Week 2:** [nyan](/nyan) - infinite loops, `while`, code blocks, `<control>-c`, `top`<br>
-**Week 3:** [waffles](/waffles) - conditions, `if/else`, nested blocks, `exit()`<br>
+**Week 3:** [waffles](/waffles) - conditions, `if/else`, `==`, nested blocks, `exit()`<br>
 **Week 4:** [dice](/dice) - lists, loops, `for`, implicit, `'''`,`list.append()`,`import random`,`random.choice()`<br>
 **Week 5:** [badgers](/badgers) - nested loops, `import time`, `time.sleep()`<br>
-**Week 6:** [eightball](/eightball)<br>
-**Week 7:** [bridge](/bridge) (utils.py)<br>
+**Week 6:** [eightball](/eightball) - `if/elif/else`, `not`, `!=`, `in`<br>
+**Week 7:** [bridge](/bridge)<br>
+**Week 7:** [utils](/utils) - modules, refactoring, reuse, docstrings, `if
+__name__ == '__main__':`<br>
 **Week 8:** [bridge](/bridge)<br>
 **Week 9:** [mtable](/mtable)<br>
 **Week 10:** [madforms](/madforms)<br>
