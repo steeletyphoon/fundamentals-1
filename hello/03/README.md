@@ -52,4 +52,4 @@ If you are a teacher or am ambitious student who does not
 have these colors set up in your terminal you can look at
 [`tools`](../../tools) for some help.
 
-[[&larr; Back](../03) | [Continue &rarr;](../05)]
+[[&larr; Back](../02) | [Continue &rarr;](../04)]
