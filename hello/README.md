@@ -67,8 +67,9 @@ tool to learn.
 
 `vi` is an ancient ***text editor***, almost the first, (which I think was
 `ed`). Ironically it holds its position as the Stradivarius of editors
-&mdash; especially now that `vim` has improved it.  It's power comes from
-its ubiquity. You can find it on *every* UNIX/Linux system in the world.
+&mdash; especially now that `vim` has improved it.  Its power comes from
+its ubiquity. You can find `vi` on *every* UNIX/Linux/Solaris/AIX/BSD/Mac
+system in the world by default (no it isn't on Windows).
 
 Here are the survival essentials you need to master at this point. You
 will learn many more as you grow into this powerful editor:
