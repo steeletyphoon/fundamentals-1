@@ -69,7 +69,9 @@ tool to learn.
 `ed`). Ironically it holds its position as the Stradivarius of editors
 &mdash; especially now that `vim` has improved it.  Its power comes from
 its ubiquity. You can find `vi` on *every* UNIX/Linux/Solaris/AIX/BSD/Mac
-system in the world by default (no it isn't on Windows).
+system in the world by default (no it isn't on Windows, which is all you
+really need to know about Windows to choose not to use it as a developer
+unless forced).
 
 Here are the survival essentials you need to master at this point. You
 will learn many more as you grow into this powerful editor:
