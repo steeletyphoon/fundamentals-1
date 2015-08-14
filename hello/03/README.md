@@ -32,7 +32,7 @@ print(c.yellow + "Hello world" + c.reset)
 
 ## Setting Up Your Own Colors
 
-If you are a teacher or am ambitious student who does not
+If you are a teacher or an ambitious student who does not
 have these colors set up in your terminal you can look at
 [`tools`](../../tools) for some help.
 
