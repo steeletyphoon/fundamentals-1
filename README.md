@@ -32,12 +32,11 @@ school. Students are encouraged to test often but no test frameworks
 besides code bits in `if __name__ == '__main__':` are introduced at
 this level.
 
-By the way, Python 2 is the devil. Don't use it (or anything that
-uses it) unless you are forced to. Don't believe me? Google why then
-compare the people that argue against Python 3 to those that promote
-it. Eventually you will regret it no matter how convincing some of the
-arguments are. (And yes I know MIT's textbook uses Python 2, which is
-completely asinine.)
+By the way, Python 2 is the devil, (the version not the course). Don't
+use it (or anything that uses it) unless you are forced to. Don't believe
+me? Google the debate then compare the people that argue against Python
+3 to those that promote it. It should become obvious. (And yes I know
+MIT's textbook and Apple uses Python 2, which is completely asinine.)
 
 # Planning
 
