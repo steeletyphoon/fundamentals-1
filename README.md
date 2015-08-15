@@ -57,9 +57,9 @@ progress.
 **Week 5:** [badgers](/badgers) - numbers, casting, `int/str()`, nesting, scope, `import time`, `.sleep()`<br>
 **Week 6:** [eightball](/eightball) - `if/elif/else`, `not`, `!=`, `in`, `.strip()`, `.lower()`<br>
 **Week 7:** [bridge](/bridge) - compound conditions, `or`, `and`, logic bugs, functions, `def`, `return`<br>
-**Week 7:** [cli.py](/cli) - basic modules, refactoring, reuse, docstrings, `if
+**Week 7:** [bridge](/bridge) - procedures<br>
+**Week 8:** [cli.py](/cli) - basic modules, refactoring, reuse, docstrings, `if
 __name__ == '__main__':`<br>
-**Week 8:** [bridge](/bridge) - procedures<br>
 **Week 9:** [mtable](/mtable) - math, `*` vs `x`, `for`,`range()`, arguments, `import sys`,`argv`,`len()`<br>
 **Week 10:** [madforms](/madforms) - dictionaries, JSON, web apis, `.format()`<br>
 **Week 11:** [madforms](/madforms) - `for`, `.splitlines()`, `.rstrip()`<br>
