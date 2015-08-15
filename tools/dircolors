@@ -1,5 +1,5 @@
 # Dark 256 color solarized theme for the color GNU ls utility.
-# Used and tested with dircolors (GNU coreutils) 8.5
+# Used and tested with dircolors (GNU corecli) 8.5
 #
 # More Information at
 # https://github.com/seebi/dircolors-solarized
@@ -85,7 +85,7 @@ TERM xterm-termite
 #
 #
 # 256 color support
-# see here: http://www.mail-archive.com/bug-coreutils@gnu.org/msg11030.html)
+# see here: http://www.mail-archive.com/bug-corecli@gnu.org/msg11030.html)
 #
 # Text 256 color coding:
 # 38;5;COLOR_NUMBER

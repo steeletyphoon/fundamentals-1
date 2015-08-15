@@ -1,5 +1,5 @@
 import colors as c
-from utils import ask
+from cli import ask
 
 
 intro = c.magenta + '''

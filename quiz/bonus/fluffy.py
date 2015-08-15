@@ -1,7 +1,7 @@
 """The pink fluffy unicorn quiz questions module"""
 
 import colors as c
-from utils import ask
+from cli import ask
 
 intro = c.magenta + '''
 Welcome to the Pink Fluffy Unicorns quiz.
