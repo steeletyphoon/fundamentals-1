@@ -1,4 +1,4 @@
-"""My awesome utility kitchen sink. Don't judge me."""
+"""A module of command-line helpers."""
 
 import colors as c
 

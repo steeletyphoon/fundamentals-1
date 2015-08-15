@@ -55,10 +55,11 @@ progress.
 **Week 3:** [waffles](/waffles) - conditions, `if/else`, `==`, nested blocks, exceptions, `try/except`, `exit()`<br>
 **Week 4:** [dice](/dice) - lists, loops, `for`, `range()`, implicit,`.append()`,`import random`,`.choice()`<br>
 **Week 5:** [badgers](/badgers) - numbers, casting, `int/str()`, nesting, scope, `import time`, `.sleep()`<br>
-**Week 6:** [eightball](/eightball) - `if/elif/else`, `not`, `!=`, `in`, functions, `def/return`, `.strip()`, `.lower()`<br>
-**Week 7:** [utils](/utils) - basic modules, refactoring, reuse, docstrings, `if
+**Week 6:** [eightball](/eightball) - `if/elif/else`, `not`, `!=`, `in`, `.strip()`, `.lower()`<br>
+**Week 7:** [bridge](/bridge) - compound conditions, `or`, `and`, logic bugs, functions, `def`, `return`<br>
+**Week 7:** [cli.py](/cli) - basic modules, refactoring, reuse, docstrings, `if
 __name__ == '__main__':`<br>
-**Week 8:** [bridge](/bridge) - compound conditions, `or`, `and`, logic bugs, procedures (void `return`)<br>
+**Week 8:** [bridge](/bridge) - procedures<br>
 **Week 9:** [mtable](/mtable) - math, `*` vs `x`, `for`,`range()`, arguments, `import sys`,`argv`,`len()`<br>
 **Week 10:** [madforms](/madforms) - dictionaries, JSON, web apis, `.format()`<br>
 **Week 11:** [madforms](/madforms) - `for`, `.splitlines()`, `.rstrip()`<br>
@@ -67,7 +68,7 @@ __name__ == '__main__':`<br>
 **Week 14:** [quiz](/quiz) - `$PYTHONPATH`, conditional `import`<br>
 **Week 15:** [review](/review) - hello, hi, nyan, waffles, dice, badgers,
 eightball<br>
-**Week 16:** [review](/review) - utils, bridge, mtable, madforms, bincount,
+**Week 16:** [review](/review) - bridge, cli.py, mtable, madforms, bincount,
 quiz<br>
 
 # Resources and Requirements
