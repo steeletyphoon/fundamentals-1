@@ -27,9 +27,10 @@ paradigms. It does not directly cover important but more advanced concepts
 such as traditional object-oriented and functional programming.  While the
 games and code in Python-1 are designed to be fun, Python-1 does **not**
 use Python IDLE, `turtle`, `pygame` or other made-for-education Python
-technologies, which are of dubious value in the professional world. Focus
-is placed on techniques and tools that will remain useful well beyond
-school. Students are encouraged to test often but no test frameworks
+technologies, which, despite their prevalence, are of dubious value in
+the higher-education and professional world. Focus is placed instead on
+techniques and tools that will remain useful well beyond school. Students
+are encouraged to unit test their code often but no test frameworks
 besides code bits in `if __name__ == '__main__':` are introduced at
 this level.
 
