@@ -6,3 +6,5 @@ two words and add a second color before the second one. Don't forget
 both new strings need their own quotes.
 
 In this case we only need a single `c.reset` at the end.
+
+[[&larr; Back](../04) | [Continue &rarr;](../06)]
