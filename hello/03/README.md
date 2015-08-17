@@ -41,12 +41,13 @@ have these colors set up in your terminal you can look at
 
 The colors can be joined to our string with the join `+` operator. An
 ***operator*** is a symbol that does something to the things on either side
-of it called ***operands***. You can thing of an old-school telephone
+of it called ***operands***. You can think of an old-school telephone
 operator who made connections between folks.
 
 ![Operator](operator.jpg)
 
-Or if you prefer, the Matrix version, Tank the operator.
+Or if you prefer the Matrix version, think of how Tank the operator got
+a call every time Neo and the gang wanted in or out of the Matrix.
 
 ![Tank Operator](tank.jpg)
 
@@ -55,5 +56,8 @@ space and typing. When in doubt, use whatever one reads the best.
 
 The `c.reset` is a good habit to get into. It keeps colors from bleeding
 into text that follows.
+
+If you forget the colors you can type `colors` from the Linux command-line
+to see them again.
 
 [[&larr; Back](../02) | [Continue &rarr;](../04)]
