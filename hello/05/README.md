@@ -1,3 +1,4 @@
+[[&larr; Back](../04) | [Continue &rarr;](../06)]
 # Splitting a String
 
 Now let's get crazy and use two colors, wahoooo! You already know how to

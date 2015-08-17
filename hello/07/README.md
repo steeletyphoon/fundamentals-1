@@ -1,3 +1,4 @@
+[[&larr; Back](../06) | [Bonus &rarr;](../bonus)]
 # Random Color
 
 One last fun option is using random colors with `c.random_color()`

@@ -1,3 +1,4 @@
+[[&larr; Back](../05) | [Continue &rarr;](../07)]
 # Color Abbreviations (Short Names)
 
 To reduce the amount of typing and confusion when using colors short
