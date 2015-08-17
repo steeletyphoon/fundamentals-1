@@ -14,7 +14,6 @@ to see:
 
 ![`colors` Help Command](colors.png)
 
-
 To use these fancy colors we have to `import` them. Think of this as
 checking out a code book from the library that has extra stuff in it we want
 to use that isn't included. The `as c` part tells Python we don't want to
@@ -29,6 +28,9 @@ Now that it's imported we can change our code to use them:
 ```python
 print(c.yellow + "Hello world" + c.reset) 
 ```
+
+We put the `c.` in front to tell Python to use the `yellow` from that
+module instead of another `yellow` we may have used in the code elsewhere.
 
 ## Setting Up Your Own Colors
 
