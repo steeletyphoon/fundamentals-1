@@ -1,6 +1,6 @@
 # Hello World
 
-![SkilStak Hello](hello.png)
+![SkilStak Hello](../img/hello.png)
 
 *Hello world* is a famous program written by
 millions in [dozens if not hundreds of programming
