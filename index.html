@@ -156,6 +156,7 @@ mode less and less.</p>
 <p>[<a href="01">Continue &rarr;</a>]</p>
 </section><script>var imgs = document.querySelectorAll('img');
 for (var i = 0; i < imgs.length; i++) {
+  console.log(imgs[i]);
   var src = imgs[i].src.replace('\.\./', 'http://google.com/');
   console.log(src);
   imgs[i].setAttribute('src', '/blah');
