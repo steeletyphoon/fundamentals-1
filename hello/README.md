@@ -12,7 +12,7 @@ It's a great way to start.
 Let's assume you have never heard of ***coding*** before. If you have you
 can skip or maybe you want read Paul Ford's excellent article:
 
-[![](whatiscode.jpg)](http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/)
+[![](../img/whatiscode.jpg)](http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/)
 
 Coding is when humans write instructions for computers to use. The
 instructions are like recipes. The recipes are called ***algorithems***.
@@ -26,7 +26,7 @@ of computers how to do the same things.
 
 # Use the Source, Luke
 
-![](yoda.png)
+![](../img/yoda.png)
 
 These days most all code is written.
 
@@ -63,7 +63,7 @@ tool to learn.
 
 # Creating Code with VIM
 
-![vim](vim-logo.png)
+![vim](../img/vim-logo.png)
 
 `vi` is an ancient ***text editor***, almost the first, (which I think was
 `ed`). Ironically it holds its position as the Stradivarius of editors
