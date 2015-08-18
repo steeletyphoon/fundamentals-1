@@ -6,3 +6,10 @@ body
     include:markdown ../README.md
   section.part#hello
     include:markdown ../hello/README.md
+  script.
+    var imgs = document.querySelectorAll('img');
+    for (var i = 0; i < imgs.length; i++) {
+      var src = imgs[i].src.replace('\(../\)*', '');
+      imgs[i].setAttribute('src', src);
+    }
+    
