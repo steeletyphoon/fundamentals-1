@@ -1,4 +1,3 @@
-[[&larr; Back](..) | [Continue &rarr;](../02)]
 # Your First Program
 
 Let's start simple:
@@ -32,5 +31,3 @@ way of helping you get it right. Make sure you read those errors carefully
 even if they contain hard words to understand, they contain a lot of clues
 about the problem, which you can even Google to get more help from other
 humans on the Interwebz.
-
-[[&larr; Back](..) | [Continue &rarr;](../02)]

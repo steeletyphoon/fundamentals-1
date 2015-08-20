@@ -1,4 +1,3 @@
-[[&larr; Back](../01) | [Continue &rarr;](../03)]
 # Chmod That SheBang
 
 ![](dry.png)
@@ -45,7 +44,5 @@ We could have used `#!/usr/bin/python3` but use the `env` version
 instead. `env` is itself a program that finds other programs wherever
 they are.  `env` finds `python3` wherever it may be on the system
 (or another system). This makes our program easier to share with others.
-
-[[&larr; Back](../01) | [Continue &rarr;](../03)]
 
 ![](shebang.png)

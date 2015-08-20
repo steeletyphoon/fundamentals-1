@@ -1,4 +1,3 @@
-[[&larr; Back](../02) | [Continue &rarr;](../04)]
 # Ooooo, Pretty Colors
 
 ![Solarized Color Palette](http://ethanschoonover.com/solarized/img/solarized-palette.png)
@@ -61,5 +60,3 @@ into text that follows.
 
 If you forget the colors you can type `colors` from the Linux command-line
 to see them again.
-
-[[&larr; Back](../02) | [Continue &rarr;](../04)]
