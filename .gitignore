@@ -3,6 +3,7 @@
 .viminfo
 .ssh
 .mozilla
+www*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
