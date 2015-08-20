@@ -89,5 +89,3 @@ The secret for beginners is the arrows. Eventually you will use `INSERT`
 mode less and less.
 
 Now you are ready to start creating files with vi.
-
-[[Continue &rarr;](01)]

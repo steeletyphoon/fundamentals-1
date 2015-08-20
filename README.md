@@ -74,6 +74,8 @@ quiz<br>
 
 # Resources and Requirements
 
+[![][logo]][scb] [![][cc0]][cc0link]
+
 Students need access to a Linux command-line on a computer that has had
 `python3` installed. Usually this will be through an ssh connection
 (putty, etc.) to a Linux account on a school server. This could equally
@@ -81,25 +83,7 @@ be done with individual [Raspberry Pi][] computers, individual Linux
 real or virtual machines, or a remote virtual host such as Digital Ocean.
 
 GitHub accounts for each student are strongly recommended and the
-following function is contained in `.bashrc` to make `git commits`
-as easy as possible:
-
-```bash
-save () 
-{ 
-    comment=save;
-    [ ! -z "$*" ] && comment="$*";
-    git pull;
-    git add -A .;
-    git commit -a -m "$comment";
-    git push
-}
-```
-
-More details about setting up a teacher and/or student environment can be
-found in the [`bin`](bin) and [`tools`](tools) directory.
-
-[![][logo]][scb] [![][cc0]][cc0link]
+`bin/save` can make commits easier.
 
 [logo]: http://skilstak.com/images/skilstak-logo-bw-31.svg "SkilStak"
 [scb]: README-SKB.md
