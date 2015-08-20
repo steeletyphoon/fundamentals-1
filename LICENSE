@@ -1,3 +1,9 @@
+This repo is a SkilStak Content Block™ released to the Public Domain.
+Students and teachers and anyone else can browse, clone, or download any
+block repo as a zip from GitHub to use locally on their own computers.
+The content can be compiled into a `www` site for hosting, printing,
+or coversion to a PhoneGap app. (See the stuff in `bin` for more.)
+
 CC0 1.0 Universal
 
 Statement of Purpose
