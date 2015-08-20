@@ -3,7 +3,9 @@ head
   title #{title} | SkilStak Coding Arts
 body
   header: include:markdown README.md
-  section#hello: include:markdown hello/README.md
+  section#hello
+    header: include:markdown hello/README.md
+    section: include:markdown hello/README.md
   section#hi: include:markdown hi/README.md
   section#nyan: include:markdown nyan/README.md
   section#waffles: include:markdown waffles/README.md
