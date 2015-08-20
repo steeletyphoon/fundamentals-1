@@ -1,0 +1,19 @@
+{
+  "_id": "skilstak-python-1",
+  "name": "Learning to Code, in Python",
+  "parts": [
+    { "name": "hello" },
+    { "name": "hi" },
+    { "name": "nyan" },
+    { "name": "waffles" },
+    { "name": "dice" },
+    { "name": "badgers" },
+    { "name": "eightball" },
+    { "name": "bridge" },
+    { "name": "cli" },
+    { "name": "mtable" },
+    { "name": "madforms" },
+    { "name": "bincount" },
+    { "name": "quiz" }
+  ]
+}
