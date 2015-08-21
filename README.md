@@ -6,19 +6,25 @@ Meet Python, the best first programming language anyone should learn.
 It is approachable, easy, and &mdash; most of all &mdash; real. Python is
 a core language used by the worldwide scientific community &mdash; including
 MIT where it is the first language taught. Python can be found everywhere
-from elementary schools to Hollywood.
+from elementary schools to Hollywood &mdash; even on the cover of the
+Bloomberg Businessweek dedicated to coding:
+
+
+![](img/bloomberg.jpg)
 
 # What We Learn
 
-In this course students find out what coding is, why they should learn
-it, and how to write their first Python code the way most professionals
-do, with the vim text editor from a Linux Bash command line. Students
-gradually learn the same habits, tools, and workflows associated with
-college CS programs and technical careers. Students learn programming
-fundamentals such as variables, operators, blocks, logics, loops, data
-types, lists, dictionaries, functions, exceptions, and basic code
-organization with modules. We use modern Python 3 for many obvious
-reasons.
+In this course students find out what coding is, why they should learn it,
+and how. Students focus on programming fundamentals such as variables,
+operators, blocks, logic, loops, data types, lists, dictionaries,
+functions, exceptions, unit testing, and basic code organization.
+
+Students gradually learn the same habits, tools, and workflows associated
+with college computer science programs and technical careers. We
+write code using vim from the command-line the way most experienced
+professionals do.
+
+Students learn modern Python 3 (not 2.7) for many obvious reasons.
 
 # What We Don't Learn
 
