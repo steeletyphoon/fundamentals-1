@@ -20,11 +20,10 @@ operators, blocks, logic, loops, data types, lists, dictionaries,
 functions, exceptions, unit testing, and basic code organization.
 
 Students gradually learn the same habits, tools, and workflows associated
-with college computer science programs and technical careers. We
-write code using vim from the command-line the way most experienced
-professionals do.
+with college computer science programs and technical careers. We code
+using vim from the command-line the way most experienced professionals do.
 
-Students learn modern Python 3 (not 2.7) for many obvious reasons.
+Students learn modern Python (3.4+ not 2.7) for many obvious reasons.
 
 # What We Don't Learn
 
@@ -33,28 +32,36 @@ paradigms. It does not directly cover important but more advanced concepts
 such as traditional object-oriented and functional programming.  While the
 games and code in Python-1 are designed to be fun, Python-1 does **not**
 use Python IDLE, `turtle`, `pygame` or other made-for-education Python
-technologies, which, despite their prevalence, are of dubious value in
-the higher-education and professional world. Focus is placed instead on
-techniques and tools that will remain useful well beyond school. Students
-are encouraged to unit test their code often but no test frameworks
-besides code bits in `if __name__ == '__main__':` are introduced at
-this level.
+technologies, which despite their prevalence are of dubious value in
+the computer science and professional world. Focus is placed instead on
+techniques and tools that will remain useful beyond this course. Students
+are encouraged to unit test their code often by adding runnable snippets
+to `if __name__ == '__main__':` but otherwise are not introduced to any
+specific test frameworks.
 
 # Planning
 
-This course takes a total of 24 hours to complete and is designed
-to fit into 16 weeks of 90-minute classes (a semester) or two, 4-day weeks of
-3-hour classes (ex: 9:30 - 12:30, Monday - Thursday).
+The pace of this course is set to what an average 8-12 year-old with
+typing skills can accomplish within 70 minutes of a 90 minute class. At
+this pace students this course takes about 24 hours to complete. This is
+usually broken down in one of the following ways:
 
-The pace is set to what an average 8-12 year-old with typing skills can
-accomplish within 70 minutes of a 90 minute class. Bonus challenges are
-available for faster and older learners increasing the age range to about 18.
-Keep in mind, however, that adults are also challenged by this material
-(even if they don't get the pop references).
+* 16 weeks of 90-minute classes (a semester)
+* 8 weeks of 3-hour classes
+* 8 days of 3-hour classes (ex: 9:30 - 12:30, M-Th) 
 
-The last two weeks are a review of all the previous material. Avoid the
-temptation to skip the final review since it ensures students are ready to
-progress.
+Bonus challenges are available for faster and older learners increasing
+the age range to about 18. Above that students often become annoyed at
+the younger pop culture references.
+
+The last two weeks are a review of all the previous material. Programming
+is largely like learning a foreign language and these weeks are essential
+to reinforce what has been learned before moving on. This is also an
+opportunity for instructors to informally assess mastery and decide
+if a student is prepared to move on or needs to repeat. Unlike other
+subjects and programs this course should be repeated as often as needed
+until full mastery is demonstrated. Mastery is essential in programming
+before progressing.
 
 **Week 1:** [hello](/hello) - vim, `chmod`, `#!`, strings, functions, `print()`, `import colors`, `+`,`"`,`'`<br>
 **Week 1:** [hi](/hi) - `input()`, variables, assignment, operators, `=`<br>
@@ -89,7 +96,8 @@ be done with individual [Raspberry Pi][] computers, individual Linux
 real or virtual machines, or a remote virtual host such as Digital Ocean.
 
 GitHub accounts for each student are strongly recommended and the
-`bin/save` can make commits easier.
+[`save`](https://github.com/skilstak/python-1/blob/master/bin/save)
+command can make commits easier.
 
 [logo]: http://skilstak.com/images/skilstak-logo-bw-31.svg "SkilStak"
 [scb]: README-SKB.md

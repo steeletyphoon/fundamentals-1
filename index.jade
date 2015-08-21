@@ -1,31 +1,92 @@
+- var name = public._data.name
+- var version = public._data.version
+- var org = public._data.org
+- var parts = public._data.parts
+- var repourl = "http://" + public._data.repo
+
+mixin _concepts(part)
+  if part.concepts
+    for concept, index in part.concepts
+      - var escaped = concept.replace('<','&lt;').replace('>','&gt;').replace('`','<code>').replace('`','</code>')
+      span.concept!= escaped
+      - if (index < part.concepts.length - 1)
+        span.sep=  " / " 
+
+mixin _styles()
+  :stylus
+    textcolor = rgba(0,0,0,0.8) 
+    body
+      font-family "Helvetica Neue", Helvetica, Arial, freesans, sans-serif
+      font-weight 400
+      line-height 1.5em
+      margin 15%
+      color textcolor
+    img
+      max-width 100%
+      display inline-block
+    pre
+      line-height 1.2em
+    a
+      color rgb(64,120,192)
+      text-decoration none
+      &:hover
+        text-decoration underline
+    #lastmod
+      a
+        color rgba(0,0,0,0.2)
+    li
+      font-weight 500
+    .summary
+      .sep
+      .mins
+        color rgba(0,0,0,0.4)
+      .concepts
+        margin-left 1em
+        padding .7em
+        line-height 1.5em
+    code
+      padding 0.2em
+      padding 0.2em
+      border-radius 3px
+      margin 0
+      font-size 85%
+      background-color rgba(0,0,0,0.08)
+      font-family Consolas,"Liberation Mono", Menlo, Courier, monospace
+    h1
+    h2
+    h3
+      font-size 2.25em
+      line-height 1em
+      padding-bottom 0.4em
+      margin-top 1em
+      margin-bottom 0.8em
+      border-bottom-style solid
+      border-bottom-color #EEE
+      border-width 2px
+
 doctype
 head
-  title #{title} | SkilStak Coding Arts
-  link(href="css/skb.css" rel="stylesheet")
-  link(href="css/soldark.css" rel="stylesheet")
+  title #{name} | #{org}
+  style: +_styles()
 body
-  header: include:markdown README.md
-  section#hello
-    header: include:markdown hello/README.md
-    section: include:markdown hello/01/README.md
-    section: include:markdown hello/02/README.md
-    section: include:markdown hello/03/README.md
-    section: include:markdown hello/04/README.md
-    section: include:markdown hello/05/README.md
-    section: include:markdown hello/06/README.md
-    section: include:markdown hello/07/README.md
-    section: include:markdown hello/bonus/README.md
-  section#hi: include:markdown hi/README.md
-  section#nyan: include:markdown nyan/README.md
-  section#waffles: include:markdown waffles/README.md
-  section#dice: include:markdown dice/README.md
-  section#badgers: include:markdown badgers/README.md
-  section#eightball: include:markdown eightball/README.md
-  section#bridge: include:markdown bridge/README.md
-  section#cli: include:markdown cli/README.md
-  section#mtable: include:markdown mtable/README.md
-  section#madforms: include:markdown madforms/README.md
-  section#bincount: include:markdown bincount/README.md
-  section#quiz: include:markdown quiz/README.md
-  section#review: include:markdown review/README.md
+  header
+    #lastmod
+      span: a(href=repourl) Version: #{version}, 
+        script document.write((new Date(document.lastModified)).toLocaleString())
+    include:markdown README.md
+    h1 Parts and Concepts
+    p 
+    ol
+      for part in parts
+        li.summary
+          strong: a(href="#" + part.name) #{part.name} 
+          span.mins (about #{part.minutes} minutes):
+          .concepts
+            +_concepts(part)
+  for part in parts
+    section(id=part.name)
+      != partial(part.name + "/README")
+
+  // syntax hilighting
   script(src="js/prism.js")
+  link(href="soldark.css" rel="stylesheet")
