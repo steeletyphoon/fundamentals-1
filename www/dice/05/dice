@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+
+import colors as c
+print(c.clear)
+
+sides = []
+
+sides.append("1")
+sides.append("2")
+sides.append("3")
+sides.append("4")
+sides.append("5")
+sides.append("6")
+
+print(sides)
+print()
+
+for side in sides:
+    print("no index needed for", side)
+
+##############################
+# Keep for reference later:
+#
+# for n in range(6):
+#     print("index", n, "is side", sides[n])
+#
+# n = 0
+# while n < 6:
+#     print("index", n, "is side", sides[n])
+#     n = n + 1
+

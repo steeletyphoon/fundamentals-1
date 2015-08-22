@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+
+import colors as c
+import time
+
+try: 
+    while True:
+        for n in range(16):
+            string = '{:2} {:04b} {:x}'.format(n,n,n).upper()
+            print(c.cl + c.r + string + c.x)
+            time.sleep(1)
+except KeyboardInterrupt:
+    exit(0)
+

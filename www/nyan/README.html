@@ -1,0 +1,131 @@
+<h1>Infinite Looping Nyan Cat</h1><p><a href="https://youtu.be/wZZ7oFKsKzY"><img src="http://img.youtube.com/vi/wZZ7oFKsKzY/0.jpg" alt="Nyan, Nyan, Nyan"></a></p>
+<p><strong>Approximate Time:</strong> 45 minutes</p>
+<p>Did you know <em>nyan</em> is the sound a Japanese cat makes? Sure you did. Well
+before you create your new program file with <code>vi nyan</code> or <code>vi meow</code>
+watch the <a href="https://youtu.be/wZZ7oFKsKzY">10 hour video for inspiration</a>,
+or not.  Oh, and don&#39;t forget to <code>chmod u+x nyan</code> after you create it.</p>
+<p>Truth is this project is just an excuse to learn how to create
+loops that never end or <em>infinite</em> loops and how to stop them with
+<code>&lt;control&gt;-c</code>. We&#39;ll also see what they can do to a machine with the
+<code>top</code> command.</p>
+<h2>nyan1</h2><pre><code class="language-python">#!/usr/bin/env python3
+
+print(&#39;Nyan&#39;)
+</code></pre>
+<p>First we just print <em>nyan</em>. Make sure you don&#39;t forget the standard
+shebang, which you should have memorized pretty much by this point. <code>chmod
+u+x nyan</code> the file if you need to. Run it to make sure all is in order. It
+is always a good idea to start with something crazy simple to make sure
+you didn&#39;t miss something obvious.</p>
+<h2>nyan2</h2><pre><code class="language-python">#!/usr/bin/env python3 
+
+while True:
+    print(&#39;Nyan&#39;)
+</code></pre>
+<p>Now for the <em>loop</em> part. If you have played any
+<a href="http://codecombat.com">CodeCombat</a> you will probably remember the
+<code>loop:</code> thingy. Well forget it. There is no such thing in <em>actual</em>
+Python code. The creators told me they decided to add it because it
+was too much to introduce a <em>real</em> loop like the one we&#39;ll add below. I
+think you&#39;ll agree it isn&#39;t that hard to understand.</p>
+<p>There are three specific changes here to make the loop work:</p>
+<ol>
+<li>The line <code>while True</code> was added (note the capital <code>T</code> in `true)</li>
+<li>The colon (<code>:</code>) as added after <code>while True:</code></li>
+<li>The original <code>print(&#39;Nyan&#39;)</code> line was <em>indented</em> with <em>tab</em> (4 spaces)</li>
+</ol>
+<p>The word <code>True</code> is capitalized because is special. It is called a
+<em>boolean</em>, which is a fancy word for values that are <code>True</code> or <code>False</code>.</p>
+<p>We also added the loop keyword <code>while</code> which must always be followed with
+a condition. A condition is like a question with a true or false answer.
+Computers only understand true or false, on or off, 1 or 0 when you
+get right down to it. But this is an easy question for the computer to
+answer. How often is <code>True</code> true? If you answered forrrreeeeevvvvvaaa
+you get bonus points. So the next question is how long does <code>while True:</code>
+loop? Yep, same answer. But <em>what</em> loops forever? That&#39;s the third change.</p>
+<p>We added a colon <code>:</code> to the end of the <code>while True</code> line to show the
+beginning of a <em>block</em> of code to come. Blocks are lines of code that go
+together inside of other code, in this case, a loop. The lines of code
+in the block don&#39;t run unless the condition of the loop is true, which is
+forever in this case. The other part of a block is the four spaces before
+<code>print(&#39;Nyan&#39;)</code>. This is the other part of a block in Python. Python
+sees the <code>:</code> and then looks for all the lines that are <em>indented</em> that
+follow it.</p>
+<p>Indenting is when you put spaces or tabs in front of the line. In our
+case we will use the tab key because VIM turns tabs into 4-spaces. You
+usually never want actual tab characters in your code.</p>
+<blockquote>
+<p>Now is a good time to talk about one of Python&#39;s most controversial
+aspects, (which means something that coders argue about a lot). Python
+is a <em>whitespace significant</em> langauge. This means that unlike most every
+other language around when Python came out, the creators of Python decided
+to make Python see spaces and tabs as part of the <em>syntax</em>. Syntax is
+the stuff of the langauge, the details, the colons, the way you write it.
+This meant that if you forgot a space or put in too many spaces your code
+would not work. This infuriated most traditional programmers (including
+this author) and most swore an oath never to program in Python (usually
+preferring Perl, C, and PHP instead). More than a decade later the use of
+forced whitespace has proven a big win responsible for millions of lines
+of readable code while the whitespace freedom Perl and other languages
+allowed created millions of lines of &#39;spaghetti&#39; and &#39;code that looked
+like a cat walked across your keyboard&#39;. Python&#39;s strict, there is one
+best way to do it&#39; (including the style of the code itself), won v.s. the
+artistic &#39;there is more than one way to do it&#39; approaches of Perl and
+others. Whatever the reason in the end, Python has clearly dominated
+anywhere a lot of code is going to be written, read and maintained by
+a lot of different people. This also made Python hands-down the easiest
+language to learn because all the missed <code>{</code>s and <code>;</code>s were gone. The moral
+of the story? Python won, just don&#39;t forget to line up your lines.</p>
+</blockquote>
+<h2>Stopping the Loop</h2><p>Ok, so you have started your <code>nyan</code> program and <em>it isn&#39;t stopping!</em>
+Keep calm and <code>&lt;control&gt;-c</code> (that&#39;s both keys at the same time). This
+stops the program by sending it an <em>interrupt signal</em>, (which we&#39;ll
+learn more about later). The <code>&lt;control&gt;</code> key is in the bottom left of
+the keyboard. Practice typing the <code>&lt;control&gt;</code> key with your left pinky
+and the <code>c</code> key your left pointer finger. You&#39;ll be doing this a lot.</p>
+<h2>Loops Hurt Computer Brains</h2><p>Here&#39;s something fun. Start up another terminal and login so you have
+two terminals at once. In one of the terminals run the command <code>top</code>
+and watch how the numbers change. Type <code>z</code> while running <code>top</code> to see it
+all in pretty color. In the other terminal start your <code>nyan</code> program. See
+anything change in your <code>top</code> terminal? ;) Remember to stop <code>nyan</code> just
+type <code>&lt;control&gt;-c</code> and type <code>q</code> to stop the <code>top</code> terminal. If you panic
+you can just close your terminal and everything should get stopped as
+well. But learn how to cancel these things because every programmer ends
+up having to interrupt stuff they are working on.</p>
+<p>For a really demented friendly competition put on some theme &#39;ZZ Top&#39;
+music and see which of you in the class can make their loop faster than
+the other and be #1 on the top list. (Did I really just encourage you to
+slam the server CPU? Sigh, I&#39;m a horrible teacher. But hey, any excuse
+to play some &#39;ZZ Top&#39;.)</p>
+<h2>nyan3</h2><pre><code class="language-python">#!/usr/bin/env python3 
+
+while True:
+    print(&#39;Nyan&#39;, end=&#39; &#39;)
+</code></pre>
+<p>Oh, and there is this cool thing in Python 3 where if you add <code>, end=&#39;
+&#39;</code> you can make the <code>Nyan</code>s print on the same line. This is because
+every time you use <code>print(&#39;Nyan&#39;)</code> it actually adds something called
+a <em>new line</em> character that you can&#39;t see.  (In fact you can actually
+print extra new lines in your strings by adding <code>\n</code>.) When you add <code>,
+end=&#39; &#39;</code> you make Python change the character is uses by default to end the
+line. Now it prints a space or whatever you set <code>end</code> to at the end.</p>
+<h2>nyan4</h2><pre><code class="language-python">#!/usr/bin/env python3 
+
+import colors as c
+
+while True:
+    print(c.blue + &#39;Nyan&#39;, end=&#39; &#39;)
+</code></pre>
+<p>Annnnd now the colors of course. They are so aesthetically pleasing
+(fancy words for pretty) with no logical value whatsoever. It just looks
+cool. </p>
+<h2>nyan5</h2><pre><code class="language-python">#!/usr/bin/env python3 
+
+import colors as c
+
+while True:
+    print(c.random_color() + &#39;Nyan&#39;, end=&#39; &#39;)
+</code></pre>
+<p>&#39;Cuz <code>random_color()</code>. That is all.</p>
+<h2>More ...</h2><p>Can you get yours to pick a random color for every letter of the word
+<em>Nyan</em>? Just fun stuff.</p>

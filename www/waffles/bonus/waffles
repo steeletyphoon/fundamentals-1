@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+
+import colors as c
+from cli import ask
+
+answer = ask(c.clear + "Do you like waffles?",c.random_color())
+if answer == "yes":
+    answer = ask(c.clear + "Do you like pancakes?",c.random_color())
+    if answer == "yes":
+        answer = ask(c.clear + "Do you like French Toast?",c.random_color())
+        if answer == "yes":
+            print(c.clear + c.random_color() + "♫ Do, do da do, can't wait to get a mouthful! ♫")
+        else:
+            print("Well, I like French toast.")
+    else:
+        print("Well, I like pancakes.")
+else:
+    print("Well, I like waffles.")
+    
+

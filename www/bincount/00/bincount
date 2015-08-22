@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+
+print('''
+There are 10 types of people in the world,
+those who get base-2 (binary) and those who don't.
+''')

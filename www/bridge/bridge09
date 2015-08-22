@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+print(c.clear + c.yellow + '''
+Who shall cross the Bridge of Death
+Must answer me these questions three
+'Ere the other side he see.
+''' + c.reset)
+
+def ask(question):
+    print(c.red + question + c.reset)
+    answer = input("> " + c.base3).lower().strip()
+    print(c.reset)
+    return answer
+
+name = ask("What is your name? ")
+quest = ask("What is your quest? ")
+
+if name in ['lancelot','galahad']:
+    colour = ask("What is your favorite colour? ")
+

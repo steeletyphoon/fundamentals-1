@@ -1,0 +1,28 @@
+<h1>Chmod That SheBang</h1><p><img src="dry.png" alt=""></p>
+<p>The best programmers live by an important rule <em>Don&#39;t Repeat Yourself</em>
+or <em>DRY</em> — even code-muggles can appreciate that. Typing <code>python3</code>
+is far too much work.  We just want to type <code>hello</code>, but how?</p>
+<h2>Make It Executable</h2><p><strong><em>Executable</em></strong> means <em>runnable</em>. It is the difference between a simple
+<strong><em>text file</em></strong> and a <strong><em>script</em></strong>. To change this we use the <code>chmod +x
+hello</code> command. After this the script is a different color and we see an <code>x</code>
+in the permissions for the file when we do <code>ls -l hello</code>:</p>
+<pre><code>-rwxr-xr-x 1 student student 46 Jul 11 14:57 hello
+</code></pre><p>Don&#39;t worry about permissions now, just know they control things
+like reading and writing the file and telling the computer the file is
+a script that can be run.</p>
+<p><img src="chmod4.png" alt=""></p>
+<h2>Tell Computer How to Run the Program</h2><p>After <code>chmod</code>ing we have to tell the computer which program we want to use to run
+our Python <code>hello</code> script. By adding the executable permission we signaled
+to the computer to look at the first line of our script for a <strong><em>shebang
+line</em></strong>.  This special line starts with a <em>hashtag</em> <code>#</code> and the <em>bang</em>
+is for the exclamation point <code>!</code>. Coders have all kinds of slang for
+different characters. Add the following on the very first line of your script:</p>
+<pre><code class="language-python">#!/usr/bin/env python3
+</code></pre>
+<p>Don&#39;t forget the space between <code>env</code> and <code>python3</code> and don&#39;t forget the <code>3</code>
+or put a space before it.</p>
+<p>We could have used <code>#!/usr/bin/python3</code> but use the <code>env</code> version
+instead. <code>env</code> is itself a program that finds other programs wherever
+they are.  <code>env</code> finds <code>python3</code> wherever it may be on the system
+(or another system). This makes our program easier to share with others.</p>
+<p><img src="shebang.png" alt=""></p>

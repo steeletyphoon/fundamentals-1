@@ -1,0 +1,41 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+print(c.clear + c.yellow + '''
+Who shall cross the Bridge of Death
+Must answer me these questions three
+'Ere the other side he see.
+''' + c.reset)
+
+def prompt(question):
+    print(c.red + question + c.reset)
+    answer = input("> " + c.base3).lower().strip()
+    print(c.reset)
+    return answer
+
+def live():
+    print(c.green + "Right, off you go then." + c.reset)
+
+def die():
+    print("Thou art cast into the Gorge of Eternal Peril")
+
+name = ask("What is your name? ")
+quest = ask("What is your quest? ")
+
+if name in ['lancelot','galahad']:
+    colour = ask("What is your favorite colour? ")
+    if colour == 'blue':
+        live()
+    else:
+        die()
+
+elif name == 'robin':
+    capital = ask('What is the capital of Assyria')
+    if capital in ['assur','ashur']:
+        live()
+    else:
+        die()
+        
+
+

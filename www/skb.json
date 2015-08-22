@@ -1,0 +1,137 @@
+{
+  "name": "Learning to Code, in Python",
+  "short": "Python-1",
+  "_id": "skilstak-python-1",
+  "version": "2.1.1",
+  "author": "Rob Muhlestein <rob@skilstak.com>",
+  "contributors": [],
+  "org": "SkilStak Coding Arts",
+  "license": "CC0 Public Domain Dedication",
+  "repo": "github.com/skilstak/python-1",
+  "url": "skilstak-python-1.surge.sh",
+  "issues": "github.com/skilstak/python-1/issues",
+  "keywords": [
+    "python","python3","programming","coding","beginner"
+  ],
+  "age": { "from": 8, "to": 18 },
+  "prereqs": [ "skilstak-code-prep" ],
+  "parts": [
+    {
+      "name": "hello",
+      "minutes": 40,
+      "concepts": [
+        "`vim`", "`chmod`", "shebang", "`#!`", "strings", "actions",
+        "functions", "`print()`", "`import`", "colors", "solarized",
+        "operators", "operands", "join operator", "`+`", "quotes",
+        "`\"`","`'`"
+      ]
+    },
+    {
+      "name": "hi",
+      "minutes": 30,
+      "concepts": [
+        "`input()`", "variables", "assignment", "assignment operator", "`=`"
+      ]
+    },
+    {
+      "name": "nyan",
+      "minutes": 30,
+      "concepts": [
+        "code blocks", "booleans", "`while`", "inifinite loops", "booleans",
+        "`True`", "`False`", "signals", "interrupt", "`<cntl>-c`", 
+        "comments", "triple quotes", "`\"\"\"`", "`'''`", "`print(end='')`",
+        "ASCII", "`top`"
+      ]
+    },
+    {
+      "name": "waffles",
+      "minutes": 70,
+      "concepts": [
+        "conditions", "equality operator", "`if`","`else`","`==`",
+        "nested blocks", "exceptions", "`try`", "`except`",
+        "`exit()`"
+      ]
+    },
+    {
+      "name": "dice",
+      "minutes": 70,
+      "concepts": [
+        "lists", "loops", "`for`", "`in`", "`range()`", "implicit",
+        "explicit", "Zen of Python", "`import this`",
+        "`list.append()`", "methods", "`.`", "`import random`",
+        "`random.choice(list)`"
+      ]
+    },
+    {
+      "name": "badgers",
+      "minutes": 70,
+      "concepts": [
+        "data types", "numbers", "casting", "`int()`", "`str()`",
+        "scope", "local", "global", "`import time`", "`time.sleep()`"
+      ]
+    },
+    {
+      "name": "eightball",
+      "minutes": 70,
+      "concepts": [
+        "`elif`", "`not`", "`!=`", "inequality operator", "`in`",
+        "`string.strip()`", "`string.lower()`"
+      ]
+    },
+    {
+      "name": "bridge",
+      "minutes": 140,
+      "concepts": [
+        "compound conditions","`or`","`and`", "logic bugs",
+        "functions", "procedures", "`def`", "`return`"
+      ]
+    },
+    {
+      "name": "cli",
+      "minutes": 60,
+      "concepts": [
+        "basic modules", "refactoring", "reuse", "docstrings", "`'''`", 
+        "`if __name__ == '__main__':`", "basic unit testing"
+      ]
+    },
+    {
+      "name": "mtable",
+      "minutes": 40,
+      "concepts": [
+        "math operators", "`*`", "command-line arguments", "`import sys`",
+        "`sys.argv`", "`len(list)`"
+      ]
+    },
+    {
+      "name": "madforms",
+      "minutes": 140,
+      "concepts": [
+        "dictionaries", "JSON", "web APIs", "`string.format(**dict)`",
+        "`string.splitlines()`", "string.rstrip()",
+        "format field replacement"
+      ]
+    },
+    {
+      "name": "bincount", 
+      "minutes": 40,
+      "concepts": [
+        "decimal", "base 10", "binary", "base 2", "hexidecimal", "base 16",
+        "format number conversion", "format field padding", "machine code"
+      ]
+    },
+    {
+      "name": "quiz", 
+      "minutes": 70,
+      "concepts": [
+        "first-class functions", "`import`", "`list.remove()`"
+      ]
+    },
+    {
+      "name": "review",
+      "minutes": 140,
+      "concepts": [
+        "learning code is like a foreign language", "needs constant practice"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+print(c.clear + c.yellow + "Do you like waffles?" + c.reset)
+answer = input("> ")
+
+if answer == "yes" or answer == "Yes" or answer == "YES":
+    print("Awesome")
+elif answer == "maybe":
+    print("How indecisive.")
+else:
+    print("Well I like waffles.")
+

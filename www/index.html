@@ -1,0 +1,912 @@
+<!DOCTYPE html><head><title>Learning to Code, in Python | SkilStak Coding Arts</title><style>body {
+  font-family: "Helvetica Neue", Helvetica, Arial, freesans, sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin: 15%;
+  color: rgba(0,0,0,0.8);
+}
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+pre {
+  line-height: 1.2em;
+}
+a {
+  color: #4078c0;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+#lastmod a {
+  color: rgba(0,0,0,0.2);
+}
+li {
+  font-weight: 500;
+}
+.summary .sep,
+.summary .mins {
+  color: rgba(0,0,0,0.4);
+}
+.summary .concepts {
+  margin-left: 1em;
+  padding: 0.7em;
+  line-height: 1.5em;
+}
+code {
+  padding: 0.2em;
+  padding: 0.2em;
+  border-radius: 3px;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.08);
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+h1,
+h2,
+h3 {
+  font-size: 2.25em;
+  line-height: 1em;
+  padding-bottom: 0.4em;
+  margin-top: 1em;
+  margin-bottom: 0.8em;
+  border-bottom-style: solid;
+  border-bottom-color: #eee;
+  border-width: 2px;
+}
+</style></head><body><header><div id="lastmod"><span><a href="http://github.com/skilstak/python-1">Version: 2.1.1, <script>document.write((new Date(document.lastModified)).toLocaleString())</script></a></span></div><h1 id="learning-to-program-in-python">Learning to Program, in Python</h1>
+<p><img src="https://www.python.org/static/community_logos/python-logo-generic.svg" alt=""></p>
+<p>Meet Python, the best first programming language anyone should learn.
+It is approachable, easy, and &mdash; most of all &mdash; real. Python is
+a core language used by the worldwide scientific community &mdash; including
+MIT where it is the first language taught. Python can be found everywhere
+from elementary schools to Hollywood &mdash; even on the cover of the
+Bloomberg Businessweek dedicated to coding:</p>
+<p><img src="img/bloomberg.jpg" alt=""></p>
+<h1 id="what-we-learn">What We Learn</h1>
+<p>In this course students find out what coding is, why they should learn it,
+and how. Students focus on programming fundamentals such as variables,
+operators, blocks, logic, loops, data types, lists, dictionaries,
+functions, exceptions, unit testing, and basic code organization.</p>
+<p>Students gradually learn the same habits, tools, and workflows associated
+with college computer science programs and technical careers. We code
+using vim from the command-line the way most experienced professionals do.</p>
+<p>Students learn modern Python (3.4+ not 2.7) for many obvious reasons.</p>
+<h1 id="what-we-don-t-learn">What We Don&#39;t Learn</h1>
+<p>Python-1 focuses on basic structured and procedural programming
+paradigms. It does not directly cover important but more advanced concepts
+such as traditional object-oriented and functional programming.  While the
+games and code in Python-1 are designed to be fun, Python-1 does <strong>not</strong>
+use Python IDLE, <code>turtle</code>, <code>pygame</code> or other made-for-education Python
+technologies, which despite their prevalence are of dubious value in
+the computer science and professional world. Focus is placed instead on
+techniques and tools that will remain useful beyond this course. Students
+are encouraged to unit test their code often by adding runnable snippets
+to <code>if __name__ == &#39;__main__&#39;:</code> but otherwise are not introduced to any
+specific test frameworks.</p>
+<h1 id="planning">Planning</h1>
+<p>The pace of this course is set to what an average 8-12 year-old with
+typing skills can accomplish within 70 minutes of a 90 minute class. At
+this pace students this course takes about 24 hours to complete. This is
+usually broken down in one of the following ways:</p>
+<ul>
+<li>16 weeks of 90-minute classes (a semester)</li>
+<li>8 weeks of 3-hour classes</li>
+<li>8 days of 3-hour classes (ex: 9:30 - 12:30, M-Th) </li>
+</ul>
+<p>Bonus challenges are available for faster and older learners increasing
+the age range to about 18. Above that students often become annoyed at
+the younger pop culture references.</p>
+<p>The last two weeks are a review of all the previous material. Programming
+is largely like learning a foreign language and these weeks are essential
+to reinforce what has been learned before moving on. This is also an
+opportunity for instructors to informally assess mastery and decide
+if a student is prepared to move on or needs to repeat. Unlike other
+subjects and programs this course should be repeated as often as needed
+until full mastery is demonstrated. Mastery is essential in programming
+before progressing.</p>
+<h1 id="resources-and-requirements">Resources and Requirements</h1>
+<p><a href="README-SKB.md"><img src="http://skilstak.com/images/skilstak-logo-bw-31.svg" alt="" title="SkilStak"></a> <a href="https://creativecommons.org/publicdomain/zero/1.0/"><img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" alt="" title="CC0 Public Domain"></a></p>
+<p>Students need access to a Linux command-line on a computer that has had
+<code>python3</code> installed. Usually this will be through an ssh connection
+(putty, etc.) to a Linux account on a school server. This could equally
+be done with individual <a href="https://www.raspberrypi.org/">Raspberry Pi</a> computers, individual Linux
+real or virtual machines, or a remote virtual host such as Digital Ocean.</p>
+<p>GitHub accounts for each student are strongly recommended and the
+<a href="https://github.com/skilstak/python-1/blob/master/bin/save"><code>save</code></a>
+command can make commits easier.</p>
+<h1>Parts and Concepts</h1><p>Here are the major parts of the course with concepts introduced
+in each:</p><ol><li class="summary"><strong><a href="#hello">hello </a></strong><span class="mins">(about 40 minutes):</span><div class="concepts"><span class="concept"><code>vim</code></span><span class="sep"> / </span><span class="concept"><code>chmod</code></span><span class="sep"> / </span><span class="concept">shebang</span><span class="sep"> / </span><span class="concept"><code>#!</code></span><span class="sep"> / </span><span class="concept">strings</span><span class="sep"> / </span><span class="concept">actions</span><span class="sep"> / </span><span class="concept">functions</span><span class="sep"> / </span><span class="concept"><code>print()</code></span><span class="sep"> / </span><span class="concept"><code>import</code></span><span class="sep"> / </span><span class="concept">colors</span><span class="sep"> / </span><span class="concept">solarized</span><span class="sep"> / </span><span class="concept">operators</span><span class="sep"> / </span><span class="concept">operands</span><span class="sep"> / </span><span class="concept">join operator</span><span class="sep"> / </span><span class="concept"><code>+</code></span><span class="sep"> / </span><span class="concept">quotes</span><span class="sep"> / </span><span class="concept"><code>"</code></span><span class="sep"> / </span><span class="concept"><code>'</code></span></div></li><li class="summary"><strong><a href="#hi">hi </a></strong><span class="mins">(about 30 minutes):</span><div class="concepts"><span class="concept"><code>input()</code></span><span class="sep"> / </span><span class="concept">variables</span><span class="sep"> / </span><span class="concept">assignment</span><span class="sep"> / </span><span class="concept">assignment operator</span><span class="sep"> / </span><span class="concept"><code>=</code></span></div></li><li class="summary"><strong><a href="#nyan">nyan </a></strong><span class="mins">(about 30 minutes):</span><div class="concepts"><span class="concept">code blocks</span><span class="sep"> / </span><span class="concept">booleans</span><span class="sep"> / </span><span class="concept"><code>while</code></span><span class="sep"> / </span><span class="concept">inifinite loops</span><span class="sep"> / </span><span class="concept">booleans</span><span class="sep"> / </span><span class="concept"><code>True</code></span><span class="sep"> / </span><span class="concept"><code>False</code></span><span class="sep"> / </span><span class="concept">signals</span><span class="sep"> / </span><span class="concept">interrupt</span><span class="sep"> / </span><span class="concept"><code>&lt;cntl&gt;-c</code></span><span class="sep"> / </span><span class="concept">comments</span><span class="sep"> / </span><span class="concept">triple quotes</span><span class="sep"> / </span><span class="concept"><code>"""</code></span><span class="sep"> / </span><span class="concept"><code>'''</code></span><span class="sep"> / </span><span class="concept"><code>print(end='')</code></span><span class="sep"> / </span><span class="concept">ASCII</span><span class="sep"> / </span><span class="concept"><code>top</code></span></div></li><li class="summary"><strong><a href="#waffles">waffles </a></strong><span class="mins">(about 70 minutes):</span><div class="concepts"><span class="concept">conditions</span><span class="sep"> / </span><span class="concept">equality operator</span><span class="sep"> / </span><span class="concept"><code>if</code></span><span class="sep"> / </span><span class="concept"><code>else</code></span><span class="sep"> / </span><span class="concept"><code>==</code></span><span class="sep"> / </span><span class="concept">nested blocks</span><span class="sep"> / </span><span class="concept">exceptions</span><span class="sep"> / </span><span class="concept"><code>try</code></span><span class="sep"> / </span><span class="concept"><code>except</code></span><span class="sep"> / </span><span class="concept"><code>exit()</code></span></div></li><li class="summary"><strong><a href="#dice">dice </a></strong><span class="mins">(about 70 minutes):</span><div class="concepts"><span class="concept">lists</span><span class="sep"> / </span><span class="concept">loops</span><span class="sep"> / </span><span class="concept"><code>for</code></span><span class="sep"> / </span><span class="concept"><code>in</code></span><span class="sep"> / </span><span class="concept"><code>range()</code></span><span class="sep"> / </span><span class="concept">implicit</span><span class="sep"> / </span><span class="concept">explicit</span><span class="sep"> / </span><span class="concept">Zen of Python</span><span class="sep"> / </span><span class="concept"><code>import this</code></span><span class="sep"> / </span><span class="concept"><code>list.append()</code></span><span class="sep"> / </span><span class="concept">methods</span><span class="sep"> / </span><span class="concept"><code>.</code></span><span class="sep"> / </span><span class="concept"><code>import random</code></span><span class="sep"> / </span><span class="concept"><code>random.choice(list)</code></span></div></li><li class="summary"><strong><a href="#badgers">badgers </a></strong><span class="mins">(about 70 minutes):</span><div class="concepts"><span class="concept">data types</span><span class="sep"> / </span><span class="concept">numbers</span><span class="sep"> / </span><span class="concept">casting</span><span class="sep"> / </span><span class="concept"><code>int()</code></span><span class="sep"> / </span><span class="concept"><code>str()</code></span><span class="sep"> / </span><span class="concept">scope</span><span class="sep"> / </span><span class="concept">local</span><span class="sep"> / </span><span class="concept">global</span><span class="sep"> / </span><span class="concept"><code>import time</code></span><span class="sep"> / </span><span class="concept"><code>time.sleep()</code></span></div></li><li class="summary"><strong><a href="#eightball">eightball </a></strong><span class="mins">(about 70 minutes):</span><div class="concepts"><span class="concept"><code>elif</code></span><span class="sep"> / </span><span class="concept"><code>not</code></span><span class="sep"> / </span><span class="concept"><code>!=</code></span><span class="sep"> / </span><span class="concept">inequality operator</span><span class="sep"> / </span><span class="concept"><code>in</code></span><span class="sep"> / </span><span class="concept"><code>string.strip()</code></span><span class="sep"> / </span><span class="concept"><code>string.lower()</code></span></div></li><li class="summary"><strong><a href="#bridge">bridge </a></strong><span class="mins">(about 140 minutes):</span><div class="concepts"><span class="concept">compound conditions</span><span class="sep"> / </span><span class="concept"><code>or</code></span><span class="sep"> / </span><span class="concept"><code>and</code></span><span class="sep"> / </span><span class="concept">logic bugs</span><span class="sep"> / </span><span class="concept">functions</span><span class="sep"> / </span><span class="concept">procedures</span><span class="sep"> / </span><span class="concept"><code>def</code></span><span class="sep"> / </span><span class="concept"><code>return</code></span></div></li><li class="summary"><strong><a href="#cli">cli </a></strong><span class="mins">(about 60 minutes):</span><div class="concepts"><span class="concept">basic modules</span><span class="sep"> / </span><span class="concept">refactoring</span><span class="sep"> / </span><span class="concept">reuse</span><span class="sep"> / </span><span class="concept">docstrings</span><span class="sep"> / </span><span class="concept"><code>'''</code></span><span class="sep"> / </span><span class="concept"><code>if __name__ == '__main__':</code></span><span class="sep"> / </span><span class="concept">basic unit testing</span></div></li><li class="summary"><strong><a href="#mtable">mtable </a></strong><span class="mins">(about 40 minutes):</span><div class="concepts"><span class="concept">math operators</span><span class="sep"> / </span><span class="concept"><code>*</code></span><span class="sep"> / </span><span class="concept">command-line arguments</span><span class="sep"> / </span><span class="concept"><code>import sys</code></span><span class="sep"> / </span><span class="concept"><code>sys.argv</code></span><span class="sep"> / </span><span class="concept"><code>len(list)</code></span></div></li><li class="summary"><strong><a href="#madforms">madforms </a></strong><span class="mins">(about 140 minutes):</span><div class="concepts"><span class="concept">dictionaries</span><span class="sep"> / </span><span class="concept">JSON</span><span class="sep"> / </span><span class="concept">web APIs</span><span class="sep"> / </span><span class="concept"><code>string.format(**dict)</code></span><span class="sep"> / </span><span class="concept"><code>string.splitlines()</code></span><span class="sep"> / </span><span class="concept">string.rstrip()</span><span class="sep"> / </span><span class="concept">format field replacement</span></div></li><li class="summary"><strong><a href="#bincount">bincount </a></strong><span class="mins">(about 40 minutes):</span><div class="concepts"><span class="concept">decimal</span><span class="sep"> / </span><span class="concept">base 10</span><span class="sep"> / </span><span class="concept">binary</span><span class="sep"> / </span><span class="concept">base 2</span><span class="sep"> / </span><span class="concept">hexidecimal</span><span class="sep"> / </span><span class="concept">base 16</span><span class="sep"> / </span><span class="concept">format number conversion</span><span class="sep"> / </span><span class="concept">format field padding</span><span class="sep"> / </span><span class="concept">machine code</span></div></li><li class="summary"><strong><a href="#quiz">quiz </a></strong><span class="mins">(about 70 minutes):</span><div class="concepts"><span class="concept">first-class functions</span><span class="sep"> / </span><span class="concept"><code>import</code></span><span class="sep"> / </span><span class="concept"><code>list.remove()</code></span></div></li><li class="summary"><strong><a href="#review">review </a></strong><span class="mins">(about 140 minutes):</span><div class="concepts"><span class="concept">learning code is like a foreign language</span><span class="sep"> / </span><span class="concept">needs constant practice</span></div></li></ol></header><section id="hello"><h1>Hello World</h1><p><img src="../img/hello.png" alt="SkilStak Hello"></p>
+<p><em>Hello world</em> is a famous program written by
+millions in <a href="https://en.wikipedia.org/wiki/List_of_Hello_world_program_examples">dozens if not hundreds of programming
+languages</a>.
+It&#39;s a great way to start.</p>
+<h1>What is Coding?</h1><p>Let&#39;s assume you have never heard of <strong><em>coding</em></strong> before. If you have you
+can skip or maybe you want read Paul Ford&#39;s excellent article:</p>
+<p><a href="http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/"><img src="../img/whatiscode.jpg" alt=""></a></p>
+<p>Coding is when humans write instructions for computers to use. The
+instructions are like recipes. The recipes are called <strong><em>algorithems</em></strong>.
+Computers really only speak one language, <strong><em>machine language</em></strong>. Since
+each computer machine is different computers speak different
+machine languages. Remember C-3PO from Star Wars? His job was talking
+between machines. (A <strong><em>protocol</em></strong> is a way to communicate.) We may not
+have protocol droids like 3PO yet, but many languages have been created
+with interpreters and other stuff to help humans tell different types
+of computers how to do the same things.</p>
+<h1>Use the Source, Luke</h1><p><img src="../img/yoda.png" alt=""></p>
+<p>These days most all code is written.</p>
+<p>A <strong><em>character</em></strong> is a letter, number, symbol or space that you can type.</p>
+<p>A <strong><em>text file</em></strong> is a file with letters, numbers, spaces and other characters
+in it.</p>
+<p><strong><em>Source code</em></strong> is the text that goes into one or more <strong><em>text files</em></strong> that
+make up your program. Sometimes these files can be run as a program by
+themselves.  These are called <strong><em>scripts</em></strong>. Sometimes <strong><em>source code</em></strong> files are
+turned into other files that the computer can understand better and faster
+than what you could ever type in. Making these computer-friendly files
+is called <strong><em>compiling</em></strong> your code. Computers can understand some compiled
+code directly and some still needs an <strong><em>interpreter</em></strong>. Just like humans,
+computers sometimes need help interpreting one language into something
+they understand. Like in real-life, it is faster for the computer when
+an interpreter is not needed, but sometimes speed isn&#39;t as important as
+being able to easily work with code that humans and many different types of
+computers can understand.</p>
+<p>A <strong><em>script</em></strong> is <strong><em>source code</em></strong> that can be run as a program.</p>
+<p>An <strong><em>editor</em></strong> is a app used to change stuff in a file, for example, to create
+a new <code>hello</code> program or edit a <code>server.properties</code> file to change
+a Minecraft world to super flat.</p>
+<p>A <strong><em>screen-oriented editor</em></strong> is an editor that doesn&#39;t need a mouse to
+use. Since we are writing all our programs from a <strong><em>Linux terminal</em></strong>
+(like professionals) we will use <strong><em>vi</em></strong> (or <strong><em>vim</em></strong>) a famous <strong><em>editor</em></strong> used
+by great programmers since before the Internet was invented. <strong><em>vi</em></strong>
+is on every UNIX/Linux computer there is.  This makes it a very useful
+tool to learn.</p>
+<h1>Creating Code with VIM</h1><p><img src="../img/vim-logo.png" alt="vim"></p>
+<p><code>vi</code> is an ancient <strong><em>text editor</em></strong>, almost the first, (which I think was
+<code>ed</code>). Ironically it holds its position as the Stradivarius of editors
+&mdash; especially now that <code>vim</code> has improved it.  Its power comes from
+its ubiquity. You can find <code>vi</code> on <em>every</em> UNIX/Linux/Solaris/AIX/BSD/Mac
+system in the world by default (no it isn&#39;t on Windows, which is all you
+really need to know about Windows to choose not to use it as a developer
+unless forced).</p>
+<p>Here are the survival essentials you need to master at this point. You
+will learn many more as you grow into this powerful editor:</p>
+<ul>
+<li><code>vi hello</code> - create and open a new file called <code>hello</code></li>
+<li><code>i</code> - switch to <code>INSERT</code> mode (look in bottom left)</li>
+<li><code>&lt;arrows&gt;</code> - move around (easiest for beginners)</li>
+<li><code>&lt;esc&gt;</code> - escape out of <code>INSERT</code></li>
+<li><code>&lt;esc&gt;u</code> - undo, which you can repeat</li>
+<li><code>ZZ</code> or <code>:q</code> - save and exit</li>
+<li><code>ZQ</code> or <code>:q!</code> - just quit without saving</li>
+<li><code>:w</code> - save without exiting</li>
+</ul>
+<p>The secret for beginners is the arrows. Eventually you will use <code>INSERT</code>
+mode less and less.</p>
+<p>Now you are ready to start creating files with vi.</p>
+</section><section id="hi"><h1>Hi</h1><p><img src="http://skilstak.github.io/images/skilstak-hi.png" alt="SkilStak Hi"></p>
+<p><strong>Approximate Time:</strong> 30 minutes</p>
+<p>This program is a more personalized version of <a href="../hello">hello</a> that
+prompts the user for a name before saying hello. The goal of the
+project is to learn how to prompt users for information that they type in,
+which is a core part of any interactive command-line script including the
+<a href="../eightball">eightball</a> program we&#39;ll make later. It is also obviously
+a core part of any sort of interactive story or text adventure game such as
+the <a href="http://github.com/storyeng">storyeng</a> games we will make in
+<a href="http://github.com/skilstak/python-1">Python-1</a> and 
+<a href="http://github.com/skilstak/python-2">Python-2</a>.</p>
+<h2>hi1</h2><pre><code class="language-python">#!/usr/bin/env python3
+
+print(&quot;Hi, what&#39;s your name?&quot;)
+</code></pre>
+<p>First let&#39;s just do the same thing we did to begin <a href="../hello">hello</a> by just
+printing something out. In fact, you can just <code>cp hello hi</code> if you want to
+save yourself the <code>chmod u+x hi</code> command since the proper permissions have
+already been set on hello.</p>
+<p>Notice that we use <code>&quot;</code> instead of <code>&#39;</code> because the <code>what&#39;s</code> already used
+a <code>&#39;</code> and it would mess it up. Python let&#39;s you use either <code>&#39;</code> or <code>&quot;</code>
+for strings and they don&#39;t have different functions (as they do in some
+other programming languages).</p>
+<h2>hi2</h2><pre><code class="language-python">#!/usr/bin/env python3
+
+print(&quot;Hi, what&#39;s your name?&quot;)
+input(&#39;--&gt; &#39;)
+</code></pre>
+<p>Now let&#39;s get some input from the user. The <code>input()</code> function makes
+our program wait for the user to type something in and press the
+enter key. Whatever we pass to the function inside of the parentheses
+(or <em>parens</em>) <code>()</code> will be printed to the screen to let the user know
+to type something in. This is called a <em>prompt</em>. There&#39;s also a fancy
+name for the stuff we pass into the parenthesis like coins in a soda
+machine. <em>Parameters</em> is what computer scientists call them (the rest
+of us say <em>params</em>).</p>
+<h2>hi3</h2><pre><code class="language-python">#!/usr/bin/env python3
+
+print(&quot;Hi, what&#39;s your name?&quot;)
+name = input(&#39;--&gt; &#39;)
+print(name)
+</code></pre>
+<p>Now we add a <code>name</code> variable that will have whatever the user typed
+inside of it so we can use it later.  The <code>input()</code> function is like
+a machine that spits something out. When a function does this we call
+it <em>returning</em> a value. We store that returned value into <code>name</code> by
+assigning it just like we did color codes in <a href="../hellow">hello</a>.</p>
+<p>To make sure all this plumbing is working we are going to just print
+the <code>name</code> variable. <code>print()</code> is universally used to test code so
+we can see what is going on &mdash; especially when things get more
+complicated. Often this is referred to as a <em>debug print statement</em>. There
+are much fancier ways to debug, (which means to track down problems),
+in code. But the old reliable <code>print()</code> statement is always there to
+help us out. We&#39;ll delete it later once we know our code is working.</p>
+<p>Using all our fancy new words for things we can describe <code>name =
+input(&#39;--&gt;&#39;)</code> as a line of code that calls the <em>function</em> <code>input()</code> and
+passes a single <em>string</em> as a <em>param</em> for the <em>prompt</em> and <em>returns</em>
+another <em>string</em> containing what the user typed into the <code>name</code>
+<em>variable</em>. By now that sentence should make sense enough to not sound
+like some coder-geek foreign language. Yes, face the reality, YOU are
+becoming a geek. Just own it and start imagining how you will soon use
+your new superpower for good. Oh, and don&#39;t forget to go outside once
+in a while.</p>
+<h2>hi4</h2><pre><code class="language-python">#!/usr/bin/env python3
+
+print(&quot;Hi, what&#39;s your name?&quot;)
+name = input(&#39;--&gt; &#39;)
+print(&#39;Nice to meet you, &#39; + name + &#39;!&#39;)
+</code></pre>
+<p>Now let&#39;s do something more useful with the <code>name</code> variable. Don&#39;t forget
+the space after the word <em>you</em> <strong>inside of the string</strong> because that will
+keep the name from being too close.</p>
+<h2>hi5</h2><pre><code class="language-python">#!/usr/bin/env python3
+
+import colors as c
+
+print(c.clear)
+print(c.yellow + &quot;Hi, what&#39;s your name?&quot;)
+name = input(c.orange + &#39;--&gt; &#39;)
+print(c.yellow + &#39;Well &#39; + name + &#39;, nice to meet you.&#39;)
+</code></pre>
+<p>Time to color things up now that the base program is working. We&#39;ll add
+a new special &#39;color&#39; that isn&#39;t really a color at all. It clears the
+screen when you print it like the other colors.</p>
+<p>Notice that the last line is all yellow. Can you think of a way to make</p>
+<h2>hi6</h2><pre><code class="language-python">#!/usr/bin/env python3
+
+import colors as c
+
+print(c.clear + c.yellow + &quot;Hi, what&#39;s your name?&quot;)
+name = input(c.orange + &#39;--&gt; &#39;)
+print(c.yellow + &#39;Well &#39; + name + &#39;, nice to meet you.&#39;)
+</code></pre>
+<p>Now, can you figure out how to make the <code>--&gt;</code> prompt a different color than
+what the user types in? Give it a try before you proceed.</p>
+<h2>hi7</h2><pre><code class="language-python">#!/usr/bin/env python3
+
+import colors as c
+
+print(c.clear + c.yellow + &quot;Hi, what&#39;s your name?&quot; + c.reset)
+name = input(&#39;--&gt; &#39; + c.orange)
+print(c.red + &#39;Well &#39; + c.magenta + name + c.red + &#39;, nice to meet you.&#39;)
+</code></pre>
+<p>Great job! You have completed <code>hi</code>. And by the way you can use <code>c.pink</code>
+instead of <code>c.magenta</code> if it is easier to remember. Same with <code>c.purple</code>
+and <code>c.violet</code>.</p>
+</section><section id="nyan"><h1>Infinite Looping Nyan Cat</h1><p><a href="https://youtu.be/wZZ7oFKsKzY"><img src="http://img.youtube.com/vi/wZZ7oFKsKzY/0.jpg" alt="Nyan, Nyan, Nyan"></a></p>
+<p><strong>Approximate Time:</strong> 45 minutes</p>
+<p>Did you know <em>nyan</em> is the sound a Japanese cat makes? Sure you did. Well
+before you create your new program file with <code>vi nyan</code> or <code>vi meow</code>
+watch the <a href="https://youtu.be/wZZ7oFKsKzY">10 hour video for inspiration</a>,
+or not.  Oh, and don&#39;t forget to <code>chmod u+x nyan</code> after you create it.</p>
+<p>Truth is this project is just an excuse to learn how to create
+loops that never end or <em>infinite</em> loops and how to stop them with
+<code>&lt;control&gt;-c</code>. We&#39;ll also see what they can do to a machine with the
+<code>top</code> command.</p>
+<h2>nyan1</h2><pre><code class="language-python">#!/usr/bin/env python3
+
+print(&#39;Nyan&#39;)
+</code></pre>
+<p>First we just print <em>nyan</em>. Make sure you don&#39;t forget the standard
+shebang, which you should have memorized pretty much by this point. <code>chmod
+u+x nyan</code> the file if you need to. Run it to make sure all is in order. It
+is always a good idea to start with something crazy simple to make sure
+you didn&#39;t miss something obvious.</p>
+<h2>nyan2</h2><pre><code class="language-python">#!/usr/bin/env python3 
+
+while True:
+    print(&#39;Nyan&#39;)
+</code></pre>
+<p>Now for the <em>loop</em> part. If you have played any
+<a href="http://codecombat.com">CodeCombat</a> you will probably remember the
+<code>loop:</code> thingy. Well forget it. There is no such thing in <em>actual</em>
+Python code. The creators told me they decided to add it because it
+was too much to introduce a <em>real</em> loop like the one we&#39;ll add below. I
+think you&#39;ll agree it isn&#39;t that hard to understand.</p>
+<p>There are three specific changes here to make the loop work:</p>
+<ol>
+<li>The line <code>while True</code> was added (note the capital <code>T</code> in `true)</li>
+<li>The colon (<code>:</code>) as added after <code>while True:</code></li>
+<li>The original <code>print(&#39;Nyan&#39;)</code> line was <em>indented</em> with <em>tab</em> (4 spaces)</li>
+</ol>
+<p>The word <code>True</code> is capitalized because is special. It is called a
+<em>boolean</em>, which is a fancy word for values that are <code>True</code> or <code>False</code>.</p>
+<p>We also added the loop keyword <code>while</code> which must always be followed with
+a condition. A condition is like a question with a true or false answer.
+Computers only understand true or false, on or off, 1 or 0 when you
+get right down to it. But this is an easy question for the computer to
+answer. How often is <code>True</code> true? If you answered forrrreeeeevvvvvaaa
+you get bonus points. So the next question is how long does <code>while True:</code>
+loop? Yep, same answer. But <em>what</em> loops forever? That&#39;s the third change.</p>
+<p>We added a colon <code>:</code> to the end of the <code>while True</code> line to show the
+beginning of a <em>block</em> of code to come. Blocks are lines of code that go
+together inside of other code, in this case, a loop. The lines of code
+in the block don&#39;t run unless the condition of the loop is true, which is
+forever in this case. The other part of a block is the four spaces before
+<code>print(&#39;Nyan&#39;)</code>. This is the other part of a block in Python. Python
+sees the <code>:</code> and then looks for all the lines that are <em>indented</em> that
+follow it.</p>
+<p>Indenting is when you put spaces or tabs in front of the line. In our
+case we will use the tab key because VIM turns tabs into 4-spaces. You
+usually never want actual tab characters in your code.</p>
+<blockquote>
+<p>Now is a good time to talk about one of Python&#39;s most controversial
+aspects, (which means something that coders argue about a lot). Python
+is a <em>whitespace significant</em> langauge. This means that unlike most every
+other language around when Python came out, the creators of Python decided
+to make Python see spaces and tabs as part of the <em>syntax</em>. Syntax is
+the stuff of the langauge, the details, the colons, the way you write it.
+This meant that if you forgot a space or put in too many spaces your code
+would not work. This infuriated most traditional programmers (including
+this author) and most swore an oath never to program in Python (usually
+preferring Perl, C, and PHP instead). More than a decade later the use of
+forced whitespace has proven a big win responsible for millions of lines
+of readable code while the whitespace freedom Perl and other languages
+allowed created millions of lines of &#39;spaghetti&#39; and &#39;code that looked
+like a cat walked across your keyboard&#39;. Python&#39;s strict, there is one
+best way to do it&#39; (including the style of the code itself), won v.s. the
+artistic &#39;there is more than one way to do it&#39; approaches of Perl and
+others. Whatever the reason in the end, Python has clearly dominated
+anywhere a lot of code is going to be written, read and maintained by
+a lot of different people. This also made Python hands-down the easiest
+language to learn because all the missed <code>{</code>s and <code>;</code>s were gone. The moral
+of the story? Python won, just don&#39;t forget to line up your lines.</p>
+</blockquote>
+<h2>Stopping the Loop</h2><p>Ok, so you have started your <code>nyan</code> program and <em>it isn&#39;t stopping!</em>
+Keep calm and <code>&lt;control&gt;-c</code> (that&#39;s both keys at the same time). This
+stops the program by sending it an <em>interrupt signal</em>, (which we&#39;ll
+learn more about later). The <code>&lt;control&gt;</code> key is in the bottom left of
+the keyboard. Practice typing the <code>&lt;control&gt;</code> key with your left pinky
+and the <code>c</code> key your left pointer finger. You&#39;ll be doing this a lot.</p>
+<h2>Loops Hurt Computer Brains</h2><p>Here&#39;s something fun. Start up another terminal and login so you have
+two terminals at once. In one of the terminals run the command <code>top</code>
+and watch how the numbers change. Type <code>z</code> while running <code>top</code> to see it
+all in pretty color. In the other terminal start your <code>nyan</code> program. See
+anything change in your <code>top</code> terminal? ;) Remember to stop <code>nyan</code> just
+type <code>&lt;control&gt;-c</code> and type <code>q</code> to stop the <code>top</code> terminal. If you panic
+you can just close your terminal and everything should get stopped as
+well. But learn how to cancel these things because every programmer ends
+up having to interrupt stuff they are working on.</p>
+<p>For a really demented friendly competition put on some theme &#39;ZZ Top&#39;
+music and see which of you in the class can make their loop faster than
+the other and be #1 on the top list. (Did I really just encourage you to
+slam the server CPU? Sigh, I&#39;m a horrible teacher. But hey, any excuse
+to play some &#39;ZZ Top&#39;.)</p>
+<h2>nyan3</h2><pre><code class="language-python">#!/usr/bin/env python3 
+
+while True:
+    print(&#39;Nyan&#39;, end=&#39; &#39;)
+</code></pre>
+<p>Oh, and there is this cool thing in Python 3 where if you add <code>, end=&#39;
+&#39;</code> you can make the <code>Nyan</code>s print on the same line. This is because
+every time you use <code>print(&#39;Nyan&#39;)</code> it actually adds something called
+a <em>new line</em> character that you can&#39;t see.  (In fact you can actually
+print extra new lines in your strings by adding <code>\n</code>.) When you add <code>,
+end=&#39; &#39;</code> you make Python change the character is uses by default to end the
+line. Now it prints a space or whatever you set <code>end</code> to at the end.</p>
+<h2>nyan4</h2><pre><code class="language-python">#!/usr/bin/env python3 
+
+import colors as c
+
+while True:
+    print(c.blue + &#39;Nyan&#39;, end=&#39; &#39;)
+</code></pre>
+<p>Annnnd now the colors of course. They are so aesthetically pleasing
+(fancy words for pretty) with no logical value whatsoever. It just looks
+cool. </p>
+<h2>nyan5</h2><pre><code class="language-python">#!/usr/bin/env python3 
+
+import colors as c
+
+while True:
+    print(c.random_color() + &#39;Nyan&#39;, end=&#39; &#39;)
+</code></pre>
+<p>&#39;Cuz <code>random_color()</code>. That is all.</p>
+<h2>More ...</h2><p>Can you get yours to pick a random color for every letter of the word
+<em>Nyan</em>? Just fun stuff.</p>
+</section><section id="waffles"><h1>Do You Like Waffles?</h1><p>mmmm</p>
+</section><section id="dice"><h1>Roll the Dice</h1><p>booyeah</p>
+</section><section id="badgers"><h1>Badgers, Badgers, Badgers</h1><p>mushroom mushroom</p>
+</section><section id="eightball"><h1>Magic Eight Ball</h1><p><a href="https://youtu.be/mFOracFClBg"><img src="http://img.youtube.com/vi/mFOracFClBg/0.jpg" alt="Don&#39;t Count on It"></a></p>
+<p><strong>Approximate Time:</strong> 90 minutes</p>
+<p>The magic eight ball is a popular, sooth-saying toy predicting the
+futures of kids, their pets, parents, and teachers for decades. The fun
+part about the coded version we are going to make is that you can change
+it up and even save off the conversations you have with it when asking
+it lots of questions.</p>
+<pre><code>--&gt; Should we make a magic eight ball?
+It is decidedly so.
+</code></pre><h2>eightball01</h2><pre><code class="language-python">#!/usr/bin/env python3
+
+import colors as c
+
+print(c.red + &#39;&#39;&#39;
+Welcome to the magic eight ball!
+Enter your question below.
+&#39;&#39;&#39; + c.reset)
+</code></pre>
+<p>Let&#39;s just get something to print for now to make sure all the basics are
+working. Don&#39;t forget to <code>cp</code> an existing program or <code>touch eightball;
+chmod u+x eightball</code> to create a new <code>eightball</code> file for your that
+can be run. You should already know all about <a href="../colors"><code>colors</code></a>
+at this point so we&#39;ll go ahead and use them.</p>
+<p>Here&#39;s something new, the triple-quote <em>long string</em>. A long string is,
+um, a long string. You can use single quotes <code>&#39;</code> or double <code>&quot;</code> and
+everything inside is included in the string. This includes all the line
+returns and words with single and double quotes with them. That&#39;s right.
+Everything you put in a triple quote just gets included like you want. We
+use long-strings a lot for large amounts of text and ASCII art. In fact, you
+can use a triple quote later when adding more answers if you want to 
+get really creative and include ASCII art answers to your list.</p>
+<h2>eightball02</h2><pre><code class="language-python">#!/usr/bin/env python3
+
+import colors as c
+
+print(c.red + &#39;&#39;&#39;
+Welcome to the magic eight ball!
+Enter your question below.
+&#39;&#39;&#39; + c.reset)
+
+answers = [&#39;Yes.&#39;,&#39;No.&#39;,&#39;Maybe&#39;]
+print(answers)
+</code></pre>
+<p>Now let&#39;s add some answers in a <em>list</em>. A <em>list</em> is a Python thing
+that is exactly what it sounds like, just a list of items. The
+items in the list can be anything you can put into a <em>variable</em>,
+strings, numbers, other variables, even functions, (which we do in
+<a href="http://github.com/skilstak/python-1">Python-1</a>).</p>
+<p>You tell Python you want to use a list with square brackets <code>[]</code>. Inside
+the bracket you put the items of your list separated with commas <code>,</code>. You
+can have a list on on one line or on more than one line. It really
+depends on your items and how many you have. For now since we only have
+a few answers, and they all fit on one screen, we&#39;ll use one line.</p>
+<p>Add the <code>print(answers)</code> just to make sure everything is working. You&#39;ll
+delete it later. This is called a <em>debug</em> <code>print</code> and is common for seeing
+what your program is doing while you develop it.</p>
+<h2>eightball03</h2><pre><code class="language-python">#!/usr/bin/env python3
+
+import colors as c
+
+print(c.red + &#39;&#39;&#39;
+Welcome to the magic eight ball!
+Enter your question below.
+&#39;&#39;&#39; + c.reset)
+
+answers = [
+    c.green + &#39;Yes.&#39; + c.reset,
+    c.red + &#39;No.&#39; + c.reset,
+    c.base01 + &#39;Maybe.&#39; + c.reset
+]
+
+print(answers)
+</code></pre>
+<p>On second thought how about a little color for each answer. Once we add the
+color and the reset code we really need to put each item on it&#39;s own line.</p>
+<h2>eightball04</h2><pre><code class="language-python">#!/usr/bin/env python3
+
+import colors as c
+
+print(c.red + &#39;&#39;&#39;
+Welcome to the magic eight ball!
+Enter your question below.
+&#39;&#39;&#39; + c.reset)
+
+answers = [
+    c.green + &#39;Yes.&#39; + c.reset,
+    c.red + &#39;No.&#39; + c.reset,
+    c.base01 + &#39;Maybe.&#39; + c.reset
+]
+
+question = input(&#39;&gt; &#39; + c.yellow)
+</code></pre>
+<p>Remember the <a href="../hi"><code>hi</code></a> program? Remember how we make it wait for a
+user to type some input in? Let&#39;s do the same thing to prompt the user
+for a question they want answered. We&#39;ll save what they type into a
+<code>question</code> variable so we can check it later.</p>
+<h2>eightball05</h2><pre><code class="language-python">#!/usr/bin/env python3
+
+import colors as c
+
+print(c.red + &#39;&#39;&#39;
+Welcome to the magic eight ball!
+Enter your question below.
+&#39;&#39;&#39; + c.reset)
+
+answers = [
+    c.green + &#39;Yes.&#39; + c.reset,
+    c.red + &#39;No.&#39; + c.reset,
+    c.base01 + &#39;Maybe.&#39; + c.reset
+]
+
+question = input(&#39;&gt; &#39; + c.yellow)
+
+import random
+answer = random.choice(answers)
+print(answer)
+</code></pre>
+<p>Now comes the magic, the
+<a href="https://docs.python.org/3.4/library/random.html"><code>random</code></a>
+magic. There are lots of <a href="https://docs.python.org/3.4/library/random.html">spells in the
+random</a>
+book of code magic. (Ok, fine, it&#39;s called a <em>module</em>,
+but spellbook sounds so much awesome-er.) We&#39;ll just use
+one <a href="http://en.wikipedia.org/wiki/Cantrip">cantrip</a> for now:
+<code>random.choice(list)</code>. This function is like a hat that you put all the
+items from your list into and randomly pull one out and <em>return</em> it. We&#39;ll
+save the randomly selected answer into a <em>variable</em> named <code>answer</code>. Note
+the difference between the variables <code>answer</code> and <code>answers</code>. One is <em>singular</em> (just one), and the other <em>plural</em>
+(more than one).</p>
+<p>At this point you have a working, one-time-use magic eight ball. Run it
+and see.</p>
+<h2>eightball06</h2><pre><code class="language-python">#!/usr/bin/env python3
+
+import random
+import colors as c
+
+print(c.clear)
+print(c.red + &#39;&#39;&#39;
+Welcome to the magic eight ball!
+Enter your question below.
+&#39;&#39;&#39; + c.reset)
+
+answers = [
+    &#39;It is certain.&#39;,
+    &#39;It is decidedly so.&#39;,
+    &#39;Without a doubt.&#39;,
+    &#39;Yes definitely.&#39;,
+    &#39;You may rely on it.&#39;,
+    &#39;As I see it, yes.&#39;,
+    &#39;Most likely.&#39;,
+    &#39;Outlook good.&#39;,
+    &#39;Yes.&#39;,
+    &#39;Signs point to yes.&#39;,
+    &#39;Reply hazy try again.&#39;,
+    &#39;Ask again later.&#39;,
+    &#39;Better not tell you now.&#39;,
+    &#39;Cannot predict now.&#39;,
+    &#39;Concentrate and ask again.&#39;,
+    &quot;Don&#39;t count on it.&quot;,
+    &#39;My reply is no.&#39;,
+    &#39;My sources say no.&#39;,
+    &#39;Outlook not so good.&#39;,
+    &#39;Very doubtful.&#39;
+]
+
+while True:
+    question = input(&#39;--&gt; &#39; + c.yellow)
+    answer = random.choice(answers)
+    print(c.random_color() + answer + c.reset)
+</code></pre>
+<p>The rest is just polish. </p>
+<p>Let&#39;s move <code>import random</code> to the top now where it belongs.</p>
+<p>Plus we want to have conversations with our magic eight ball when we are
+<em>really</em> lonely. ;) Can you think of how you would make this program
+repeat answering questions forrreevvaaa? You&#39;ve done it before. Yep,
+you got it, add an infinite loop with <code>while True:</code>. Don&#39;t forget to
+tab/indent your lines over so they are included in the loop block and
+don&#39;t put your <code>answers</code> list inside the loop. You don&#39;t need to waste the
+computer&#39;s time redefining the list every time because it isn&#39;t changing.</p>
+<p>What else, humm? Ok, let&#39;s have at least 20 answers like the actual magic
+eight ball. You can make your own 20 answers unique. And no one says you
+have to stop with just 20. Go crazy. PG would be awesome, but we don&#39;t
+judge here. Just please consider your audience.</p>
+<p>Annnnnd, because we are lazy, let&#39;s take out all the color codes from
+the answers list and use a <code>c.random_color()</code> instead.</p>
+<p>If you got stuck in the <code>eightball</code> program and can&#39;t get out it is because
+you forgot about <code>&lt;control&gt;-c</code> that you learned in <a href="../nyan"><code>nyan</code></a>.</p>
+<h2>eightball07</h2><pre><code class="language-python">#!/usr/bin/env python3
+
+import random
+import colors as c
+
+print(c.clear)
+print(c.red + &#39;&#39;&#39;
+Welcome to the magic eight ball!
+Enter your question below.
+&#39;&#39;&#39; + c.reset)
+
+answers = [
+    &#39;It is certain.&#39;,
+    &#39;It is decidedly so.&#39;,
+    &#39;Without a doubt.&#39;,
+    &#39;Yes definitely.&#39;,
+    &#39;You may rely on it.&#39;,
+    &#39;As I see it, yes.&#39;,
+    &#39;Most likely.&#39;,
+    &#39;Outlook good.&#39;,
+    &#39;Yes.&#39;,
+    &#39;Signs point to yes.&#39;,
+    &#39;Reply hazy try again.&#39;,
+    &#39;Ask again later.&#39;,
+    &#39;Better not tell you now.&#39;,
+    &#39;Cannot predict now.&#39;,
+    &#39;Concentrate and ask again.&#39;,
+    &quot;Don&#39;t count on it.&quot;,
+    &#39;My reply is no.&#39;,
+    &#39;My sources say no.&#39;,
+    &#39;Outlook not so good.&#39;,
+    &#39;Very doubtful.&#39;
+]
+
+while True:
+    question = input(&#39;--&gt; &#39; + c.yellow)
+    if question == &#39;bye&#39;:
+        print(&#39;Goodbye&#39;)
+        exit()
+    answer = random.choice(answers)
+    print(c.random_color() + answer + c.reset)
+</code></pre>
+<p>But who really wants to have to <code>&lt;control&gt;-c</code> to interrupt the
+conversation with the magic eight ball, which you have to admit is
+rather rude. Let&#39;s add a proper goodbye. </p>
+<p>You will likely remember the <code>if</code> statement from
+<a href="http://codecombat.com">CodeCombat</a>. If not here it is. Like <code>while</code>
+the <code>if</code> statement tests if a question (called a <em>condition</em>) is <code>True</code>
+or <code>False. There are a whole bunch of different questions and types of
+questions you can ask that we will get into more later. For now we only
+have one question ask: did the user type ‘bye’ or ‘goodbye’? To put the
+question in a from Python understands we have to use two equals signs</code>==<code>together (because a single equals sign is used for assigning variables). So
+the question we want to ask is</code>if question == &#39;bye&#39;<code>and we add a block after
+it to tell Python what to do if the answer to that question is</code>True<code>. We
+add another new function</code>exit()` to the block so that the program stops
+politely if the user enters ‘bye’ as their question (instead of an actual
+question).</p>
+<h2>eightball08</h2><pre><code class="language-python">#!/usr/bin/env python3
+
+import random
+import colors as c
+
+print(c.clear)
+print(c.red + &#39;&#39;&#39;
+Welcome to the magic eight ball!
+Enter your question below.
+&#39;&#39;&#39; + c.reset)
+
+answers = [
+    &#39;It is certain.&#39;,
+    &#39;It is decidedly so.&#39;,
+    &#39;Without a doubt.&#39;,
+    &#39;Yes definitely.&#39;,
+    &#39;You may rely on it.&#39;,
+    &#39;As I see it, yes.&#39;,
+    &#39;Most likely.&#39;,
+    &#39;Outlook good.&#39;,
+    &#39;Yes.&#39;,
+    &#39;Signs point to yes.&#39;,
+    &#39;Reply hazy try again.&#39;,
+    &#39;Ask again later.&#39;,
+    &#39;Better not tell you now.&#39;,
+    &#39;Cannot predict now.&#39;,
+    &#39;Concentrate and ask again.&#39;,
+    &quot;Don&#39;t count on it.&quot;,
+    &#39;My reply is no.&#39;,
+    &#39;My sources say no.&#39;,
+    &#39;Outlook not so good.&#39;,
+    &#39;Very doubtful.&#39;
+]
+
+while True:
+    question = input(&#39;--&gt; &#39; + c.yellow)
+    if question == &#39;bye&#39;:
+        print(&#39;Goodbye&#39;)
+        exit()
+    elif question == &#39;goodbye&#39;:
+        print(&#39;Goodbye&#39;)
+        exit()
+    answer = random.choice(answers)
+    print(c.random_color() + answer + c.reset)
+</code></pre>
+<p>We only handled if the user types ‘bye’ before but what if the user
+enters ‘goodbye’ instead? The <code>if</code> statement actually has three parts:
+<code>if</code>, <code>elif</code>, and <code>else</code>. We can handle ‘goodbye’ with an <code>elif
+question == &#39;goodbye&#39;</code> block. Like before we need to include the code we
+want, which happens to be identical to the code from the <code>if question ==
+&#39;bye&#39;</code> block.</p>
+<p>Yes, the answer to your question is there is a better way, a lazier way.</p>
+<h2>eightball09</h2><pre><code class="language-python">#!/usr/bin/env python3
+
+import random
+import colors as c
+
+print(c.clear)
+print(c.red + &#39;&#39;&#39;
+Welcome to the magic eight ball!
+Enter your question below.
+&#39;&#39;&#39; + c.reset)
+
+answers = [
+    &#39;It is certain.&#39;,
+    &#39;It is decidedly so.&#39;,
+    &#39;Without a doubt.&#39;,
+    &#39;Yes definitely.&#39;,
+    &#39;You may rely on it.&#39;,
+    &#39;As I see it, yes.&#39;,
+    &#39;Most likely.&#39;,
+    &#39;Outlook good.&#39;,
+    &#39;Yes.&#39;,
+    &#39;Signs point to yes.&#39;,
+    &#39;Reply hazy try again.&#39;,
+    &#39;Ask again later.&#39;,
+    &#39;Better not tell you now.&#39;,
+    &#39;Cannot predict now.&#39;,
+    &#39;Concentrate and ask again.&#39;,
+    &quot;Don&#39;t count on it.&quot;,
+    &#39;My reply is no.&#39;,
+    &#39;My sources say no.&#39;,
+    &#39;Outlook not so good.&#39;,
+    &#39;Very doubtful.&#39;
+]
+
+while True:
+    question = input(&#39;--&gt; &#39; + c.yellow)
+    if question == &#39;bye&#39; or question == &#39;goodbye&#39;:
+        print(&#39;Goodbye&#39;)
+        exit()
+    answer = random.choice(answers)
+    print(c.random_color() + answer + c.reset)
+</code></pre>
+<p>Here&#39;s a new thing: the keywords <code>or</code> and <code>and</code> also. Just like in
+English these allow us to combine two questions into one in our <code>if</code>
+or <code>elif</code> condition checks. Combining two questions into one creates
+what&#39;s called a <em>compound condition check</em>, which is coder-speak for,
+well, more than one question at a time. All we really need to remember is
+that unlike English we have to include the full question (<em>condition</em>)
+for each question instead of chopping off the subject of the question
+like we often do when speaking. For example, in English we say, “if
+question is ‘bye’ or ‘goodbye’” when we mean, “if question
+is ‘bye’ or question is ‘goodbye’”. <strong>Full questions are
+important. Leaving off the extra <code>question ==</code> in the second question
+will not give you an error, but also not do what you think.</strong></p>
+<pre><code class="language-python">if question == &#39;bye&#39; or &#39;goodbye&#39;:               # &lt;--- WRONG
+    print(&#39;always prints because never false&#39;)
+</code></pre>
+<p>The reason for this is a little complicated and will be more
+understandable later. For now just know that the word &#39;goodbye&#39; by
+itself is seen by Python as <code>True</code>. It turns out an empty string is
+<code>False</code>. This is very useful later on.</p>
+<h2>eightball10</h2><pre><code class="language-python">#!/usr/bin/env python3
+
+import random
+import colors as c
+
+print(c.clear)
+print(c.red + &#39;&#39;&#39;
+Welcome to the magic eight ball!
+Enter your question below.
+&#39;&#39;&#39; + c.reset)
+
+answers = [
+    &#39;It is certain.&#39;,
+    &#39;It is decidedly so.&#39;,
+    &#39;Without a doubt.&#39;,
+    &#39;Yes definitely.&#39;,
+    &#39;You may rely on it.&#39;,
+    &#39;As I see it, yes.&#39;,
+    &#39;Most likely.&#39;,
+    &#39;Outlook good.&#39;,
+    &#39;Yes.&#39;,
+    &#39;Signs point to yes.&#39;,
+    &#39;Reply hazy try again.&#39;,
+    &#39;Ask again later.&#39;,
+    &#39;Better not tell you now.&#39;,
+    &#39;Cannot predict now.&#39;,
+    &#39;Concentrate and ask again.&#39;,
+    &quot;Don&#39;t count on it.&quot;,
+    &#39;My reply is no.&#39;,
+    &#39;My sources say no.&#39;,
+    &#39;Outlook not so good.&#39;,
+    &#39;Very doubtful.&#39;
+]
+
+while True:
+    question = input(&#39;--&gt; &#39; + c.yellow)
+    if question == &#39;bye&#39; or question == &#39;goodbye&#39;:
+        print(&#39;Goodbye&#39;)
+        exit()
+    elif &#39;love&#39; in question:
+        print(&#39;Do I look like Cupid to you?&#39;)
+        continue
+    elif &#39;die&#39; in question or &#39;death&#39; in question or &#39;dead&#39; in question:
+        print(&quot;Such grim questions don&#39;t deserve an answer, yet.&quot;)
+        continue
+    answer = random.choice(answers)
+    print(c.random_color() + answer + c.reset)
+</code></pre>
+<p>We may have removed the <code>elif</code> for ‘bye’ and ‘goodbye’ but
+what if we add it back to add an <em>Easter Egg</em> of sorts, you know, those
+things coders put in games that are kind of secrets. What if we don&#39;t
+want users asking about love or death? We&#39;ll add two more <code>elif</code>s. The
+keyword <code>continue</code> makes the <code>while</code> continue without finishing all the
+rest of the code in the loop block.</p>
+<h2>eightball11</h2><pre><code class="language-python">#!/usr/bin/env python3
+
+import random
+import colors as c
+
+print(c.clear)
+print(c.red + &#39;&#39;&#39;
+Welcome to the magic eight ball!
+Enter your question below.
+&#39;&#39;&#39; + c.reset)
+
+answers = [
+    &#39;It is certain.&#39;,
+    &#39;It is decidedly so.&#39;,
+    &#39;Without a doubt.&#39;,
+    &#39;Yes definitely.&#39;,
+    &#39;You may rely on it.&#39;,
+    &#39;As I see it, yes.&#39;,
+    &#39;Most likely.&#39;,
+    &#39;Outlook good.&#39;,
+    &#39;Yes.&#39;,
+    &#39;Signs point to yes.&#39;,
+    &#39;Reply hazy try again.&#39;,
+    &#39;Ask again later.&#39;,
+    &#39;Better not tell you now.&#39;,
+    &#39;Cannot predict now.&#39;,
+    &#39;Concentrate and ask again.&#39;,
+    &quot;Don&#39;t count on it.&quot;,
+    &#39;My reply is no.&#39;,
+    &#39;My sources say no.&#39;,
+    &#39;Outlook not so good.&#39;,
+    &#39;Very doubtful.&#39;
+]
+
+while True:
+    question = input(&#39;--&gt; &#39; + c.yellow)
+    if question == &#39;bye&#39; or question == &#39;goodbye&#39;:
+        print(&#39;Goodbye&#39;)
+        exit()
+    elif &#39;love&#39; in question:
+        print(&#39;Do I look like Cupid to you?&#39;)
+    elif &#39;die&#39; in question or &#39;death&#39; in question or &#39;dead&#39; in question:
+        print(&quot;Such grim questions don&#39;t deserve an answer, yet.&quot;)
+    else:
+        answer = random.choice(answers)
+        print(c.random_color() + answer + c.reset)
+</code></pre>
+<p>Perhaps a better way to save us from the <code>continue</code>s is to simply add
+the third part of the <code>if/elif/else</code> trio. We add <code>else:</code> (don&#39;t forget
+the colon) and put the code we want to run inside the <code>else:</code> block by
+indenting it over. Now that code will only run if and only if the <code>if</code>
+question isn&#39;t true and neither of the <code>elif</code>s are either.</p>
+<p>You may be wondering why not make a bunch of <code>if</code> statements instead of
+using the <code>elif</code> statement at all. The short answer is that it is more
+correct and faster. If we only used <code>if</code> statements every one would be
+checked even if the first one was true. Using <code>elif</code> ensures that as
+soon as one of the conditions is true that the rest of the <code>elif</code>s aren&#39;t
+even checked and the code skipped. The first <code>True</code> wins so to speak. If
+none of the <code>if</code> and <code>elif</code>s are <code>True</code> then <code>else</code> wins.</p>
+<h2>More ...</h2><p>That&#39;s about it. Have fun with this one by adding different responses and
+see if you can even add a multi-line ASCII Art answer.</p>
+</section><section id="bridge"><ul>
+<li>week1: 1-7</li>
+<li>week2: 8+</li>
+</ul>
+</section><section id="cli"><h1>Command Line Utility Module</h1><p>DRY</p>
+</section><section id="mtable"><h1>Multiplication Tables</h1><p>mhmmmm</p>
+</section><section id="madforms"><p>kdffdf</p>
+</section><section id="bincount"><h1>10 Types of People</h1><p>There are 10 types of people in the world
+those that understand binary and those that do not.</p>
+</section><section id="quiz"><p>lesson one: 01-06
+lesson two: 07-13 + own quiz
+bonus: 13+</p>
+</section><section id="review"><h1>Remember?</h1><p>good</p>
+</section><script>/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript+python&plugins=line-highlight+line-numbers */ var _self="undefined"!=typeof window?window:"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?self:{},Prism=function(){var e=/\blang(?:uage)?-(?!\*)(\w+)\b/i,t=_self.Prism={util:{encode:function(e){return e instanceof n?new n(e.type,t.util.encode(e.content),e.alias):"Array"===t.util.type(e)?e.map(t.util.encode):e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\u00a0/g," ")},type:function(e){return Object.prototype.toString.call(e).match(/\[object (\w+)\]/)[1]},clone:function(e){var n=t.util.type(e);switch(n){case"Object":var a={};for(var r in e)e.hasOwnProperty(r)&&(a[r]=t.util.clone(e[r]));return a;case"Array":return e.map&&e.map(function(e){return t.util.clone(e)})}return e}},languages:{extend:function(e,n){var a=t.util.clone(t.languages[e]);for(var r in n)a[r]=n[r];return a},insertBefore:function(e,n,a,r){r=r||t.languages;var i=r[e];if(2==arguments.length){a=arguments[1];for(var l in a)a.hasOwnProperty(l)&&(i[l]=a[l]);return i}var o={};for(var s in i)if(i.hasOwnProperty(s)){if(s==n)for(var l in a)a.hasOwnProperty(l)&&(o[l]=a[l]);o[s]=i[s]}return t.languages.DFS(t.languages,function(t,n){n===r[e]&&t!=e&&(this[t]=o)}),r[e]=o},DFS:function(e,n,a){for(var r in e)e.hasOwnProperty(r)&&(n.call(e,r,e[r],a||r),"Object"===t.util.type(e[r])?t.languages.DFS(e[r],n):"Array"===t.util.type(e[r])&&t.languages.DFS(e[r],n,r))}},highlightAll:function(e,n){for(var a,r=document.querySelectorAll('code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'),i=0;a=r[i++];)t.highlightElement(a,e===!0,n)},highlightElement:function(a,r,i){for(var l,o,s=a;s&&!e.test(s.className);)s=s.parentNode;s&&(l=(s.className.match(e)||[,""])[1],o=t.languages[l]),a.className=a.className.replace(e,"").replace(/\s+/g," ")+" language-"+l,s=a.parentNode,/pre/i.test(s.nodeName)&&(s.className=s.className.replace(e,"").replace(/\s+/g," ")+" language-"+l);var u=a.textContent,g={element:a,language:l,grammar:o,code:u};if(!u||!o)return t.hooks.run("complete",g),void 0;if(t.hooks.run("before-highlight",g),r&&_self.Worker){var c=new Worker(t.filename);c.onmessage=function(e){g.highlightedCode=n.stringify(JSON.parse(e.data),l),t.hooks.run("before-insert",g),g.element.innerHTML=g.highlightedCode,i&&i.call(g.element),t.hooks.run("after-highlight",g),t.hooks.run("complete",g)},c.postMessage(JSON.stringify({language:g.language,code:g.code}))}else g.highlightedCode=t.highlight(g.code,g.grammar,g.language),t.hooks.run("before-insert",g),g.element.innerHTML=g.highlightedCode,i&&i.call(a),t.hooks.run("after-highlight",g),t.hooks.run("complete",g)},highlight:function(e,a,r){var i=t.tokenize(e,a);return n.stringify(t.util.encode(i),r)},tokenize:function(e,n){var a=t.Token,r=[e],i=n.rest;if(i){for(var l in i)n[l]=i[l];delete n.rest}e:for(var l in n)if(n.hasOwnProperty(l)&&n[l]){var o=n[l];o="Array"===t.util.type(o)?o:[o];for(var s=0;s<o.length;++s){var u=o[s],g=u.inside,c=!!u.lookbehind,f=0,h=u.alias;u=u.pattern||u;for(var p=0;p<r.length;p++){var d=r[p];if(r.length>e.length)break e;if(!(d instanceof a)){u.lastIndex=0;var m=u.exec(d);if(m){c&&(f=m[1].length);var y=m.index-1+f,m=m[0].slice(f),v=m.length,k=y+v,b=d.slice(0,y+1),w=d.slice(k+1),N=[p,1];b&&N.push(b);var O=new a(l,g?t.tokenize(m,g):m,h);N.push(O),w&&N.push(w),Array.prototype.splice.apply(r,N)}}}}}return r},hooks:{all:{},add:function(e,n){var a=t.hooks.all;a[e]=a[e]||[],a[e].push(n)},run:function(e,n){var a=t.hooks.all[e];if(a&&a.length)for(var r,i=0;r=a[i++];)r(n)}}},n=t.Token=function(e,t,n){this.type=e,this.content=t,this.alias=n};if(n.stringify=function(e,a,r){if("string"==typeof e)return e;if("Array"===t.util.type(e))return e.map(function(t){return n.stringify(t,a,e)}).join("");var i={type:e.type,content:n.stringify(e.content,a,r),tag:"span",classes:["token",e.type],attributes:{},language:a,parent:r};if("comment"==i.type&&(i.attributes.spellcheck="true"),e.alias){var l="Array"===t.util.type(e.alias)?e.alias:[e.alias];Array.prototype.push.apply(i.classes,l)}t.hooks.run("wrap",i);var o="";for(var s in i.attributes)o+=s+'="'+(i.attributes[s]||"")+'"';return"<"+i.tag+' class="'+i.classes.join(" ")+'" '+o+">"+i.content+"</"+i.tag+">"},!_self.document)return _self.addEventListener?(_self.addEventListener("message",function(e){var n=JSON.parse(e.data),a=n.language,r=n.code;_self.postMessage(JSON.stringify(t.util.encode(t.tokenize(r,t.languages[a])))),_self.close()},!1),_self.Prism):_self.Prism;var a=document.getElementsByTagName("script");return a=a[a.length-1],a&&(t.filename=a.src,document.addEventListener&&!a.hasAttribute("data-manual")&&document.addEventListener("DOMContentLoaded",t.highlightAll)),_self.Prism}();"undefined"!=typeof module&&module.exports&&(module.exports=Prism);; Prism.languages.markup={comment:/<!--[\w\W]*?-->/,prolog:/<\?[\w\W]+?\?>/,doctype:/<!DOCTYPE[\w\W]+?>/,cdata:/<!\[CDATA\[[\w\W]*?]]>/i,tag:{pattern:/<\/?[^\s>\/]+(?:\s+[^\s>\/=]+(?:=(?:("|')(?:\\\1|\\?(?!\1)[\w\W])*\1|[^\s'">=]+))?)*\s*\/?>/i,inside:{tag:{pattern:/^<\/?[^\s>\/]+/i,inside:{punctuation:/^<\/?/,namespace:/^[^\s>\/:]+:/}},"attr-value":{pattern:/=(?:('|")[\w\W]*?(\1)|[^\s>]+)/i,inside:{punctuation:/[=>"']/}},punctuation:/\/?>/,"attr-name":{pattern:/[^\s>\/]+/,inside:{namespace:/^[^\s>\/:]+:/}}}},entity:/&#?[\da-z]{1,8};/i},Prism.hooks.add("wrap",function(t){"entity"===t.type&&(t.attributes.title=t.content.replace(/&amp;/,"&"))});; Prism.languages.css={comment:/\/\*[\w\W]*?\*\//,atrule:{pattern:/@[\w-]+?.*?(;|(?=\s*\{))/i,inside:{rule:/@[\w-]+/}},url:/url\((?:(["'])(\\(?:\r\n|[\w\W])|(?!\1)[^\\\r\n])*\1|.*?)\)/i,selector:/[^\{\}\s][^\{\};]*?(?=\s*\{)/,string:/("|')(\\(?:\r\n|[\w\W])|(?!\1)[^\\\r\n])*\1/,property:/(\b|\B)[\w-]+(?=\s*:)/i,important:/\B!important\b/i,"function":/[-a-z0-9]+(?=\()/i,punctuation:/[(){};:]/},Prism.languages.css.atrule.inside.rest=Prism.util.clone(Prism.languages.css),Prism.languages.markup&&(Prism.languages.insertBefore("markup","tag",{style:{pattern:/<style[\w\W]*?>[\w\W]*?<\/style>/i,inside:{tag:{pattern:/<style[\w\W]*?>|<\/style>/i,inside:Prism.languages.markup.tag.inside},rest:Prism.languages.css},alias:"language-css"}}),Prism.languages.insertBefore("inside","attr-value",{"style-attr":{pattern:/\s*style=("|').*?\1/i,inside:{"attr-name":{pattern:/^\s*style/i,inside:Prism.languages.markup.tag.inside},punctuation:/^\s*=\s*['"]|['"]\s*$/,"attr-value":{pattern:/.+/i,inside:Prism.languages.css}},alias:"language-css"}},Prism.languages.markup.tag));; Prism.languages.clike={comment:[{pattern:/(^|[^\\])\/\*[\w\W]*?\*\//,lookbehind:!0},{pattern:/(^|[^\\:])\/\/.*/,lookbehind:!0}],string:/("|')(\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,"class-name":{pattern:/((?:(?:class|interface|extends|implements|trait|instanceof|new)\s+)|(?:catch\s+\())[a-z0-9_\.\\]+/i,lookbehind:!0,inside:{punctuation:/(\.|\\)/}},keyword:/\b(if|else|while|do|for|return|in|instanceof|function|new|try|throw|catch|finally|null|break|continue)\b/,"boolean":/\b(true|false)\b/,"function":/[a-z0-9_]+(?=\()/i,number:/\b-?(0x[\dA-Fa-f]+|\d*\.?\d+([Ee]-?\d+)?)\b/,operator:/[-+]{1,2}|!|<=?|>=?|={1,3}|&{1,2}|\|?\||\?|\*|\/|~|\^|%/,punctuation:/[{}[\];(),.:]/};; Prism.languages.javascript=Prism.languages.extend("clike",{keyword:/\b(as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|false|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|true|try|typeof|var|void|while|with|yield)\b/,number:/\b-?(0x[\dA-Fa-f]+|0b[01]+|0o[0-7]+|\d*\.?\d+([Ee][+-]?\d+)?|NaN|Infinity)\b/,"function":/(?!\d)[a-z0-9_$]+(?=\()/i}),Prism.languages.insertBefore("javascript","keyword",{regex:{pattern:/(^|[^/])\/(?!\/)(\[.+?]|\\.|[^/\\\r\n])+\/[gimyu]{0,5}(?=\s*($|[\r\n,.;})]))/,lookbehind:!0}}),Prism.languages.insertBefore("javascript","class-name",{"template-string":{pattern:/`(?:\\`|\\?[^`])*`/,inside:{interpolation:{pattern:/\$\{[^}]+\}/,inside:{"interpolation-punctuation":{pattern:/^\$\{|\}$/,alias:"punctuation"},rest:Prism.languages.javascript}},string:/[\s\S]+/}}}),Prism.languages.markup&&Prism.languages.insertBefore("markup","tag",{script:{pattern:/<script[\w\W]*?>[\w\W]*?<\/script>/i,inside:{tag:{pattern:/<script[\w\W]*?>|<\/script>/i,inside:Prism.languages.markup.tag.inside},rest:Prism.languages.javascript},alias:"language-javascript"}});; Prism.languages.python={comment:{pattern:/(^|[^\\])#.*?(\r?\n|$)/,lookbehind:!0},string:/"""[\s\S]+?"""|'''[\s\S]+?'''|("|')(\\?.)*?\1/,"function":{pattern:/((^|\s)def[ \t]+)([a-zA-Z_][a-zA-Z0-9_]*(?=\())/g,lookbehind:!0},"class-name":{pattern:/(class\s+)[a-z0-9_]+/i,lookbehind:!0},keyword:/\b(as|assert|async|await|break|class|continue|def|del|elif|else|except|exec|finally|for|from|global|if|import|in|is|lambda|pass|print|raise|return|try|while|with|yield)\b/,"boolean":/\b(True|False)\b/,number:/\b-?(0[bo])?(?:(\d|0x[a-f])[\da-f]*\.?\d*|\.\d+)(?:e[+-]?\d+)?j?\b/i,operator:/[-+]|<=?|>=?|!|={1,2}|&{1,2}|\|?\||\?|\*|\/|@|~|\^|%|\b(or|and|not)\b/,punctuation:/[{}[\];(),.:]/};; !function(){function e(e,t){return Array.prototype.slice.call((t||document).querySelectorAll(e))}function t(e,t){return t=" "+t+" ",(" "+e.className+" ").replace(/[\n\t]/g," ").indexOf(t)>-1}function n(e,n,i){for(var a,o=n.replace(/\s+/g,"").split(","),l=+e.getAttribute("data-line-offset")||0,d=r()?parseInt:parseFloat,c=d(getComputedStyle(e).lineHeight),s=0;a=o[s++];){a=a.split("-");var u=+a[0],h=+a[1]||u,m=document.createElement("div");m.textContent=Array(h-u+2).join(" \n"),m.className=(i||"")+" line-highlight",t(e,"line-numbers")||(m.setAttribute("data-start",u),h>u&&m.setAttribute("data-end",h)),m.style.top=(u-l-1)*c+"px",t(e,"line-numbers")?e.appendChild(m):(e.querySelector("code")||e).appendChild(m)}}function i(){var t=location.hash.slice(1);e(".temporary.line-highlight").forEach(function(e){e.parentNode.removeChild(e)});var i=(t.match(/\.([\d,-]+)$/)||[,""])[1];if(i&&!document.getElementById(t)){var r=t.slice(0,t.lastIndexOf(".")),a=document.getElementById(r);a&&(a.hasAttribute("data-line")||a.setAttribute("data-line",""),n(a,i,"temporary "),document.querySelector(".temporary.line-highlight").scrollIntoView())}}if(window.Prism){var r=function(){var e;return function(){if("undefined"==typeof e){var t=document.createElement("div");t.style.fontSize="13px",t.style.lineHeight="1.5",t.style.padding=0,t.style.border=0,t.innerHTML="&nbsp;<br />&nbsp;",document.body.appendChild(t),e=38===t.offsetHeight,document.body.removeChild(t)}return e}}(),a=0;Prism.hooks.add("complete",function(t){var r=t.element.parentNode,o=r&&r.getAttribute("data-line");r&&o&&/pre/i.test(r.nodeName)&&(clearTimeout(a),e(".line-highlight",r).forEach(function(e){e.parentNode.removeChild(e)}),n(r,o),a=setTimeout(i,1))}),addEventListener("hashchange",i)}}();; Prism.hooks.add("complete",function(e){if(e.code){var t=e.element.parentNode,s=/\s*\bline-numbers\b\s*/;if(t&&/pre/i.test(t.nodeName)&&(s.test(t.className)||s.test(e.element.className))&&!e.element.querySelector(".line-numbers-rows")){s.test(e.element.className)&&(e.element.className=e.element.className.replace(s,"")),s.test(t.className)||(t.className+=" line-numbers");var a,n=e.code.match(/\n(?!$)/g).length+1,l=new Array(n+1);l=l.join("<span></span>"),a=document.createElement("span"),a.className="line-numbers-rows",a.innerHTML=l,t.hasAttribute("data-start")&&(t.style.counterReset="linenumber "+(parseInt(t.getAttribute("data-start"),10)-1)),e.element.appendChild(a)}}});;</script><style>code[class*="language-"],pre[class*="language-"]{font-family:Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;font-size:14px;line-height:1.375;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;background:#002b36;color:#93a1a1}pre[class*="language-"]::-moz-selection,pre[class*="language-"] ::-moz-selection,code[class*="language-"]::-moz-selection,code[class*="language-"] ::-moz-selection{text-shadow:none;background:#839496}pre[class*="language-"]::selection,pre[class*="language-"] ::selection,code[class*="language-"]::selection,code[class*="language-"] ::selection{text-shadow:none;background:#839496}pre[class*="language-"]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*="language-"]{padding:.1em;border-radius:.3em}.token.comment,.token.prolog,.token.doctype,.token.cdata{color:#657b83}.token.punctuation{color:#93a1a1}.token.namespace{opacity:.7}.token.operator,.token.boolean,.token.number{color:#cb4b16}.token.property{color:#b58900}.token.tag{color:#268bd2}.token.string{color:#2aa198}.token.selector{color:#6c71c4}.token.attr-name{color:#cb4b16}.token.entity,.token.url,.language-css .token.string,.style .token.string{color:#2aa198}.token.attr-value,.token.keyword,.token.control,.token.directive,.token.unit{color:#859900}.token.statement,.token.regex,.token.atrule{color:#2aa198}.token.placeholder,.token.variable{color:#268bd2}.token.deleted{text-decoration:line-through}.token.inserted{border-bottom:1px dotted #fdf6e3;text-decoration:none}.token.italic{font-style:italic}.token.important,.token.bold{font-weight:bold}.token.important{color:#dc322f}.token.entity{cursor:help}pre>code.highlight{outline:0.4em solid #dc322f;outline-offset:.4em}</style></body>

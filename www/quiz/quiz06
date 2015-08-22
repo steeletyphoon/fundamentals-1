@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+
+import colors as c
+from cli import ask
+
+print(c.clear + c.magenta + '''
+Welcome to the Pink Fluffy Unicorns quiz.
+''' + c.reset)
+
+def q1():
+    answer = ask("What color are the unicorns?")
+    if answer == "pink":
+        print("And what a lovely color it is.")
+        return True
+    print("That is incorrect.")
+    return False
+
+def q2():
+    answer = ask("What are the unicorns dancing on?")
+    if answer.startswith("rainbow"):
+        print("But isn't that physically impossible? Oh well.")
+        return True
+    print("Nope")
+    return False
+
+def q3():
+    answer = ask("Use one word to describe the texture of their magical fur?")
+    if answer.startswith("smile"):
+        print(":)")
+        return True
+    print(":<")
+    return False
+
+#----------------
+
+q1()
+q2()
+q3()

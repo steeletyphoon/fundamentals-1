@@ -1,0 +1,58 @@
+#!/usr/bin/env python3
+
+import random
+import colors as c
+
+print(c.clear)
+print(c.red + '''
+Welcome to the magic eight ball!
+Enter your question below.
+''' + c.reset)
+
+answers = [
+    'It is certain.',
+    'It is decidedly so.',
+    'Without a doubt.',
+    'Yes definitely.',
+    'You may rely on it.',
+    'As I see it, yes.',
+    'Most likely.',
+    'Outlook good.',
+    'Yes.',
+    'Signs point to yes.',
+    'Reply hazy try again.',
+    'Ask again later.',
+    'Better not tell you now.',
+    'Cannot predict now.',
+    'Concentrate and ask again.',
+    "Don't count on it.",
+    'My reply is no.',
+    'My sources say no.',
+    'Outlook not so good.',
+    'Very doubtful.'
+]
+
+def bye():
+    print()
+    print('Fine. Bye.')
+    exit()
+
+def handle_question():
+    question = input('--> ' + c.yellow)
+    if question == 'bye' or question == 'goodbye':
+        bye()
+    elif 'love' in question:
+        print(c.random_color() + 'Do I look like Cupid to you?' + c.reset)
+    elif 'die' in question or 'death' in question or 'dead' in question:
+        print(c.random_color() + "Such grim questions don't deserve an answer, yet." + c.reset)
+    else:
+        answer = random.choice(answers)
+        print(c.random_color() + answer + c.reset)
+
+while True:
+    try:
+        handle_question()
+    except KeyboardInterrupt:
+        bye()
+    except EOFError:
+        print(c.reset)
