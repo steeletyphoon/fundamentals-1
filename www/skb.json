@@ -19,6 +19,7 @@
     {
       "name": "hello",
       "minutes": 40,
+      "steps": 7,
       "concepts": [
         "`vim`", "`chmod`", "shebang", "`#!`", "strings", "actions",
         "functions", "`print()`", "`import`", "colors", "solarized",
@@ -29,6 +30,7 @@
     {
       "name": "hi",
       "minutes": 30,
+      "steps": 6,
       "concepts": [
         "`input()`", "variables", "assignment", "assignment operator", "`=`"
       ]
@@ -36,6 +38,7 @@
     {
       "name": "nyan",
       "minutes": 40,
+      "steps": 7,
       "concepts": [
         "code blocks", "booleans", "`while`", "inifinite loops", "booleans",
         "`True`", "`False`", "signals", "interrupt", "`<cntl>-c`", 
@@ -46,6 +49,7 @@
     {
       "name": "waffles",
       "minutes": 70,
+      "steps": 7,
       "concepts": [
         "conditions", "equality operator", "`if`","`else`","`==`",
         "nested blocks", "nesting", "exceptions", "`try`",
@@ -55,6 +59,7 @@
     {
       "name": "dice",
       "minutes": 70,
+      "steps": 7,
       "concepts": [
         "lists", "loops", "`for`", "`in`", "`range()`", "implicit",
         "explicit", "Zen of Python", "`import this`",
@@ -65,6 +70,7 @@
     {
       "name": "badgers",
       "minutes": 70,
+      "steps": 7,
       "concepts": [
         "data types", "numbers", "casting", "`int()`", "`str()`",
         "scope", "local", "global", "`import time`", "`time.sleep()`"
@@ -73,6 +79,7 @@
     {
       "name": "eightball",
       "minutes": 70,
+      "steps": 7,
       "concepts": [
         "`elif`", "`not`", "`!=`", "inequality operator", "`in`",
         "`string.strip()`", "`string.lower()`"
@@ -81,6 +88,7 @@
     {
       "name": "bridge",
       "minutes": 140,
+      "steps": 7,
       "concepts": [
         "compound conditions","`or`","`and`", "logic bugs",
         "functions", "procedures", "`def`", "`return`"
@@ -89,6 +97,7 @@
     {
       "name": "cli",
       "minutes": 70,
+      "steps": 7,
       "concepts": [
         "basic modules", "refactoring", "reuse", "docstrings", "`'''`", 
         "`if __name__ == '__main__':`", "basic unit testing"
@@ -97,6 +106,7 @@
     {
       "name": "mtable",
       "minutes": 70,
+      "steps": 7,
       "concepts": [
         "math operators", "`*`", "command-line arguments", "`import sys`",
         "`sys.argv`", "`len(list)`"
@@ -105,15 +115,17 @@
     {
       "name": "madforms",
       "minutes": 140,
+      "steps": 7,
       "concepts": [
         "dictionaries", "JSON", "web APIs", "`string.format(**dict)`",
-        "`string.splitlines()`", "string.rstrip()",
+        "`string.splitlines()`", "`string.rstrip()`",
         "format field replacement"
       ]
     },
     {
       "name": "bincount", 
       "minutes": 70,
+      "steps": 7,
       "concepts": [
         "decimal", "base 10", "binary", "base 2", "hexidecimal", "base 16",
         "format number conversion", "format field padding", "machine code"
@@ -122,6 +134,7 @@
     {
       "name": "quiz", 
       "minutes": 140,
+      "steps": 7,
       "concepts": [
         "first-class functions", "`import`", "`list.remove()`"
       ]
@@ -129,6 +142,7 @@
     {
       "name": "review",
       "minutes": 200,
+      "steps": 7,
       "concepts": [
         "learning code is like a foreign language", "needs constant practice"
       ]
