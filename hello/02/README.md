@@ -1,4 +1,4 @@
-## Chmod That SheBang
+## Don't Repeat Yourself
 
 ![](../img/dry.png)
 
