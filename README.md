@@ -63,28 +63,6 @@ subjects and programs this course should be repeated as often as needed
 until full mastery is demonstrated. Mastery is essential in programming
 before progressing.
 
-**Week 1:** [hello](/hello) - vim, `chmod`, `#!`, strings, functions, `print()`, `import colors`, `+`,`"`,`'`<br>
-**Week 1:** [hi](/hi) - `input()`, variables, assignment, operators, `=`<br>
-**Week 2:** [nyan](/nyan) - code blocks, booleans, `while`, `True/False`,`ctrl-c`, `'''`, `end=''`, ascii, `top`<br>
-**Week 3:** [waffles](/waffles) - conditions, `if/else`, `==`, nested blocks, exceptions, `try/except`, `exit()`<br>
-**Week 4:** [dice](/dice) - lists, loops, `for`, `range()`, implicit,`.append()`,`import random`,`.choice()`<br>
-**Week 5:** [badgers](/badgers) - numbers, casting, `int/str()`, nesting, scope, `import time`, `.sleep()`<br>
-**Week 6:** [eightball](/eightball) - `if/elif/else`, `not`, `!=`, `in`, `.strip()`, `.lower()`<br>
-**Week 7:** [bridge](/bridge) - compound conditions, `or`, `and`, logic bugs, functions, `def`, `return`<br>
-**Week 7:** [bridge](/bridge) - procedures<br>
-**Week 8:** [cli.py](/cli) - basic modules, refactoring, reuse, docstrings, `if
-__name__ == '__main__':`<br>
-**Week 9:** [mtable](/mtable) - math, `*` vs `x`, `for`,`range()`, arguments, `import sys`,`argv`,`len()`<br>
-**Week 10:** [madforms](/madforms) - dictionaries, JSON, web apis, `.format()`<br>
-**Week 11:** [madforms](/madforms) - `for`, `.splitlines()`, `.rstrip()`<br>
-**Week 12:** [bincount](/bincount) - decimal (base 10), binary (base 2), hexadecimal (base 16), `.format()`<br>
-**Week 13:** [quiz](/quiz) - first-class functions, modules, scope `import`<br>
-**Week 14:** [quiz](/quiz) - `$PYTHONPATH`, conditional `import`<br>
-**Week 15:** [review](/review) - hello, hi, nyan, waffles, dice, badgers,
-eightball<br>
-**Week 16:** [review](/review) - bridge, cli.py, mtable, madforms, bincount,
-quiz<br>
-
 # Resources and Requirements
 
 [![][logo]][scb] [![][cc0]][cc0link]
