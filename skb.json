@@ -35,7 +35,7 @@
     },
     {
       "name": "nyan",
-      "minutes": 30,
+      "minutes": 40,
       "concepts": [
         "code blocks", "booleans", "`while`", "inifinite loops", "booleans",
         "`True`", "`False`", "signals", "interrupt", "`<cntl>-c`", 
@@ -48,8 +48,8 @@
       "minutes": 70,
       "concepts": [
         "conditions", "equality operator", "`if`","`else`","`==`",
-        "nested blocks", "exceptions", "`try`", "`except`",
-        "`exit()`"
+        "nested blocks", "nesting", "exceptions", "`try`",
+        "`except`", "`exit()`"
       ]
     },
     {
@@ -88,7 +88,7 @@
     },
     {
       "name": "cli",
-      "minutes": 60,
+      "minutes": 70,
       "concepts": [
         "basic modules", "refactoring", "reuse", "docstrings", "`'''`", 
         "`if __name__ == '__main__':`", "basic unit testing"
@@ -96,7 +96,7 @@
     },
     {
       "name": "mtable",
-      "minutes": 40,
+      "minutes": 70,
       "concepts": [
         "math operators", "`*`", "command-line arguments", "`import sys`",
         "`sys.argv`", "`len(list)`"
@@ -113,7 +113,7 @@
     },
     {
       "name": "bincount", 
-      "minutes": 40,
+      "minutes": 70,
       "concepts": [
         "decimal", "base 10", "binary", "base 2", "hexidecimal", "base 16",
         "format number conversion", "format field padding", "machine code"
@@ -121,14 +121,14 @@
     },
     {
       "name": "quiz", 
-      "minutes": 70,
+      "minutes": 140,
       "concepts": [
         "first-class functions", "`import`", "`list.remove()`"
       ]
     },
     {
       "name": "review",
-      "minutes": 140,
+      "minutes": 200,
       "concepts": [
         "learning code is like a foreign language", "needs constant practice"
       ]

@@ -42,8 +42,12 @@ specific test frameworks.
 # Planning
 
 The pace of this course is set to what an average 8-12 year-old with
-typing skills can accomplish within 70 minutes of a 90 minute class. At
-this pace students this course takes about 24 hours to complete. This is
+typing skills can accomplish within 70 minutes of a 90 minute class. This
+pace ensures instructors are not rushed in presenting the material in
+fun, memorable ways and that students have plenty of time to master vim,
+the Linux command-line, and GitHub as they progress. At this pace the
+course takes about 24 hours to complete (which includes about 4 total
+hours of time for socializing, tardiness, and project time). This is
 usually broken down in one of the following ways:
 
 * 16 weeks of 90-minute classes (a semester)
@@ -74,9 +78,10 @@ be done with individual [Raspberry Pi][] computers, individual Linux
 real or virtual machines, or a remote virtual host such as Digital Ocean.
 
 GitHub accounts for each student are strongly recommended and the
-[`save`](https://github.com/skilstak/python-1/blob/master/bin/save)
-command can make commits easier.
+[`save`][save]
+command can make commits easier:
 
+[save]: https://github.com/skilstak/python-1/blob/master/bin/save
 [logo]: http://skilstak.com/images/skilstak-logo-bw-31.svg "SkilStak"
 [scb]: README-SKB.md
 [cc0]: http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg "CC0 Public Domain"

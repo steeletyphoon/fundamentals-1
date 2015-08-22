@@ -31,6 +31,8 @@ mixin _styles()
       text-decoration none
       &:hover
         text-decoration underline
+    #totalhours
+      color rgba(0,0,0,0.2)
     #lastmod
       a
         color rgba(0,0,0,0.2)
@@ -80,12 +82,16 @@ body
       Here are the major parts of the course with concepts introduced
       in each:
     ol
+      - var totalMin = 0
       for part in parts
+        - totalMin += part.minutes
         li.summary
           strong: a(href="#" + part.name) #{part.name} 
           span.mins (about #{part.minutes} minutes):
           .concepts
             +_concepts(part)
+    #totalhours= "Total Hours: " + Math.round(totalMin / 60)
+
   for part in parts
     section(id=part.name)
       != partial(part.name + "/README")
