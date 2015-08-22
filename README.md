@@ -45,10 +45,11 @@ The pace of this course is set to what an average 8-12 year-old with
 typing skills can accomplish within 70 minutes of a 90 minute class. This
 pace ensures instructors are not rushed in presenting the material in
 fun, memorable ways and that students have plenty of time to master vim,
-the Linux command-line, and GitHub as they progress. At this pace the
-course takes about 24 hours to complete (which includes about 4 total
-hours of time for socializing, tardiness, and project time). This is
-usually broken down in one of the following ways:
+the Linux command-line, and GitHub as they progress. Every class ends
+with at least 10 minutes of something fun and team building. At this
+pace the course takes about 24 hours to complete, (which includes about
+4 total hours of time for socializing, tardiness, and project time). This
+is usually broken down in one of the following ways:
 
 * 16 weeks of 90-minute classes (a semester)
 * 8 weeks of 3-hour classes
