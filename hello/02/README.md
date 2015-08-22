@@ -1,4 +1,4 @@
-# Chmod That SheBang
+# Step 2: Chmod That SheBang
 
 ![](../img/dry.png)
 

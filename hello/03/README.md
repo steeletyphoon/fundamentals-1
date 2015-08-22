@@ -1,4 +1,4 @@
-# Ooooo, Pretty Colors
+# Step 3: Ooooo, Pretty Colors
 
 ![Solarized Color Palette](http://ethanschoonover.com/solarized/img/solarized-palette.png)
 
