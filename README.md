@@ -12,7 +12,7 @@ Bloomberg Businessweek dedicated to coding:
 
 ![](img/bloomberg.jpg)
 
-# What We Learn
+## What We Learn
 
 In this course students find out what coding is, why they should learn it,
 and how. Students focus on programming fundamentals such as variables,
@@ -25,7 +25,7 @@ using vim from the command-line the way most experienced professionals do.
 
 Students learn modern Python (3.4+ not 2.7) for many obvious reasons.
 
-# What We Don't Learn
+## What We Don't Learn
 
 Python-1 focuses on basic structured and procedural programming
 paradigms. It does not directly cover important but more advanced concepts
@@ -39,7 +39,7 @@ are encouraged to unit test their code often by adding runnable snippets
 to `if __name__ == '__main__':` but otherwise are not introduced to any
 specific test frameworks.
 
-# Planning
+## Planning
 
 The pace of this course is set to what an average 8-12 year-old with
 typing skills can accomplish within 70 minutes of a 90 minute class. This
@@ -68,7 +68,7 @@ subjects and programs this course should be repeated as often as needed
 until full mastery is demonstrated. Mastery is essential in programming
 before progressing.
 
-# Resources and Requirements
+## Resources and Requirements
 
 [![][logo]][scb] [![][cc0]][cc0link]
 

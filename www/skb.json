@@ -22,9 +22,9 @@
       "steps": 7,
       "concepts": [
         "`vim`", "`chmod`", "shebang", "`#!`", "strings", "actions",
-        "functions", "`print()`", "`import`", "colors", "solarized",
-        "operators", "operands", "join operator", "`+`", "quotes",
-        "`\"`","`'`"
+        "functions", "`print()`", "`import`", "syntax", "syntax highlighting",
+        "colors", "solarized", "operators", "operands",
+        "join operator", "`+`", "quotes", "`\"`","`'`"
       ]
     },
     {
