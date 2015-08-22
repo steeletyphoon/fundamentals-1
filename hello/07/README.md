@@ -1,4 +1,4 @@
-# Random Color
+# Step 7: Random Color
 
 One last fun option is using random colors with `c.random_color()`
 or the short form `c.rc()`. Don't forget the ***parenthesis*** `()`
