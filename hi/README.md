@@ -1,4 +1,4 @@
-# Hi There, You
+# Hi You!
 
 ![SkilStak Hi](http://skilstak.github.io/images/skilstak-hi.png)
 
