@@ -11,7 +11,7 @@ Theme](http://ethanschoonover.com/solarized), our favorite here at
 SkilStak. What are the colors you ask? Type `colors` on the command-line
 to see:
 
-![`colors` Help Command](colors.png)
+![`colors` Help Command](../img/colors.png)
 
 To use these fancy colors we have to `import` them. Think of this as
 checking out a code book from the library that has extra stuff in it we want
@@ -45,12 +45,12 @@ The colors can be joined to our string with the join `+` operator. An
 of it called ***operands***. You can think of an old-school telephone
 operator who made connections between folks.
 
-![Operator](operator.jpg)
+![Operator](../img/operator.jpg)
 
 Or if you prefer the Matrix version, think of how Tank the operator got
 a call every time Neo and the gang wanted in or out of the Matrix.
 
-![Tank Operator](tank.jpg)
+![Tank Operator](../img/tank.jpg)
 
 We'll join the long `c.yellow` for now and short for later to save on
 space and typing. When in doubt, use whatever one reads the best.

@@ -1,6 +1,6 @@
 # Chmod That SheBang
 
-![](dry.png)
+![](../img/dry.png)
 
 The best programmers live by an important rule *Don't Repeat Yourself*
 or *DRY* — even code-muggles can appreciate that. Typing `python3`
@@ -21,7 +21,7 @@ Don't worry about permissions now, just know they control things
 like reading and writing the file and telling the computer the file is
 a script that can be run.
 
-![](chmod4.png)
+![](../img/chmod4.png)
 
 ## Tell Computer How to Run the Program
 
@@ -45,4 +45,4 @@ instead. `env` is itself a program that finds other programs wherever
 they are.  `env` finds `python3` wherever it may be on the system
 (or another system). This makes our program easier to share with others.
 
-![](shebang.png)
+![](../img/shebang.png)
