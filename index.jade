@@ -1,8 +1,4 @@
-- var name = public._data.name
-- var version = public._data.version
-- var org = public._data.org
-- var parts = public._data.parts
-- var repourl = "http://" + public._data.repo
+- var skb = public._data
 
 mixin _concepts(part)
   if part.concepts
@@ -70,13 +66,13 @@ mixin _styles()
 
 doctype
 head
-  title #{name} | #{org}
+  title #{skb.name} | #{skb.org}
   style
     +_styles()
 body
   header
     #lastmod
-      span: a(href=repourl) Version: #{version}, 
+      span: a(href=skb.repo) Version: #{skb.version}, 
         script document.write((new Date(document.lastModified)).toLocaleString())
     include:markdown README.md
     h1 Parts and Concepts
@@ -85,7 +81,7 @@ body
       in each:
     ol
       - var totalMin = 0
-      for part in parts
+      for part in skb.parts
         - totalMin += part.minutes
         li.summary
           strong: a(href="#" + part.name) #{part.name} 
@@ -94,7 +90,7 @@ body
             +_concepts(part)
     #totalhours= "Total Hours: " + Math.round(totalMin / 60)
 
-  for part in parts
+  for part in skb.parts
     section.part(id=part.name)
       != partial(part.name + "/README")
       - var n = 0

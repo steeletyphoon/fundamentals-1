@@ -290,7 +290,7 @@ space and typing. When in doubt, use whatever one reads the best.</p>
 into text that follows.</p>
 <p>If you forget the colors you can type <code>colors</code> from the Linux command-line
 to see them again.</p>
-<h1>Clearing the Screen</h1><p>Terminals respond to special codes when they are printed to the
+<h1>Step 4: Clearing the Screen</h1><p>Terminals respond to special codes when they are printed to the
 screen. All of the colors use these codes. One special code is
 <strong><em>clear</em></strong> or <code>c.clear</code> or <code>c.cl</code> which will clear the screen when it
 is printed. This is an extremely efficient way to wipe your screen clear
@@ -299,17 +299,17 @@ and starting printing something new to it. It is also very simple to use.</p>
 <p>Remember not to confuse <code>c.clear</code> with <code>c.reset</code>. The first clears the
 screen. The second just stops the color from continuing resetting it
 back to whatever the color was before.</p>
-<h1>Splitting a String</h1><p>Now let&#39;s get crazy and use two colors, wahoooo! You already know how to
+<h1>Step 5: Splitting a String</h1><p>Now let&#39;s get crazy and use two colors, wahoooo! You already know how to
 join a string to another with the <code>+</code> <strong><em>operator</em></strong>. Let&#39;s split the
 two words and add a second color before the second one. Don&#39;t forget
 both new strings need their own quotes.</p>
 <p>In this case we only need a single <code>c.reset</code> at the end.</p>
-<h1>Color Abbreviations (Short Names)</h1><p>To reduce the amount of typing and confusion when using colors short
+<h1>Step 6: Color Abbreviations (Short Names)</h1><p>To reduce the amount of typing and confusion when using colors short
 forms of the color names are also available. <strong><em>Abbreviations</em></strong> are
 when a longer word is made shorter by not writing it all out.</p>
 <p>Keep in mind the abbreviation for <code>c.reset</code> is <code>c.x</code> since <code>c.r</code> is
 already used for <code>c.red</code> and the <code>x</code> means &quot;turn off&quot;.</p>
-<h1>Random Color</h1><p>One last fun option is using random colors with <code>c.random_color()</code>
+<h1>Step 7: Random Color</h1><p>One last fun option is using random colors with <code>c.random_color()</code>
 or the short form <code>c.rc()</code>. Don&#39;t forget the <strong><em>parenthesis</em></strong> <code>()</code>
 on the end, which mean that this is a <strong><em>function</em></strong> and not just a
 <strong><em>variable</em></strong>. The rest of the colors are just codes in <strong><em>strings</em></strong>
