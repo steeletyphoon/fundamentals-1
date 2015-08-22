@@ -1,4 +1,11 @@
-# Step 1: Your First Program
+## Create a Script
+
+```sh
+vi hello
+```
+```python
+print("Hello world!")
+```
 
 Let's start simple:
 

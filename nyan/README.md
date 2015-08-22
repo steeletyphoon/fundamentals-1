@@ -1,4 +1,4 @@
-# Infinite Looping Nyan Cat
+# Make It Stop!
 
 [![Nyan, Nyan, Nyan](http://img.youtube.com/vi/wZZ7oFKsKzY/0.jpg)](https://youtu.be/wZZ7oFKsKzY)
 

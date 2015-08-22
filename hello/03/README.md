@@ -1,4 +1,4 @@
-# Step 3: Ooooo, Pretty Colors
+## Ooooo, Pretty Colors
 
 ![Solarized Color Palette](http://ethanschoonover.com/solarized/img/solarized-palette.png)
 
@@ -7,9 +7,8 @@ complete but let's add some color and learn about ***import*** and
 ***operators***. Somehow programming is more fun with colors and these
 days adding color to terminal programs is pretty easy. Most terminals
 are still limited to 16 colors so we will use the [Solarized Dark
-Theme](http://ethanschoonover.com/solarized), our favorite here at
-SkilStak. What are the colors you ask? Type `colors` on the command-line
-to see:
+Theme](http://ethanschoonover.com/solarized). What are the colors you
+ask? Type `colors` on the command-line to see:
 
 ![`colors` Help Command](../img/colors.png)
 
@@ -25,6 +24,7 @@ import colors as c
 Now that it's imported we can change our code to use them:
 
 ```python
+#!/usr/bin/env python3
 print(c.yellow + "Hello world" + c.reset) 
 ```
 
@@ -35,10 +35,10 @@ module instead of another `yellow` we may have used in the code elsewhere.
 
 If you are a teacher or an ambitious student who does not
 have these colors set up in your terminal you can look at
-[`tools`](../../tools) for some help.
+[`tools`](https://github.com/skilstak/python-1/blob/master/tools) for
+some help.
 
-
-# "Operator!"
+## Operator!
 
 The colors can be joined to our string with the join `+` operator. An
 ***operator*** is a symbol that does something to the things on either side

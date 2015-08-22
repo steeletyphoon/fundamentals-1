@@ -1,4 +1,4 @@
-# Step 2: Chmod That SheBang
+## Chmod That SheBang
 
 ![](../img/dry.png)
 
@@ -35,6 +35,7 @@ different characters. Add the following on the very first line of your script:
 
 ```python
 #!/usr/bin/env python3
+print("Hello world!")
 ```
 
 Don't forget the space between `env` and `python3` and don't forget the `3`

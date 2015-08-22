@@ -1,13 +1,13 @@
-# Hello World
+# Your First Program
 
 ![SkilStak Hello](../img/hello.png)
 
 *Hello world* is a famous program written by
 millions in [dozens if not hundreds of programming
 languages](https://en.wikipedia.org/wiki/List_of_Hello_world_program_examples).
-It's a great way to start.
+It's a great way to start. But first &hellip;
 
-# What is Coding?
+## What is Coding?
 
 Let's assume you have never heard of ***coding*** before. If you have you
 can skip or maybe you want read Paul Ford's excellent article:
@@ -24,7 +24,7 @@ have protocol droids like 3PO yet, but many languages have been created
 with interpreters and other stuff to help humans tell different types
 of computers how to do the same things.
 
-# Use the Source, Luke
+## Use the Source, Luke
 
 ![](../img/yoda.png)
 
@@ -61,7 +61,7 @@ by great programmers since before the Internet was invented. ***vi***
 is on every UNIX/Linux computer there is.  This makes it a very useful
 tool to learn.
 
-# Creating Code with VIM
+## Creating Code with VIM
 
 ![vim](../img/vim-logo.png)
 

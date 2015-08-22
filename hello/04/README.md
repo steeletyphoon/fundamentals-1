@@ -1,4 +1,4 @@
-# Step 4: Clearing the Screen
+## Clearing the Screen
 
 Terminals respond to special codes when they are printed to the
 screen. All of the colors use these codes. One special code is

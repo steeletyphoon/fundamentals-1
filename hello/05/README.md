@@ -1,4 +1,4 @@
-# Step 5: Splitting a String
+## Splitting a String
 
 Now let's get crazy and use two colors, wahoooo! You already know how to
 join a string to another with the `+` ***operator***. Let's split the
