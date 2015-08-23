@@ -2,6 +2,18 @@
 
 - var skb = public._data
 
+mixin _docinfo()
+  #author= "Author: " + skb.author
+  #org= "Organization: " + skb.org
+  #lastmod
+    span: a(href=skb.repo) Version: #{skb.version}, 
+      script document.write((new Date(document.lastModified)).toLocaleString())
+  #license= "License: " + skb.license
+  #url: a(href="http://#{skb.url}") URL: #{skb.url}
+  #issues: a(href="http://#{skb.issues}") Issues: #{skb.issues}
+  #uid= "UID: " + skb._id
+  #short= "Short: " + skb.short
+
 mixin _concepts(part)
   if part.concepts
     for concept, index in part.concepts
@@ -31,11 +43,12 @@ mixin _styles()
       &:hover
         text-decoration underline
     #totalhours
+    .docinfo
     em.end
       color rgba(0,0,0,0.2)
-    #lastmod
       a
         color rgba(0,0,0,0.2)
+
     li
       font-weight 500
     .summary
@@ -66,17 +79,20 @@ mixin _styles()
     .part
       h1:first-child
         padding-top .4em
+    .docinfo
+      padding 1em 0 1em 0
 
 doctype
 head
   title #{skb.name} | #{skb.org}
+  meta(name="description" content="#{skb.description}")
+  meta(name="keywords" content="#{skb.keywords}")
+  meta(name="author" content="#{skb.author}")
+  link(rel="icon" type="image/png" href="img/favicon.png")
   style
     +_styles()
 body
   header
-    #lastmod
-      span: a(href=skb.repo) Version: #{skb.version}, 
-        script document.write((new Date(document.lastModified)).toLocaleString())
     include:markdown README.md
     h1 Parts and Concepts
     p.
@@ -102,6 +118,9 @@ body
         != partial(part.name + "/" + padded + "/README")
         - n++
       em.end (end of #{part.name})
+
+  .docinfo
+    +_docinfo()
 
   script.
     var l = document.querySelectorAll("img");

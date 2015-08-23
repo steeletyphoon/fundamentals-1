@@ -3,13 +3,14 @@
   "short": "Python-1",
   "_id": "skilstak-python-1",
   "version": "2.1.1",
-  "author": "Rob Muhlestein <rob@skilstak.com>",
+  "author": "Rob Muhlestein (@robmuh)",
   "contributors": [],
   "org": "SkilStak Coding Arts",
   "license": "CC0 Public Domain Dedication",
   "repo": "github.com/skilstak/python-1",
   "url": "http://python-1.skilstak.com",
   "issues": "github.com/skilstak/python-1/issues",
+  "description": "Learn the fundamentals of computer programming (coding) using the Python3 programming language",
   "keywords": [
     "python","python3","programming","coding","beginner"
   ],
