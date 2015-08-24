@@ -42,7 +42,7 @@ specific test frameworks.
 ## Planning
 
 When deciding which language to learn at SkilStak you can't go wrong
-starting with Python-1. This projects in this course are the same projects
+starting with Python-1. The projects in this course are the same projects
 done in other SkilStak courses by design so they can be taken together
 and that fundamentals are reinforced even though the programming language
 differs. In fact, those other courses frequently refer to the material
