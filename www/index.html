@@ -1,4 +1,4 @@
-<!DOCTYPE html><head><title>Learning to Code, in Python | SkilStak Coding Arts</title><style>body {
+<!DOCTYPE html><head><title>Learning to Code, in Python | SkilStak Coding Arts</title><meta name="description" content="Learn the fundamentals of computer programming (coding) using the Python3 programming language"><meta name="keywords" content="python,python3,programming,coding,beginner"><meta name="author" content="Rob Muhlestein (@robmuh)"><link rel="icon" type="image/png" href="img/favicon.png"><style>body {
   background: #eee;
   font-family: "Helvetica Neue", Helvetica, Arial, freesans, sans-serif;
   font-weight: 400;
@@ -21,10 +21,13 @@ a:hover {
   text-decoration: underline;
 }
 #totalhours,
+.docinfo,
 em.end {
   color: rgba(0,0,0,0.2);
 }
-#lastmod a {
+#totalhours a,
+.docinfo a,
+em.end a {
   color: rgba(0,0,0,0.2);
 }
 li {
@@ -61,7 +64,10 @@ h1 {
 .part h1:first-child {
   padding-top: 0.4em;
 }
-</style></head><body><header><div id="lastmod"><span><a href="github.com/skilstak/python-1">Version: 2.1.1, <script>document.write((new Date(document.lastModified)).toLocaleString())</script></a></span></div><h1 id="learning-to-program-in-python">Learning to Program, in Python</h1>
+.docinfo {
+  padding: 1em 0 1em 0;
+}
+</style></head><body><header><h1 id="learning-to-program-in-python">Learning to Program, in Python</h1>
 <p><img src="https://www.python.org/static/community_logos/python-logo-generic.svg" alt=""></p>
 <p>Meet Python, the best first programming language anyone should learn.
 It is approachable, easy, and &mdash; most of all &mdash; real. Python is
@@ -331,14 +337,14 @@ core part of any sort of interactive story or text adventure game
 such as the <a href="http://storyeng.skilstak.io">storyeng</a> games
 we will make in <a href="http://python-2.skilstak.io">Python-2</a> and
 <a href="http://python-3.skilstak.io">Python-3</a>.</p>
-<h2>&quot;What&#39;s your name?&quot;</h2><pre><code class="language-python">#!/usr/bin/env python3
-
-print(&quot;Hi, what&#39;s your name?&quot;)
-</code></pre>
 <p>First let&#39;s just do the same thing we did to begin <code>hello</code> by just
 printing something out. In fact, you can just <code>cp hello hi</code> if you want
 to save yourself the <code>chmod u+x hi</code> command since the proper permissions
 have already been set on hello.</p>
+<pre><code class="language-python">#!/usr/bin/env python3
+
+print(&quot;Hi, what&#39;s your name?&quot;)
+</code></pre>
 <p>Notice that we use <code>&quot;</code> instead of <code>&#39;</code> because the <code>what&#39;s</code> already used
 a <code>&#39;</code> and it would mess it up. Python let&#39;s you use either <code>&#39;</code> or <code>&quot;</code>
 for strings and they don&#39;t have different functions (as they do in some
@@ -1034,7 +1040,7 @@ those that understand binary and those that do not.</p>
 lesson two: 07-13 + own quiz
 bonus: 13+</p>
 <em class="end">(end of quiz)</em></section><section id="review" class="part"><h1>Remember?</h1><p>good</p>
-<em class="end">(end of review)</em></section><script>var l = document.querySelectorAll("img");
+<em class="end">(end of review)</em></section><div class="docinfo"><div id="author">Author: Rob Muhlestein (@robmuh)</div><div id="org">Organization: SkilStak Coding Arts</div><div id="lastmod"><span><a href="github.com/skilstak/python-1">Version: 2.1.1, <script>document.write((new Date(document.lastModified)).toLocaleString())</script></a></span></div><div id="license">License: CC0 Public Domain Dedication</div><div id="url"><a href="http://http://python-1.skilstak.com">URL: http://python-1.skilstak.com</a></div><div id="issues"><a href="http://github.com/skilstak/python-1/issues">Issues: github.com/skilstak/python-1/issues</a></div><div id="uid">UID: skilstak-python-1</div><div id="short">Short: Python-1</div></div><script>var l = document.querySelectorAll("img");
 for (var i = 0; i < l.length; i++) {
   l[i].src = l[i].src.replace("\.\./","");
 }
