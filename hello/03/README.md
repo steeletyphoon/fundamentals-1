@@ -25,6 +25,7 @@ Now that it's imported we can change our code to use them:
 
 ```python
 #!/usr/bin/env python3
+import colors as c
 print(c.yellow + "Hello world" + c.reset) 
 ```
 
