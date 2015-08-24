@@ -46,7 +46,8 @@ starting with Python-1. The projects in this course are the same projects
 done in other SkilStak courses by design so they can be taken together
 and that fundamentals are reinforced even though the programming language
 differs. In fact, those other courses frequently refer to the material
-in this course content block rather than repeat it. When in doubt,
+in this course content block rather than repeat it. Python-1 is required
+before [Raspi-1](http://raspi-1.skilstak.io) can be taken. When in doubt,
 plan for Python-1.
 
 The pace of this course is set to what an average 8-12 year-old with
