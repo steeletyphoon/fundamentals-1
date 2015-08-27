@@ -66,8 +66,7 @@ is usually broken down in one of the following ways:
 * 8 days of 3-hour classes (ex: 9:30 - 12:30, M-Th) 
 
 Bonus challenges are available for faster and older learners increasing
-the age range to about 18. Above that students often become annoyed at
-the younger pop culture references.
+the age range to about 18. 
 
 The last two weeks are a review of all the previous material. Programming
 is largely like learning a foreign language and these weeks are essential
