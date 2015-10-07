@@ -1,5 +1,7 @@
 # Learning to Program, in Python
 
+NOTE: This course is under-going revision.
+
 ![](https://www.python.org/static/community_logos/python-logo-generic.svg)
 
 Meet Python, the best first programming language anyone should
