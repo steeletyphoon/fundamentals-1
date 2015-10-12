@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+var stdout = process.stdout;
 var c = require('skilstak-colors');
 
-console.log(c.cl + c.rc() + 'Hello ' + c.rc() + 'world' + c.x)
+stdout.write(c.cl + c.rc() + 'Hello ' + c.rc() + 'world' + c.x + "\n")
