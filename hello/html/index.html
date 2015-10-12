@@ -1,20 +1,37 @@
 <doctype html>
+<html>
+
   <head>
-      <title>Hello World!</title>
-      <style>
-        body {
-          font-family: "Helvetica", "Arial", sans-serif;
-          background-color: #002b36; 
-        }
-      </style>
+    <title>Hello World</title>
+    <style>
+      body {
+        font-family: "Helvetica", "Arial", sans-serif;
+        font-size: 200%;
+        background: #002B36;
+        color: grey;
+      }
+      #h {
+        color: goldenrod;
+      }
+      #w {
+        color: magenta;
+      }
+    </style>
   </head>
+
   <body>
-    <h1>
-      <span style='color: #b58900'>Hello</span>
-      <span style='color: #d33682'>World!</span>
-    </h1>
-    <script>
-      console.log("Hello world!");
-    </script>
+    <p>
+      <span id="h">Hello</span>
+      <span id="w">World!</span>
+    </p>
+
+    <p>
+      <script>
+        document.write("Hello world from JavaScript!");
+        console.log("Hello world from the console!");
+      </script>
+    </p>
+
   </body>
+
 </html>
