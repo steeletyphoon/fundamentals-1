@@ -3,6 +3,6 @@
 'use strict';
 
 var c = require('skilstak-colors');
-var stdout = process.stdout;
+var out = process.stdout;
 
-stdout.write(c.cl + c.rc() + 'Hello ' + c.rc() + 'world' + c.x + "\n");
+out.write(c.cl + c.rc() + 'Hello ' + c.rc() + 'world' + c.x + "\n");
