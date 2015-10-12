@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-<<<<<<< HEAD
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/python-1/site/license/highlight.js'
-let g:netrw_dirhist_2='/home/robmuh/repos/skilstak.github.io/news/2015/mar'
-=======
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/robmuh/repos/python-1/mtable'
->>>>>>> cb0b49b8345c67822f514132a34535305fb3dc3b

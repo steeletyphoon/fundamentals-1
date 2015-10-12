@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+var c = require('skilstak-colors');
+
+console.log(c.cl + c.rc() + 'Hello ' + c.rc() + 'world' + c.x)
