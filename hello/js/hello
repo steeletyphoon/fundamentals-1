@@ -5,4 +5,4 @@
 var c = require('skilstak-colors');
 var stdout = process.stdout;
 
-stdout.write(c.cl + c.rc() + 'Hello ' + c.rc() + 'world' + c.x + "\n")
+stdout.write(c.cl + c.rc() + 'Hello ' + c.rc() + 'world' + c.x + "\n");
