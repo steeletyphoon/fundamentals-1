@@ -1,0 +1,88 @@
+#!/usr/bin/env python3
+
+import colors as c
+import random
+
+clabels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+rows = 16
+cols = 26
+chance = 0.1
+mines = []
+hidden = []
+mine_symbol = '*'
+empty_symbol = ' '
+hidden_symbol = '~'
+show_all = False
+
+def init():
+    global mines, hidden
+    mines = [[random_mine() for r in range(rows)] for c in range(cols)]
+    hidden = [[True for r in range(rows)] for c in range(cols)]
+
+def draw():
+    global show_all
+    print(c.clear)
+    print('   ', end='')
+    for col in range(cols):
+        print(clabels[col], end=' ')
+    print()
+    for row in range(rows):
+        print("{:2} ".format(row),end="")
+        for col in range(cols):
+            if not hidden[col][row] or show_all:
+                near_one = near(col,row)
+                if is_mine(col,row):
+                    print(mines[col][row],end=' ')
+                elif near_one:
+                    print(near_one,end=' ')
+                else:
+                    print(mines[col][row],end=' ')
+            else:
+                print(hidden_symbol,end=' ')
+        print()
+
+def random_mine():
+    if random.random() <= chance:
+        return mine_symbol
+    else:
+        return empty_symbol
+
+def is_mine(col,row):
+    try:
+        return mines[col][row] == mine_symbol
+    except IndexError:
+        return False
+
+def near(col,row):
+    count = 0
+    for c in [col-1,col,col+1]:
+        for r in [row-1,row,row+1]:
+            if (c==col and r==row) or (r < 0 or c < 0) or (r > rows or c > cols):
+                pass
+            else:
+                if is_mine(c,r):
+                    count +=1
+    return count
+
+def reveal(col,row):
+    pass
+
+def blow_up():
+    global show_all
+    show_all = True
+    draw()
+    print("Boooom!")
+    exit()
+
+def guess(col,row):
+    space = mines[col][row]
+    if not space:
+        reveal(col,row)
+    elif space == mine_symbol:
+        blow_up()
+    
+
+if __name__ == '__main__':
+    init()
+    blow_up()
+

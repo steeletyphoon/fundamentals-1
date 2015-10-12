@@ -1,0 +1,86 @@
+#!/usr/bin/env python3
+
+"""The main game engine"""
+
+import colors as c
+
+from player import Player
+import monster as m
+import random
+
+class Game():
+
+    def __init__(self):
+        print(c.clear + 'Welcome to this awesome game.')
+        self.player = Player()
+        self.player.load()
+        self.player.game = self
+
+    def run(self):
+        while True:
+            action = input('What would you like to do? ')
+            print(c.clear)
+            if action == 'stats':
+                self.player.show_stats()
+            elif action == 'save':
+                self.save()
+            elif action in ['exit','bye']:
+                print('Bye')
+                exit()
+            elif action in ['pick','choose','repick']:
+                self.pick_monster()
+            elif action in ['use']:
+                self.handle_use()
+            elif action in ['bringit','battle','destroy','diediedie']:
+                self.handle_battle()
+
+    def pick_monster(self):
+        count = 1
+        for monster in m.monsters:
+            pickstr = c.base3 + "{}. " + c.random_color() + "{}" + c.reset
+            print(pickstr.format(count,monster.title))
+            count += 1
+        number = int(input().strip().lower())
+        monster_class = m.monsters[number-1]
+        monster = monster_class()
+        monster.game = self
+        print("You picked {}:".format(monster.title))
+        monster.show_stats()
+
+    def handle_use(self):
+        self.turns += 1
+
+    def pick_monster(self):
+        count = 1
+        for monster in m.monsters:
+            pickstr = c.base3 + "{}. " + c.random_color() + "{}" + c.reset
+            print(pickstr.format(count,monster.title))
+            count += 1
+        number = int(input().strip().lower())
+        monster_class = m.monsters[number-1]
+        monster = monster_class()
+        print("You picked {}:".format(monster.title))
+        monster.show_stats()
+
+    def handle_battle(self):
+        while self.player.hp > 0 and self.monster.hp > 0:
+            self.player.pick_move()
+            if self.player.speed >= self.monster.speed:
+                self.player.move()
+                self.monster.move()
+            else:
+                self.monster.move()
+                self.player.move()
+        if self.player.hp > 0:                       # player won!
+            self.player.xp += self.monster.xp
+        else:
+            self.player.xp -= self.monster.xp
+        self.turns += 1
+
+    def save(self):
+        self.player.save()
+        print("Player state saved.")
+        
+if __name__ == '__main__':
+    agame = Game()
+    agame.run()

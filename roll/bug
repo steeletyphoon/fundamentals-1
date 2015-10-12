@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+
+import random
+import time
+
+# 3d6
+
+while True:
+    total = 0
+    for n in range(9):
+        total += random.randint(1,2)
+    print(total)
+    time.sleep(0.5)

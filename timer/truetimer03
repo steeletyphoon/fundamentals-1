@@ -1,0 +1,41 @@
+#!/usr/bin/env python3 
+
+import time
+import colors as c
+import math
+
+started = time.time()
+
+def since():
+    elapsed = time.time() - started 
+    weeks = math.floor(elapsed / 604800)         # seconds in week
+    remainder = elapsed % 604800
+    days = math.floor(remainder / 86400)         # seconds in day
+    remainder = remainder % 86400
+    hours = math.floor(remainder / 3600)         # seconds in hour
+    remainder = remainder % 3600
+    minutes = math.floor(remainder / 60)         # seconds in minute
+    seconds = remainder % 60
+    return (seconds,minutes,hours,days,weeks)
+
+def show():
+    (seconds,minutes,hours,days,weeks) = since()
+    print(c.clear, end='')
+    print(c.yellow + 'weeks: ' + c.reset)
+    print(weeks)
+    print(c.yellow + 'days: ' + c.reset)
+    print(days)
+    print(c.yellow + 'hours: ' + c.reset)
+    print(hours)
+    print(c.yellow + 'minutes: ' + c.reset)
+    print(minutes)
+    print(c.yellow + 'seconds: ' + c.reset)
+    print(seconds)
+
+try:
+    while True:
+        show()
+        time.sleep(0.01)
+except KeyboardInterrupt:
+    print("\b\b\b")
+    exit()
