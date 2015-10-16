@@ -3,6 +3,5 @@
 import skilstak.colors as c
 
 while True:
-    print(c.cl + c.rc() + "Hello " + c.rc() + "world" + c.x) 
+    print(c.cl + c.rc() + "Hello " + c.rc() + "World" + c.x) 
 
-                                                       
