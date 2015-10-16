@@ -3,4 +3,4 @@
 import skilstak.colors as c
 
 print(c.cl + c.rc() + "Hello " + c.rc() + "world" + c.x) 
-
+                                                       
