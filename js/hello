@@ -2,12 +2,13 @@
 
 'use strict';
 
+var c = require('skilstak-colors');
+
 // this works but really browser-ish
 // console.log("Hello world");
 // let's use a stream instead ...
 
 var out = process.stdout;
-var c = require('skilstak-colors');
 
 while (true) {
   out.write(c.clear + c.rc() + "Hello " + c.rc() + "world\n" + c.x);
