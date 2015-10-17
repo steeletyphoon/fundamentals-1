@@ -1,7 +1,9 @@
-# Programming Fundamentals in Python, JavaScript, HTML5
+# Programming Fundamentals
 
 This course takes a polyglot approach to learning the fundamentals
-of computer programming.
+of computer programming an core related programming skills. Students
+learn simultaneously to code in Python, JavaScript, and HTML5/CSS
+while using data languages like JSON, SQL, YAML, TOML, XML and CSV.
 
 Modules:
 
