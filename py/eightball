@@ -1,0 +1,83 @@
+#!/usr/bin/env python3
+
+import random
+import skilstak.colors as c
+
+welcome_message = '''
+Welcome to the magic eight ball!
+Enter your question below.
+'''
+
+answers = [
+    'It is certain.',
+    'It is decidedly so.',
+    'Without a doubt.',
+    'Yes definitely.',
+    'You may rely on it.',
+    'As I see it, yes.',
+    'Most likely.',
+    'Outlook good.',
+    'Yes.',
+    'Signs point to yes.',
+    'Reply hazy try again.',
+    'Ask again later.',
+    'Better not tell you now.',
+    'Cannot predict now.',
+    'Concentrate and ask again.',
+    "Don't count on it.",
+    'My reply is no.',
+    'My sources say no.',
+    'Outlook not so good.',
+    'Very doubtful.',
+    """
+NNNNNNNN        NNNNNNNN     OOOOOOOOO     
+N:::::::N       N::::::N   OO:::::::::OO   
+N::::::::N      N::::::N OO:::::::::::::OO 
+N:::::::::N     N::::::NO:::::::OOO:::::::O
+N::::::::::N    N::::::NO::::::O   O::::::O
+N:::::::::::N   N::::::NO:::::O     O:::::O
+N:::::::N::::N  N::::::NO:::::O     O:::::O
+N::::::N N::::N N::::::NO:::::O     O:::::O
+N::::::N  N::::N:::::::NO:::::O     O:::::O
+N::::::N   N:::::::::::NO:::::O     O:::::O
+N::::::N    N::::::::::NO:::::O     O:::::O
+N::::::N     N:::::::::NO::::::O   O::::::O
+N::::::N      N::::::::NO:::::::OOO:::::::O
+N::::::N       N:::::::N OO:::::::::::::OO 
+N::::::N        N::::::N   OO:::::::::OO   
+NNNNNNNN         NNNNNNN     OOOOOOOOO     
+    """
+]
+
+def welcome():
+    print(c.clear + c.rc() + welcome_message + c.reset)
+
+def ask(prompt):
+    answer = input(prompt).strip().lower()
+    return answer
+
+def bye():
+    print("Goodbye. Come back soon!")
+    exit()
+
+def handle_question():
+    question = ask("--> " + c.b3)
+    print(c.reset, end='')
+    if question == 'bye' or question == 'goodbye':
+        bye()
+    elif 'love' in question:
+        print(c.red + 'Do I look like Cupid to you?' + c.x)
+    elif 'die' in question or 'death' in question or 'dead' in question:
+        print(c.red + "Such grim questions don't deserve an answer, yet." + c.x)
+    else:
+        answer = random.choice(answers)
+        print(c.random_color() + answer + c.x)
+
+if __name__ == '__main__':
+    try: 
+        welcome()
+        while True:
+            handle_question()
+    except KeyboardInterrupt:
+        print()
+        bye()
