@@ -2,9 +2,10 @@
 
 'use strict';
 
-//console.log("Hello world");
-
 var c = require("skilstak-colors");
+
+// too browser-ish
+//console.log("Hello world");
 
 var out = process.stdout;
 
