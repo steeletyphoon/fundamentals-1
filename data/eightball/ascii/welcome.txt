@@ -13,5 +13,5 @@
             `$$$$$$$$$$$$$'
               `~$$$$$$$~'
 
-      \033[1;37mWelcome to the Magic Eight Ball.\033[0m
+      Welcome to the Magic Eight Ball.
         Enter your questions below.

@@ -25,6 +25,11 @@ def welcome():
 Welcome to the magic eight ball!
 Enter your question below.
 '''
+    txt = os.environ["FUNDATA"] + "/eightball/ascii/welcome.txt"
+    if os.path.isfile(txt):
+        with open(txt) as f:
+            welcome_message = f.read()
+
     print(c.clear + c.rc() + welcome_message + c.reset)
 
 def ask(prompt):
@@ -32,7 +37,12 @@ def ask(prompt):
     return answer
 
 def bye():
-    print("Goodbye. Come back soon!")
+    goodbye = "Goodbye. Come back soon!"
+    txt = os.environ["FUNDATA"] + "/eightball/ascii/bye.txt"
+    if os.path.isfile(txt):
+        with open(txt) as f:
+            goodbye = f.read()
+    print(goodbye)
     exit()
 
 def get_special_response(question):
