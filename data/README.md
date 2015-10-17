@@ -14,3 +14,6 @@ explored in fundamentals:
 
 HTML is technically a data format as well but gets its own focus since
 it includes integrating CSS and JavaScript.
+
+The discussion about data includes using data passed from the calling
+system environment, which is universally supported on all OSes.

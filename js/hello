@@ -1,14 +1,17 @@
 #!/usr/bin/env node
+
 'use strict';
 
-var c = require('skilstak-colors');
+//console.log("Hello world");
 
-// this works but really browser-ish
-// console.log("Hello world");
-// let's use a stream instead ...
+var c = require("skilstak-colors");
 
 var out = process.stdout;
 
+// clear the screen by writing the specials clear color
+out.write(c.cl);
+
 while (true) {
-  out.write(c.cl + c.rc() + "Hello " + c.rc() + "world\n" + c.x);
+  out.write(c.rc() + "Hello world " + c.x);
 }
+
