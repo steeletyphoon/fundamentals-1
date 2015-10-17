@@ -4,11 +4,7 @@ import skilstak.colors as c
 import random
 import os 
 import json
-
-welcome_message = '''
-Welcome to the magic eight ball!
-Enter your question below.
-'''
+import re
 
 def load_answers(path):
     """Loads answers from answers.json and from ascii"""
@@ -25,6 +21,10 @@ def load_answers(path):
     return answers
 
 def welcome():
+    welcome_message = '''
+Welcome to the magic eight ball!
+Enter your question below.
+'''
     print(c.clear + c.rc() + welcome_message + c.reset)
 
 def ask(prompt):
@@ -35,18 +35,27 @@ def bye():
     print("Goodbye. Come back soon!")
     exit()
 
+def get_special_response(question):
+    with open(os.environ["FUNDATA"] + "/eightball/responses.json") as f:
+        responses = json.load(f)
+        for r in responses:
+            regx = r[0]
+            special_response = r[1]
+            if re.search(regx,question):
+                return special_response
+
 def handle_question(answers):
     question = ask("--> " + c.b3)
     print(c.reset, end='')
     if question == 'bye' or question == 'goodbye':
         bye()
-    elif 'love' in question:
-        print(c.red + 'Do I look like Cupid to you?' + c.x)
-    elif 'die' in question or 'death' in question or 'dead' in question:
-        print(c.red + "Such grim questions don't deserve an answer, yet." + c.x)
+    special = get_special_response(question)
+    if special:
+        answer = special
     else:
         answer = random.choice(answers)
-        print(c.random() + answer + c.x)
+    print(c.random() + answer + c.x)
+
 
 if __name__ == '__main__':
     try: 
