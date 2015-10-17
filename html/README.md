@@ -13,3 +13,9 @@ argument it is the only graphic interface anyone needs to learn in
 the modern tech world &mdash; especially as WebGL, WebAudio and
 other rich media web standards displace other technologies (Flash,
 DirectX, etc.)
+
+## Start Harp Webserver
+
+```sh
+www
+```
