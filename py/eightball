@@ -10,11 +10,19 @@ Welcome to the magic eight ball!
 Enter your question below.
 '''
 
-answers = []
-
-def load_answers():
-    with open(os.environ["FUNDATA"] + "/eightball.json") as f:
+def load_answers(path):
+    """Loads answers from eightball.json and from eightball.d"""
+    json_file = path + "/eightball.json"
+    txt_files = path + "/eightball.d"
+    answers = []
+    with open(json_file) as f:
         answers = json.load(f);
+    for name in os.listdir(txt_files):
+        if name.endswith(".txt"):
+            with open(txt_files + "/" + name) as f:
+                one = f.read()
+                answers.append(one)
+    return answers
 
 def welcome():
     print(c.clear + c.rc() + welcome_message + c.reset)
@@ -27,7 +35,7 @@ def bye():
     print("Goodbye. Come back soon!")
     exit()
 
-def handle_question():
+def handle_question(answers):
     question = ask("--> " + c.b3)
     print(c.reset, end='')
     if question == 'bye' or question == 'goodbye':
@@ -38,14 +46,14 @@ def handle_question():
         print(c.red + "Such grim questions don't deserve an answer, yet." + c.x)
     else:
         answer = random.choice(answers)
-        print(c.random_color() + answer + c.x)
+        print(c.random() + answer + c.x)
 
 if __name__ == '__main__':
     try: 
         welcome()
-        load_answers()
+        answers = load_answers(os.environ["FUNDATA"])
         while True:
-            handle_question()
+            handle_question(answers)
     except KeyboardInterrupt:
         print()
         bye()
