@@ -11,9 +11,9 @@ Enter your question below.
 '''
 
 def load_answers(path):
-    """Loads answers from eightball.json and from eightball.d"""
-    json_file = path + "/eightball.json"
-    txt_files = path + "/eightball.d"
+    """Loads answers from answers.json and from ascii"""
+    json_file = path + "/eightball/answers.json"
+    txt_files = path + "/eightball/ascii"
     answers = []
     with open(json_file) as f:
         answers = json.load(f);
