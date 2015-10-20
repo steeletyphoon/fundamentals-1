@@ -30,12 +30,20 @@
       are
       <span class="sblue">blue.</span>
     </p>
+
+    <p>
+      <div id="name" contenteditable>world!</div>
+    </p>
     
     <script>
         console.log("Hello from JavaScript");
         document.write(document.lastModified);
         var w = document.querySelector("#w");
         w.textContent = "Rob!";
+        var n = document.getElementById("name");
+        n.addEventListener("input", function () {
+          w.textContent = n.textContent;
+        }, false);
     </script>
 
   </body>
