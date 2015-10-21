@@ -2,49 +2,28 @@
 <html>
 
   <head>
-    <title>Hello world!</title>
-    <link rel="stylesheet" href="http://solarized.skilstak.io/colors-solarized.min.css">
+    <title>Hello World</title>
     <style>
       body {
-        font-family: "Helvetica", "Arial", sans-serif;
-        font-size: 300%;
         background: #002B36;
+        font-size: 300%;
+        font-family: "Helvetica", "Arial", sans-serif;
+        font-weight: bold;
+      }
+      #h {
+        color: goldenrod;
+      }
+      .un {
         color: grey;
       }
-      .fat { font-weight: bold; }
-      #h { color: goldenrod; }
-      #w { color: magenta; }
     </style>
   </head>
 
   <body>
-
-    <p class="fat">
-      <span id="h">Hello</span>
-      <span style="color: red;">there</span>
-      <span id="w">world!</span>
-    </p>
-
-    <p class="base3">
-      <span class="sviolet">Violets</span>
-      are
-      <span class="sblue">blue.</span>
-    </p>
-
-    <p>
-      <div id="name" contenteditable>???!</div>
-    </p>
-    
-    <script>
-        console.log("Hello from JavaScript");
-        document.write(document.lastModified);
-        var w = document.querySelector("#w");
-        var n = document.getElementById("name");
-        w.textContent = n.textContent;
-        n.addEventListener("input", function () {
-          w.textContent = n.textContent;
-        }, false);
-    </script>
+    <span id="h">Hello</span>
+    <span class="un">there</span>
+    <span style="color: magenta">world!</span>
+    <span class="un">Nice to see you.</span>
 
   </body>
 
