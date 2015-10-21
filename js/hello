@@ -2,17 +2,12 @@
 
 'use strict';
 
-var c = require("skilstak-colors");
-
-// too browser-ish
 //console.log("Hello world");
 
+var c = require("skilstak-colors");
 var out = process.stdout;
 
-// clear the screen by writing the specials clear color
-out.write(c.cl);
-
+out.write(c.clear);
 while (true) {
   out.write(c.rc() + "Hello world " + c.x);
 }
-
