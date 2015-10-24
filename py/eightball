@@ -14,11 +14,31 @@ def load_answers(path):
     with open(json_file) as f:
         answers = json.load(f);
     for name in os.listdir(txt_files):
-        if name.endswith(".txt"):
+        if name.endswith(".txt") and not (name == "welcome.txt" or name == "bye.txt"):
             with open(txt_files + "/" + name) as f:
                 one = f.read()
                 answers.append(one)
     return answers
+
+def get_special_response(question):
+    with open(os.environ["FUNDATA"] + "/eightball/responses.json") as f:
+        responses = json.load(f)
+        for r in responses:
+            regx = r[0]
+            special_response = r[1]
+            if re.search(regx,question):
+                if special_response.endswith(".txt"):
+                    file = os.environ["FUNDATA"] + "/eightball/ascii/responses/" + special_response 
+                    with open(f) as f:
+                        special_response = f.read()
+                return special_response
+
+def has_special_response(question,responses):
+    for r in responses:
+        regx = r[0]
+        if re.search(regx,question):
+            return r[1]
+        return False
 
 def welcome():
     welcome_message = '''
@@ -45,14 +65,6 @@ def bye():
     print(goodbye)
     exit()
 
-def get_special_response(question):
-    with open(os.environ["FUNDATA"] + "/eightball/responses.json") as f:
-        responses = json.load(f)
-        for r in responses:
-            regx = r[0]
-            special_response = r[1]
-            if re.search(regx,question):
-                return special_response
 
 def handle_question(answers):
     question = ask("--> " + c.b3)
@@ -71,8 +83,9 @@ if __name__ == '__main__':
     try: 
         welcome()
         answers = load_answers(os.environ["FUNDATA"])
+        reponses = load_responses(os.environ["FUNDATA"])
         while True:
-            handle_question(answers)
+            handle_question(answers,responses)
     except KeyboardInterrupt:
         print()
         bye()

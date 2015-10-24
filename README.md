@@ -22,3 +22,7 @@ Modules:
 
 In addition to the modules students are encouraged to work on their
 StoryEngine stories.
+
+## References
+
+[A Reintroduction to JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
