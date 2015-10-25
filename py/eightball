@@ -8,70 +8,73 @@ import re
 
 def load_answers(path):
     """Loads answers from answers.json and from ascii"""
-    json_file = path + "/eightball/answers.json"
-    txt_files = path + "/eightball/ascii"
+    data = path + "/answers.json"
+    txt = path + "/ascii"
     answers = []
-    with open(json_file) as f:
+    with open(data) as f:
         answers = json.load(f);
-    for name in os.listdir(txt_files):
+    for name in os.listdir(txt):
         if name.endswith(".txt") and not (name == "welcome.txt" or name == "bye.txt"):
-            with open(txt_files + "/" + name) as f:
+            with open(txt + "/" + name) as f:
                 one = f.read()
                 answers.append(one)
     return answers
 
-def get_special_response(question):
-    with open(os.environ["FUNDATA"] + "/eightball/responses.json") as f:
-        responses = json.load(f)
-        for r in responses:
-            regx = r[0]
-            special_response = r[1]
-            if re.search(regx,question):
-                if special_response.endswith(".txt"):
-                    file = os.environ["FUNDATA"] + "/eightball/ascii/responses/" + special_response 
-                    with open(f) as f:
-                        special_response = f.read()
-                return special_response
+def load_responses(path):
+    """Loads response from answers.json and from ascii"""
+    data = path + "/responses.json"
+    txt = path + "/ascii/responses"
+    responses = []
+    filled = []
+    with open(data) as f:
+        responses = json.load(f);
+    for r in responses:
+        regx = r[0]
+        special = r[1]
+        if special.endswith(".txt"):
+            fname = txt + "/" + special
+            with open(fname) as s:
+                buf = s.read()
+                r[1] = buf
+        filled.append(r)
+    return filled
 
 def has_special_response(question,responses):
     for r in responses:
         regx = r[0]
         if re.search(regx,question):
             return r[1]
-        return False
 
-def welcome():
+def welcome(data):
     welcome_message = '''
 Welcome to the magic eight ball!
 Enter your question below.
 '''
-    txt = os.environ["FUNDATA"] + "/eightball/ascii/welcome.txt"
+    txt = data + "/ascii/welcome.txt"
     if os.path.isfile(txt):
         with open(txt) as f:
             welcome_message = f.read()
-
     print(c.clear + c.rc() + welcome_message + c.reset)
 
 def ask(prompt):
     answer = input(prompt).strip().lower()
     return answer
 
-def bye():
+def bye(data):
     goodbye = "Goodbye. Come back soon!"
-    txt = os.environ["FUNDATA"] + "/eightball/ascii/bye.txt"
+    txt = data + "/ascii/bye.txt"
     if os.path.isfile(txt):
         with open(txt) as f:
             goodbye = f.read()
     print(goodbye)
     exit()
 
-
-def handle_question(answers):
+def handle_question(answers,responses,data):
     question = ask("--> " + c.b3)
     print(c.reset, end='')
     if question == 'bye' or question == 'goodbye':
-        bye()
-    special = get_special_response(question)
+        bye(data)
+    special = has_special_response(question,responses)
     if special:
         answer = special
     else:
@@ -81,11 +84,12 @@ def handle_question(answers):
 
 if __name__ == '__main__':
     try: 
-        welcome()
-        answers = load_answers(os.environ["FUNDATA"])
-        reponses = load_responses(os.environ["FUNDATA"])
+        data = os.environ["FUNDATA"] + "/eightball"
+        welcome(data)
+        answers = load_answers(data)
+        responses = load_responses(data)
         while True:
-            handle_question(answers,responses)
+            handle_question(answers,responses,data)
     except KeyboardInterrupt:
         print()
-        bye()
+        bye(data)
