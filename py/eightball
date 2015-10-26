@@ -6,10 +6,23 @@ import os
 import json
 import re
 
+def ask(prompt):
+    """Prompt the user to type input.
+    
+    Args:
+        prompt (str): Text to use as user prompt
+
+    Returns: 
+        str: Typed in text stipped of whitespace and lowercase
+
+    """
+    answer = input(prompt).strip().lower()
+    return answer
+
 def load_answers(path):
     """Loads answers from answers.json and from ascii"""
     data = path + "/answers.json"
-    txt = path + "/ascii"
+    txt    = path + "/ascii"
     answers = []
     with open(data) as f:
         answers = json.load(f);
@@ -21,11 +34,10 @@ def load_answers(path):
     return answers
 
 def load_responses(path):
-    """Loads response from answers.json and from ascii"""
+    """Loads response from responses.json and from ascii/responses"""
     data = path + "/responses.json"
     txt = path + "/ascii/responses"
     responses = []
-    filled = []
     with open(data) as f:
         responses = json.load(f);
     for r in responses:
@@ -36,29 +48,21 @@ def load_responses(path):
             with open(fname) as s:
                 buf = s.read()
                 r[1] = buf
-        filled.append(r)
-    return filled
+    return responses
 
 def has_special_response(question,responses):
+    """See if question matches the any of the special response questions."""
     for r in responses:
         regx = r[0]
         if re.search(regx,question):
             return r[1]
 
 def welcome(data):
-    welcome_message = '''
-Welcome to the magic eight ball!
-Enter your question below.
-'''
     txt = data + "/ascii/welcome.txt"
     if os.path.isfile(txt):
         with open(txt) as f:
             welcome_message = f.read()
     print(c.clear + c.rc() + welcome_message + c.reset)
-
-def ask(prompt):
-    answer = input(prompt).strip().lower()
-    return answer
 
 def bye(data):
     goodbye = "Goodbye. Come back soon!"
@@ -69,7 +73,8 @@ def bye(data):
     print(goodbye)
     exit()
 
-def handle_question(answers,responses,data):
+def answer_question(answers,responses,data):
+    """Prompt for a single question and answer it."""
     question = ask("--> " + c.b3)
     print(c.reset, end='')
     if question == 'bye' or question == 'goodbye':
@@ -81,15 +86,19 @@ def handle_question(answers,responses,data):
         answer = random.choice(answers)
     print(c.random() + answer + c.x)
 
-
-if __name__ == '__main__':
-    try: 
-        data = os.environ["FUNDATA"] + "/eightball"
-        welcome(data)
-        answers = load_answers(data)
-        responses = load_responses(data)
+def eightball(answers,responses,data):
+    """Main eightball loop. Ask and answer questions, forever."""
+    try:
         while True:
-            handle_question(answers,responses,data)
+            answer_question(answers,responses,data)
     except KeyboardInterrupt:
         print()
         bye(data)
+
+if __name__ == '__main__':
+    data = os.environ["FUNDATA"] + "/eightball"
+    welcome(data)
+    answers = load_answers(data)
+    responses = load_responses(data)
+    eightball(answers,responses,data)
+
