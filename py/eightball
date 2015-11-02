@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+"""The answers to all your questions."""
+
 import skilstak.colors as c
 import random
 import os 
@@ -7,7 +9,7 @@ import json
 import re
 
 def ask(prompt):
-    """Prompt the user to type input.
+    """Prompt the user to enter some text as a string.
     
     Args:
         prompt (str): Text to use as user prompt
@@ -20,9 +22,36 @@ def ask(prompt):
     return answer
 
 def load_answers(path):
-    """Loads answers from answers.json and from ascii"""
+    """Loads answers from answers.json and from ascii.
+
+    A random answer will be selected from the combination of all
+    answers in the answers.json file and ever ``.txt`` file in the
+    ascii directory. The JSON file should contain a list:
+
+    [
+      "Yes.",
+      "No.",
+      "Maybe."
+    ]
+    
+    Since JSON does not handle line returned very well ASCII art
+    can be put into .txt files inside the ascii directory and each
+    will be loaded into its own possible answer.
+
+    Two special files will be displayed to start and end the program:
+    ascii/welcome.txt and ascii/bye.txt
+
+    Args:
+        path (str): Full path to the directory with 'answers.json'
+        and 'ascii' dir.
+
+    Returns: 
+        list: A list of all possible answers.
+
+    """
+
     data = path + "/answers.json"
-    txt    = path + "/ascii"
+    txt = path + "/ascii"
     answers = []
     with open(data) as f:
         answers = json.load(f);
@@ -34,7 +63,34 @@ def load_answers(path):
     return answers
 
 def load_responses(path):
-    """Loads response from responses.json and from ascii/responses"""
+    """Loads special response from responses.json and ascii/responses.
+
+    Special responses, (sometimes called 'Easter eggs'), are a way
+    to give your Eightball some color. Each list entry is itself a
+    list with two parts, a regular expression to match to what the
+    player typed in and a special response to say. The simplest
+    regular expression is simply a string of text, a keyword to
+    look for (ex: "love") or a few keywords (ex: "die|death"). For
+    example:
+
+    [
+      ["love", "Sorry I'm not able to respond to matters of love."],
+      ["death|die", "death.txt"]
+    ]
+
+    If the special response ends with 'txt' the response is assumed
+    to be the name of a text file in <path>/ascii/responses/ and will
+    be loaded as the special response.
+
+    Args:
+        path (str): Full path to dir with 'responses.json' and
+                    'ascii/responses' dir.
+
+    Returns: 
+        list: A list of all special responses.
+
+    """
+
     data = path + "/responses.json"
     txt = path + "/ascii/responses"
     responses = []
@@ -51,17 +107,45 @@ def load_responses(path):
     return responses
 
 def has_special_response(question,responses):
-    """See if question matches the any of the special response questions."""
+    """See if question matches the any of the special response questions.
+
+    Args:
+        question (str): The question to match against possible special responses.
+        responses (list): A list of responses, each as a two-part list.
+
+    Returns:
+        bool/str: The special response if one is found.
+
+    """
+
     for r in responses:
         regx = r[0]
         if re.search(regx,question):
             return r[1]
 
 def welcome(data):
+    """Display a welcome message.
+
+    Looks for <data>ascii/welcome.txt and if found will use it
+    to display a welcome message when eightball starts. Otherwise,
+    it prints the following by default:
+
+        Welcome to the Magic Eightball
+        Enter your question below:
+
+    Args:
+        data (str): Full path to the dir containing 'ascii/'.
+    """
+
     txt = data + "/ascii/welcome.txt"
     if os.path.isfile(txt):
         with open(txt) as f:
             welcome_message = f.read()
+    if not welcome_message:
+        welcome_message = """
+Welcome to the Magic Eightball
+Enter your question below:
+"""
     print(c.clear + c.rc() + welcome_message + c.reset)
 
 def bye(data):

@@ -5,31 +5,31 @@
 import skilstak.colors as c
 import time
 
-def plain():
+def plain(message):
     """Clears the screen and prints 'Hello world'."""
-    print(c.clear + c.rc() + "Hello world" + c.reset)
+    print(c.clear + c.rc() + message + c.reset)
 
-def multi():
+def multi(message):
     """Prints 'Hello world' in multiple colors like a Christmas tree (or Vegas sign)."""
     while True:
-        print(c.clear + c.multi("Hello world"))
+        print(c.clear + c.multi(message))
         time.sleep(0.5)
 
-def color():
+def color(message):
     """Fills the screen with randomly colored 'Hello world's."""
     print(c.clear)
     while True:
-        print(c.rc() + "Hello world" + c.reset, end=" ")
+        print(c.rc() + message + c.reset, end=" ")
 
-def hello(kind='plain'):
+def hello(kind='plain',message='Hello world!'):
     """Main 'Hello world' function"""
     try:
         if kind == 'color':
-            color()
+            color(message)
         elif kind.startswith('m'):
-            multi()
+            multi(message)
         else:
-            plain()
+            plain(message)
     except KeyboardInterrupt:
         return
 
